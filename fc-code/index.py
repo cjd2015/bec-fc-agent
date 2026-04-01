@@ -1,5 +1,6 @@
 import base64
 import json
+from datetime import datetime
 from hashlib import sha256
 from typing import Any, Callable, Dict, Optional, Tuple
 from urllib.parse import parse_qs
@@ -565,6 +566,149 @@ def route_scene_start(request: JsonDict, scene_id: int) -> Tuple[int, JsonDict]:
         raise HttpError(500, "database connection failed", {"error": str(exc)})
 
 
+def route_scene_message(request: JsonDict, scene_id: int) -> Tuple[int, JsonDict]:
+    payload = request.get("json") or {}
+    session_id = payload.get("session_id")
+    message = payload.get("message")
+    if not session_id or not message:
+        raise HttpError(400, "session_id and message are required")
+
+    try:
+        engine = create_engine(settings.database_url, pool_pre_ping=True)
+        with engine.begin() as conn:
+            session = conn.execute(
+                text(
+                    """
+                    SELECT uss.id, uss.user_id, uss.scene_id, uss.session_status, uss.round_count,
+                           sc.scene_name, sc.training_goal, sc.ai_role, sc.recommended_expression
+                    FROM user_scene_session uss
+                    JOIN scene_content sc ON sc.id = uss.scene_id
+                    WHERE uss.id = :session_id AND uss.scene_id = :scene_id
+                    LIMIT 1
+                    """
+                ),
+                {"session_id": session_id, "scene_id": scene_id},
+            ).mappings().first()
+            if not session:
+                raise HttpError(404, "scene session not found")
+            if session["session_status"] != "started":
+                raise HttpError(400, "scene session is not active")
+
+            new_round_count = int(session["round_count"]) + 1
+            ai_reply = (
+                f"As the {session['ai_role']}, I understand your point: '{message}'. "
+                f"For this scene ({session['scene_name']}), please keep focusing on: {session['training_goal']}"
+            )
+            feedback = (
+                "Good attempt. Try to use one of these business expressions: "
+                f"{session['recommended_expression']}"
+            )
+            user_summary = f"[{datetime.utcnow().isoformat()}] user: {message}"
+            ai_summary = f"[{datetime.utcnow().isoformat()}] ai: {ai_reply} | feedback: {feedback}"
+
+            conn.execute(
+                text(
+                    """
+                    UPDATE user_scene_session
+                    SET round_count = :round_count,
+                        user_summary = COALESCE(user_summary, '') || CASE WHEN COALESCE(user_summary, '') = '' THEN '' ELSE E'\n' END || :user_summary,
+                        ai_feedback_summary = COALESCE(ai_feedback_summary, '') || CASE WHEN COALESCE(ai_feedback_summary, '') = '' THEN '' ELSE E'\n' END || :ai_summary
+                    WHERE id = :session_id
+                    """
+                ),
+                {
+                    "round_count": new_round_count,
+                    "user_summary": user_summary,
+                    "ai_summary": ai_summary,
+                    "session_id": session_id,
+                },
+            )
+
+        return 200, success(
+            {
+                "session_id": int(session_id),
+                "scene_id": scene_id,
+                "round_count": new_round_count,
+                "reply": ai_reply,
+                "feedback": feedback,
+            }
+        )
+    except HttpError:
+        raise
+    except SQLAlchemyError as exc:
+        raise HttpError(500, "database connection failed", {"error": str(exc)})
+
+
+def route_scene_finish(request: JsonDict, scene_id: int) -> Tuple[int, JsonDict]:
+    payload = request.get("json") or {}
+    session_id = payload.get("session_id")
+    if not session_id:
+        raise HttpError(400, "session_id is required")
+
+    try:
+        engine = create_engine(settings.database_url, pool_pre_ping=True)
+        with engine.begin() as conn:
+            session = conn.execute(
+                text(
+                    """
+                    SELECT uss.id, uss.session_status, uss.round_count, uss.user_summary, uss.ai_feedback_summary,
+                           sc.scene_name, sc.training_goal
+                    FROM user_scene_session uss
+                    JOIN scene_content sc ON sc.id = uss.scene_id
+                    WHERE uss.id = :session_id AND uss.scene_id = :scene_id
+                    LIMIT 1
+                    """
+                ),
+                {"session_id": session_id, "scene_id": scene_id},
+            ).mappings().first()
+            if not session:
+                raise HttpError(404, "scene session not found")
+
+            score = min(100, 60 + int(session["round_count"]) * 10)
+            summary = (
+                f"Scene '{session['scene_name']}' finished. "
+                f"You completed {session['round_count']} round(s) and practiced: {session['training_goal']}"
+            )
+            feedback_summary = (
+                f"Keep improving clarity, politeness, and business structure. Suggested score: {score}."
+            )
+
+            conn.execute(
+                text(
+                    """
+                    UPDATE user_scene_session
+                    SET session_status = 'finished',
+                        ended_at = CURRENT_TIMESTAMP,
+                        score = :score,
+                        user_summary = COALESCE(user_summary, :summary),
+                        ai_feedback_summary = COALESCE(ai_feedback_summary, '') || CASE WHEN COALESCE(ai_feedback_summary, '') = '' THEN '' ELSE E'\n' END || :feedback_summary
+                    WHERE id = :session_id
+                    """
+                ),
+                {
+                    "score": score,
+                    "summary": summary,
+                    "feedback_summary": feedback_summary,
+                    "session_id": session_id,
+                },
+            )
+
+        return 200, success(
+            {
+                "session_id": int(session_id),
+                "scene_id": scene_id,
+                "session_status": "finished",
+                "score": score,
+                "summary": summary,
+                "feedback_summary": feedback_summary,
+            }
+        )
+    except HttpError:
+        raise
+    except SQLAlchemyError as exc:
+        raise HttpError(500, "database connection failed", {"error": str(exc)})
+
+
 ROUTES: Dict[Tuple[str, str], RouteHandler] = {
     ("GET", "/api/v1/health"): route_health,
     ("GET", "/health"): route_health,
@@ -597,6 +741,14 @@ def dispatch(request: JsonDict) -> Tuple[int, JsonDict]:
             scene_id_text = suffix[:-len("/start")]
             if scene_id_text.isdigit() and method == "POST":
                 return route_scene_start(request, int(scene_id_text))
+        elif suffix.endswith("/message"):
+            scene_id_text = suffix[:-len("/message")]
+            if scene_id_text.isdigit() and method == "POST":
+                return route_scene_message(request, int(scene_id_text))
+        elif suffix.endswith("/finish"):
+            scene_id_text = suffix[:-len("/finish")]
+            if scene_id_text.isdigit() and method == "POST":
+                return route_scene_finish(request, int(scene_id_text))
         elif suffix.isdigit() and method == "GET":
             return route_scene_detail(request, int(suffix))
 
