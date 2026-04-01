@@ -1,0 +1,37 @@
+version: '3.8'
+
+services:
+  api:
+    build: .
+    container_name: agent-platform
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./data:/app/data          # 数据持久化
+      - ./logs:/app/logs          # 日志
+      - ./config:/app/config      # 配置文件
+    environment:
+      - DATABASE_URL=sqlite+aiosqlite:///app/data/agent.db
+      - CHROMA_PERSIST_DIR=/app/data/chroma
+      - QWEN_API_KEY=${QWEN_API_KEY}
+      - DEEPSEEK_API_KEY=${DEEPSEEK_API_KEY}
+      - KIMI_API_KEY=${KIMI_API_KEY}
+      - LOG_LEVEL=INFO
+    restart: unless-stopped
+    networks:
+      - app_network
+    
+    # 资源限制（2 核 2G 合理分配）
+    deploy:
+      resources:
+        limits:
+          cpus: '1.5'     # 最多 1.5 核
+          memory: 1.5G    # 最多 1.5G 内存
+
+networks:
+  app_network:
+    driver: bridge
+
+volumes:
+  data:
+  logs:

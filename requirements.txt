@@ -1,0 +1,29 @@
+# Core Dependencies
+fastapi==0.109.0
+uvicorn[standard]==0.27.0
+python-multipart==0.0.6
+
+# Database
+sqlalchemy==2.0.25
+aiosqlite==0.19.0
+psycopg2-binary==2.9.9
+email-validator==2.1.0.post1
+
+# AI Integration
+httpx==0.26.0
+tenacity==8.2.3
+
+# Vector Store
+chromadb==0.4.22
+
+# Configuration
+pyyaml==6.0.1
+pydantic==2.5.3
+pydantic-settings==2.1.0
+python-dotenv==1.0.0
+
+# Logging
+loguru==0.7.2
+
+# Utilities
+click==8.1.7

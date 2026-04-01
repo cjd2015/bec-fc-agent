@@ -1,0 +1,104 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Node
+frontend/node_modules/
+
+# Project runtime / generated
+logs/
+*.log
+data/*.db
+data/*.db-shm
+data/*.db-wal
+data/chroma/
+data/files/
+runtime/postgres-data/
+
+# Secrets / local config
+.env
+config/.env
+config/*.local.yaml
+runtime/postgres.env
+signing-proxy/.env
+signing-proxy/.venv/
+fc-code/.env
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Docker
+docker-compose.override.yml
+
+# FC vendored packages / deployment artifacts
+fc-code/*.dist-info/
+fc-code/bin/
+fc-code/include/
+fc-code/lib/
+fc-code/SQLAlchemy-*.dist-info/
+fc-code/a2wsgi-*.dist-info/
+fc-code/annotated_types-*.dist-info/
+fc-code/anyio-*.dist-info/
+fc-code/click-*.dist-info/
+fc-code/dnspython-*.dist-info/
+fc-code/email_validator-*.dist-info/
+fc-code/exceptiongroup-*.dist-info/
+fc-code/fastapi-*.dist-info/
+fc-code/greenlet-*.dist-info/
+fc-code/h11-*.dist-info/
+fc-code/httptools-*.dist-info/
+fc-code/idna-*.dist-info/
+fc-code/psycopg2_binary-*.dist-info/
+fc-code/pydantic-*.dist-info/
+fc-code/pydantic_core-*.dist-info/
+fc-code/pydantic_settings-*.dist-info/
+fc-code/python_dotenv-*.dist-info/
+fc-code/pyyaml-*.dist-info/
+fc-code/starlette-*.dist-info/
+fc-code/typing_extensions-*.dist-info/
+fc-code/uvicorn-*.dist-info/
+fc-code/uvloop-*.dist-info/
+fc-code/watchfiles-*.dist-info/
+fc-code/websockets-*.dist-info/
+fc-code/psycopg2_binary.libs/
+fc-code/sqlalchemy/
+fc-code/fastapi/
+fc-code/starlette/
+fc-code/pydantic/
+fc-code/pydantic_core/
+fc-code/pydantic_settings/
+fc-code/uvicorn/
+fc-code/uvloop/
+fc-code/websockets/
+fc-code/watchfiles/
+fc-code/httptools/
+fc-code/greenlet/
+fc-code/anyio/
+fc-code/h11/
+fc-code/idna/
+fc-code/dns/
+fc-code/dotenv/
+fc-code/yaml/
+fc-code/_yaml/
+fc-code/email_validator/
+fc-code/annotated_types/
+fc-code/typing_extensions.py

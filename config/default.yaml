@@ -1,0 +1,50 @@
+# 默认配置文件
+
+app:
+  name: AI Agent Platform
+  version: 0.1.0
+  debug: false
+  secret_key: change-me-in-production
+
+server:
+  host: 0.0.0.0
+  port: 8000
+  workers: 2
+
+database:
+  url: sqlite+aiosqlite:///./data/agent.db
+  echo: false
+  
+  # SQLite 优化
+  connect_args:
+    timeout: 30
+    check_same_thread: false
+  
+  # 连接池
+  pool_size: 10
+  max_overflow: 5
+  pool_recycle: 3600
+  
+  # WAL 模式
+  pragma:
+    journal_mode: WAL
+    synchronous: NORMAL
+    cache_size: 10000
+
+vector_store:
+  type: chroma
+  persist_directory: ./data/chroma
+  
+  settings:
+    anonymized_telemetry: false
+
+storage:
+  type: local
+  base_path: ./data/files
+
+log:
+  level: INFO
+  format: "{time:YYYY-MM-DD HH:mm:ss} | {level} | {name}:{function}:{line} - {message}"
+  file: logs/app.log
+  rotation: 10 MB
+  retention: 7 days

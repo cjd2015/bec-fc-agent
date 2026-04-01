@@ -1,0 +1,177 @@
+# NovaCode OpenAI 兼容代理配置
+# 文档：https://docs.novacode.top
+
+provider:
+  type: openai_proxy
+  name: NovaCode
+  
+  options:
+    baseURL: "https://ai.novacode.top/v1"
+    apiKey: "${NOVACODE_API_KEY}"  # 从环境变量读取
+    timeout: 120
+    max_retries: 3
+  
+  models:
+    # GPT-5 Codex 系列
+    gpt-5-codex:
+      name: "GPT-5 Codex"
+      limit:
+        context: 400000
+        output: 128000
+      options:
+        store: false
+      variants:
+        low: {}
+        medium: {}
+        high: {}
+    
+    gpt-5.1-codex:
+      name: "GPT-5.1 Codex"
+      limit:
+        context: 400000
+        output: 128000
+      options:
+        store: false
+      variants:
+        low: {}
+        medium: {}
+        high: {}
+    
+    gpt-5.1-codex-max:
+      name: "GPT-5.1 Codex Max"
+      limit:
+        context: 400000
+        output: 128000
+      options:
+        store: false
+      variants:
+        low: {}
+        medium: {}
+        high: {}
+    
+    gpt-5.1-codex-mini:
+      name: "GPT-5.1 Codex Mini"
+      limit:
+        context: 400000
+        output: 128000
+      options:
+        store: false
+      variants:
+        low: {}
+        medium: {}
+        high: {}
+    
+    gpt-5.2:
+      name: "GPT-5.2"
+      limit:
+        context: 400000
+        output: 128000
+      options:
+        store: false
+      variants:
+        low: {}
+        medium: {}
+        high: {}
+        xhigh: {}
+    
+    gpt-5.4:
+      name: "GPT-5.4"
+      limit:
+        context: 1050000  # 105 万 tokens 上下文！
+        output: 128000
+      options:
+        store: false
+      variants:
+        low: {}
+        medium: {}
+        high: {}
+        xhigh: {}
+    
+    gpt-5.3-codex-spark:
+      name: "GPT-5.3 Codex Spark"
+      limit:
+        context: 128000
+        output: 32000
+      options:
+        store: false
+      variants:
+        low: {}
+        medium: {}
+        high: {}
+        xhigh: {}
+    
+    gpt-5.3-codex:
+      name: "GPT-5.3 Codex"
+      limit:
+        context: 400000
+        output: 128000
+      options:
+        store: false
+      variants:
+        low: {}
+        medium: {}
+        high: {}
+        xhigh: {}
+    
+    gpt-5.2-codex:
+      name: "GPT-5.2 Codex"
+      limit:
+        context: 400000
+        output: 128000
+      options:
+        store: false
+      variants:
+        low: {}
+        medium: {}
+        high: {}
+        xhigh: {}
+    
+    codex-mini-latest:
+      name: "Codex Mini"
+      limit:
+        context: 200000
+        output: 100000
+      options:
+        store: false
+      variants:
+        low: {}
+        medium: {}
+        high: {}
+
+# Agent 配置
+agent:
+  build:
+    options:
+      store: false
+  plan:
+    options:
+      store: false
+
+# 使用示例
+# 
+# 1. 基础对话
+# POST /api/v1/chat
+# {
+#   "message": "你好",
+#   "model": "gpt-5.4",
+#   "variant": "high"
+# }
+#
+# 2. 长文档分析（利用 105 万上下文）
+# POST /api/v1/chat
+# {
+#   "message": "分析这份文档",
+#   "model": "gpt-5.4",
+#   "variant": "xhigh",
+#   "options": {
+#     "store": false
+#   }
+# }
+#
+# 3. 快速代码生成
+# POST /api/v1/chat
+# {
+#   "message": "写一个 Python 函数",
+#   "model": "codex-mini-latest",
+#   "variant": "medium"
+# }

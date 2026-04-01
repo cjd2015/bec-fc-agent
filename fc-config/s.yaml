@@ -1,0 +1,42 @@
+edition: 3.0.0
+name: bec-agent-platform
+access: aliyun
+
+vars:
+  region: cn-hangzhou
+  serviceName: bec-agent-service
+  functionName: bec-agent-api
+
+resources:
+  becAgentService:
+    component: fc3
+    props:
+      region: ${vars.region}
+      serviceName: ${vars.serviceName}
+      functionName: ${vars.functionName}
+      description: BEC Agent API
+      runtime: python3.10
+      code: ../fc-code
+      memorySize: 1024
+      cpu: 0.5
+      timeout: 60
+      diskSize: 512
+      internetAccess: true
+      handler: index.handler
+      environmentVariables:
+        DATABASE_URL: postgresql+psycopg2://bec_app:lW2zvY6WodKv3A4ps%3DnSASJq@8.147.56.124:5432/bec_agent
+        LOG_LEVEL: INFO
+      triggers:
+        - triggerName: httpTrigger
+          triggerType: http
+          qualifier: LATEST
+          triggerConfig:
+            authType: function
+            disableURLInternet: false
+            methods:
+              - GET
+              - POST
+              - PUT
+              - DELETE
+              - PATCH
+              - OPTIONS

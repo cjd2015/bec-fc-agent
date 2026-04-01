@@ -1,0 +1,33 @@
+version: "3.9"
+
+services:
+  postgres:
+    image: postgres:16
+    container_name: bec-postgres
+    restart: always
+    environment:
+      POSTGRES_DB: bec_agent
+      POSTGRES_USER: bec_user
+      POSTGRES_PASSWORD: change_this_to_a_strong_password
+      TZ: Asia/Shanghai
+    ports:
+      - "5432:5432"
+    volumes:
+      - ./postgres-data:/var/lib/postgresql/data
+      - ./postgresql.conf:/etc/postgresql/postgresql.conf
+    command: postgres -c config_file=/etc/postgresql/postgresql.conf
+    logging:
+      driver: json-file
+      options:
+        max-size: "10m"
+        max-file: "3"
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U bec_user -d bec_agent"]
+      interval: 30s
+      timeout: 5s
+      retries: 5
+
+# 说明：
+# 1. 当前 ECS 仅建议运行 OpenClaw + Nginx + 数据库
+# 2. Python/FastAPI 服务部署到阿里云函数计算 FC
+# 3. 建议在同目录提供 postgresql.conf 并使用低配参数
