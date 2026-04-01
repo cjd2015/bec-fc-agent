@@ -599,6 +599,209 @@ def route_level_test_result(request: JsonDict, record_id: int) -> Tuple[int, Jso
         raise HttpError(500, "database connection failed", {"error": str(exc)})
 
 
+def route_mock_exams_list(request: JsonDict) -> Tuple[int, JsonDict]:
+    level = request.get("query", {}).get("level")
+    try:
+        engine = create_engine(settings.database_url, pool_pre_ping=True)
+        sql = """
+            SELECT id, stem, level, difficulty, question_type
+            FROM question_content
+            WHERE module_type = 'mock_exam'
+              AND publish_status = 'published'
+        """
+        params: JsonDict = {}
+        if level:
+            sql += " AND level = :level"
+            params["level"] = level
+        sql += " ORDER BY id ASC LIMIT 20"
+        with engine.connect() as conn:
+            rows = conn.execute(text(sql), params).mappings().all()
+        return 200, success({"items": [dict(row) for row in rows], "count": len(rows)})
+    except SQLAlchemyError as exc:
+        raise HttpError(500, "database connection failed", {"error": str(exc)})
+
+
+def route_mock_exam_submit(request: JsonDict, exam_id: int) -> Tuple[int, JsonDict]:
+    payload = request.get("json") or {}
+    username = payload.get("username")
+    answers = payload.get("answers") or []
+    if not username:
+        raise HttpError(400, "username is required")
+    if not isinstance(answers, list) or not answers:
+        raise HttpError(400, "answers are required")
+
+    try:
+        engine = create_engine(settings.database_url, pool_pre_ping=True)
+        with engine.begin() as conn:
+            user = conn.execute(
+                text("SELECT id FROM users WHERE username = :username LIMIT 1"),
+                {"username": username},
+            ).mappings().first()
+            if not user:
+                raise HttpError(404, "user not found")
+
+            question_ids = [item.get("question_id") for item in answers if item.get("question_id")]
+            if exam_id not in question_ids:
+                question_ids.insert(0, exam_id)
+
+            placeholders = ", ".join([f":q{i}" for i in range(len(question_ids))])
+            params = {f"q{i}": qid for i, qid in enumerate(question_ids)}
+            questions = conn.execute(
+                text(
+                    f"""
+                    SELECT id, correct_answer, level, difficulty
+                    FROM question_content
+                    WHERE module_type = 'mock_exam' AND id IN ({placeholders})
+                    """
+                ),
+                params,
+            ).mappings().all()
+            question_map = {row["id"]: row for row in questions}
+            if exam_id not in question_map:
+                raise HttpError(404, "mock exam question not found")
+
+            exam_record = conn.execute(
+                text(
+                    """
+                    INSERT INTO mock_exam_record (user_id, status)
+                    VALUES (:user_id, 'submitted')
+                    RETURNING id
+                    """
+                ),
+                {"user_id": user["id"]},
+            ).mappings().one()
+
+            correct_count = 0
+            processed = 0
+            weak_tags = []
+            for item in answers:
+                question_id = item.get("question_id")
+                user_answer = item.get("user_answer")
+                question = question_map.get(question_id)
+                if not question:
+                    continue
+                is_correct = str(user_answer).strip() == str(question["correct_answer"]).strip()
+                score = 10 if is_correct else 0
+                processed += 1
+                if is_correct:
+                    correct_count += 1
+                else:
+                    weak_tags.append(f"{question['level']}/{question['difficulty']}")
+                conn.execute(
+                    text(
+                        """
+                        INSERT INTO mock_exam_answer (exam_record_id, question_id, user_answer, is_correct, score, explanation_result)
+                        VALUES (:exam_record_id, :question_id, :user_answer, :is_correct, :score, :explanation_result)
+                        """
+                    ),
+                    {
+                        "exam_record_id": exam_record["id"],
+                        "question_id": question_id,
+                        "user_answer": user_answer,
+                        "is_correct": is_correct,
+                        "score": score,
+                        "explanation_result": "correct" if is_correct else "needs review",
+                    },
+                )
+
+            total_score = correct_count * 10
+            accuracy_rate = round((correct_count / processed) * 100, 2) if processed else 0
+            weak_tags_text = ", ".join(weak_tags) if weak_tags else "none"
+            conn.execute(
+                text(
+                    """
+                    UPDATE mock_exam_record
+                    SET total_score = :total_score,
+                        accuracy_rate = :accuracy_rate,
+                        weak_tags = :weak_tags,
+                        ended_at = CURRENT_TIMESTAMP,
+                        status = 'completed'
+                    WHERE id = :record_id
+                    """
+                ),
+                {
+                    "total_score": total_score,
+                    "accuracy_rate": accuracy_rate,
+                    "weak_tags": weak_tags_text,
+                    "record_id": exam_record["id"],
+                },
+            )
+
+        return 200, success(
+            {
+                "record_id": exam_record["id"],
+                "total_score": total_score,
+                "accuracy_rate": accuracy_rate,
+                "weak_tags": weak_tags_text,
+            }
+        )
+    except HttpError:
+        raise
+    except SQLAlchemyError as exc:
+        raise HttpError(500, "database connection failed", {"error": str(exc)})
+
+
+def route_mock_exam_result(request: JsonDict, record_id: int) -> Tuple[int, JsonDict]:
+    try:
+        engine = create_engine(settings.database_url, pool_pre_ping=True)
+        with engine.connect() as conn:
+            record = conn.execute(
+                text(
+                    """
+                    SELECT mer.id, mer.total_score, mer.accuracy_rate, mer.weak_tags, mer.status,
+                           mer.started_at, mer.ended_at, u.username
+                    FROM mock_exam_record mer
+                    JOIN users u ON u.id = mer.user_id
+                    WHERE mer.id = :record_id
+                    LIMIT 1
+                    """
+                ),
+                {"record_id": record_id},
+            ).mappings().first()
+            if not record:
+                raise HttpError(404, "mock exam record not found")
+
+            answers = conn.execute(
+                text(
+                    """
+                    SELECT mea.question_id, mea.user_answer, mea.is_correct, mea.score, mea.explanation_result,
+                           qc.stem, qc.correct_answer
+                    FROM mock_exam_answer mea
+                    JOIN question_content qc ON qc.id = mea.question_id
+                    WHERE mea.exam_record_id = :record_id
+                    ORDER BY mea.id ASC
+                    """
+                ),
+                {"record_id": record_id},
+            ).mappings().all()
+
+        return 200, success(
+            {
+                "record": {
+                    "id": record["id"],
+                    "username": record["username"],
+                    "total_score": float(record["total_score"] or 0),
+                    "accuracy_rate": float(record["accuracy_rate"] or 0),
+                    "weak_tags": record["weak_tags"],
+                    "status": record["status"],
+                    "started_at": str(record["started_at"]),
+                    "ended_at": str(record["ended_at"]) if record["ended_at"] else None,
+                },
+                "answers": [
+                    {
+                        **dict(row),
+                        "score": float(row["score"] or 0),
+                    }
+                    for row in answers
+                ],
+            }
+        )
+    except HttpError:
+        raise
+    except SQLAlchemyError as exc:
+        raise HttpError(500, "database connection failed", {"error": str(exc)})
+
+
 def route_vocab_list(request: JsonDict) -> Tuple[int, JsonDict]:
     level = request.get("query", {}).get("level")
     try:
@@ -904,6 +1107,7 @@ ROUTES: Dict[Tuple[str, str], RouteHandler] = {
     ("PUT", "/api/v1/users/profile"): route_users_profile,
     ("GET", "/api/v1/level-test/start"): route_level_test_start,
     ("POST", "/api/v1/level-test/submit"): route_level_test_submit,
+    ("GET", "/api/v1/mock-exams"): route_mock_exams_list,
     ("GET", "/api/v1/vocab"): route_vocab_list,
     ("GET", "/api/v1/patterns"): route_patterns_list,
     ("GET", "/api/v1/scenes"): route_scenes_list,
@@ -939,6 +1143,17 @@ def dispatch(request: JsonDict) -> Tuple[int, JsonDict]:
         record_id_text = path[len("/api/v1/level-test/result/"):]
         if record_id_text.isdigit():
             return route_level_test_result(request, int(record_id_text))
+
+    if path.startswith("/api/v1/mock-exams/"):
+        suffix = path[len("/api/v1/mock-exams/"):]
+        if suffix.endswith("/submit"):
+            exam_id_text = suffix[:-len("/submit")]
+            if exam_id_text.isdigit() and method == "POST":
+                return route_mock_exam_submit(request, int(exam_id_text))
+        if suffix.startswith("result/") and method == "GET":
+            record_id_text = suffix[len("result/"):]
+            if record_id_text.isdigit():
+                return route_mock_exam_result(request, int(record_id_text))
 
     raise HttpError(
         404,
