@@ -462,6 +462,109 @@ def route_patterns_list(request: JsonDict) -> Tuple[int, JsonDict]:
         raise HttpError(500, "database connection failed", {"error": str(exc)})
 
 
+def route_scenes_list(request: JsonDict) -> Tuple[int, JsonDict]:
+    level = request.get("query", {}).get("level")
+    try:
+        engine = create_engine(settings.database_url, pool_pre_ping=True)
+        sql = """
+            SELECT id, scene_name, scene_background, training_goal, user_role, ai_role, level, difficulty
+            FROM scene_content
+            WHERE publish_status = 'published'
+        """
+        params: JsonDict = {}
+        if level:
+            sql += " AND level = :level"
+            params["level"] = level
+        sql += " ORDER BY id ASC LIMIT 20"
+        with engine.connect() as conn:
+            rows = conn.execute(text(sql), params).mappings().all()
+        return 200, success({"items": [dict(row) for row in rows], "count": len(rows)})
+    except SQLAlchemyError as exc:
+        raise HttpError(500, "database connection failed", {"error": str(exc)})
+
+
+def route_scene_detail(request: JsonDict, scene_id: int) -> Tuple[int, JsonDict]:
+    try:
+        engine = create_engine(settings.database_url, pool_pre_ping=True)
+        with engine.connect() as conn:
+            row = conn.execute(
+                text(
+                    """
+                    SELECT id, scene_name, scene_background, training_goal, user_role, ai_role,
+                           prompt_template, recommended_expression, level, difficulty
+                    FROM scene_content
+                    WHERE id = :scene_id AND publish_status = 'published'
+                    LIMIT 1
+                    """
+                ),
+                {"scene_id": scene_id},
+            ).mappings().first()
+        if not row:
+            raise HttpError(404, "scene not found")
+        return 200, success(dict(row))
+    except HttpError:
+        raise
+    except SQLAlchemyError as exc:
+        raise HttpError(500, "database connection failed", {"error": str(exc)})
+
+
+def route_scene_start(request: JsonDict, scene_id: int) -> Tuple[int, JsonDict]:
+    payload = request.get("json") or {}
+    username = payload.get("username")
+    if not username:
+        raise HttpError(400, "username is required")
+
+    try:
+        engine = create_engine(settings.database_url, pool_pre_ping=True)
+        with engine.begin() as conn:
+            user = conn.execute(
+                text("SELECT id, username FROM users WHERE username = :username LIMIT 1"),
+                {"username": username},
+            ).mappings().first()
+            if not user:
+                raise HttpError(404, "user not found")
+
+            scene = conn.execute(
+                text(
+                    """
+                    SELECT id, scene_name, training_goal, ai_role, prompt_template, recommended_expression
+                    FROM scene_content
+                    WHERE id = :scene_id AND publish_status = 'published'
+                    LIMIT 1
+                    """
+                ),
+                {"scene_id": scene_id},
+            ).mappings().first()
+            if not scene:
+                raise HttpError(404, "scene not found")
+
+            session = conn.execute(
+                text(
+                    """
+                    INSERT INTO user_scene_session (user_id, scene_id, session_status, round_count)
+                    VALUES (:user_id, :scene_id, 'started', 0)
+                    RETURNING id, session_status, round_count, started_at
+                    """
+                ),
+                {"user_id": user["id"], "scene_id": scene_id},
+            ).mappings().one()
+
+        return 200, success(
+            {
+                "session_id": session["id"],
+                "session_status": session["session_status"],
+                "round_count": session["round_count"],
+                "started_at": str(session["started_at"]),
+                "scene": dict(scene),
+                "opening_message": f"Hello {username}, let's begin the scene: {scene['scene_name']}. {scene['training_goal']}",
+            }
+        )
+    except HttpError:
+        raise
+    except SQLAlchemyError as exc:
+        raise HttpError(500, "database connection failed", {"error": str(exc)})
+
+
 ROUTES: Dict[Tuple[str, str], RouteHandler] = {
     ("GET", "/api/v1/health"): route_health,
     ("GET", "/health"): route_health,
@@ -476,23 +579,36 @@ ROUTES: Dict[Tuple[str, str], RouteHandler] = {
     ("GET", "/api/v1/level-test/start"): route_level_test_start,
     ("GET", "/api/v1/vocab"): route_vocab_list,
     ("GET", "/api/v1/patterns"): route_patterns_list,
+    ("GET", "/api/v1/scenes"): route_scenes_list,
 }
 
 
 def dispatch(request: JsonDict) -> Tuple[int, JsonDict]:
     route_key = (request["method"], request["path"])
     handler = ROUTES.get(route_key)
-    if not handler:
-        raise HttpError(
-            404,
-            "route not found",
-            {
-                "method": request["method"],
-                "path": request["path"],
-                "available_routes": [f"{method} {path}" for method, path in ROUTES.keys()],
-            },
-        )
-    return handler(request)
+    if handler:
+        return handler(request)
+
+    path = request["path"]
+    method = request["method"]
+    if path.startswith("/api/v1/scenes/"):
+        suffix = path[len("/api/v1/scenes/"):]
+        if suffix.endswith("/start"):
+            scene_id_text = suffix[:-len("/start")]
+            if scene_id_text.isdigit() and method == "POST":
+                return route_scene_start(request, int(scene_id_text))
+        elif suffix.isdigit() and method == "GET":
+            return route_scene_detail(request, int(suffix))
+
+    raise HttpError(
+        404,
+        "route not found",
+        {
+            "method": request["method"],
+            "path": request["path"],
+            "available_routes": [f"{method} {path}" for method, path in ROUTES.keys()],
+        },
+    )
 
 
 def handler(event, context):
