@@ -417,6 +417,188 @@ def route_level_test_start(request: JsonDict) -> Tuple[int, JsonDict]:
         raise HttpError(500, "database connection failed", {"error": str(exc)})
 
 
+def route_level_test_submit(request: JsonDict) -> Tuple[int, JsonDict]:
+    payload = request.get("json") or {}
+    username = payload.get("username")
+    answers = payload.get("answers") or []
+    if not username:
+        raise HttpError(400, "username is required")
+    if not isinstance(answers, list) or not answers:
+        raise HttpError(400, "answers are required")
+
+    try:
+        engine = create_engine(settings.database_url, pool_pre_ping=True)
+        with engine.begin() as conn:
+            user = conn.execute(
+                text("SELECT id FROM users WHERE username = :username LIMIT 1"),
+                {"username": username},
+            ).mappings().first()
+            if not user:
+                raise HttpError(404, "user not found")
+
+            test_record = conn.execute(
+                text(
+                    """
+                    INSERT INTO level_test_record (user_id, status)
+                    VALUES (:user_id, 'submitted')
+                    RETURNING id, started_at
+                    """
+                ),
+                {"user_id": user["id"]},
+            ).mappings().one()
+
+            correct_count = 0
+            total = 0
+            level_scores = {"BEC Preliminary": 0, "BEC Vantage": 0, "BEC Higher": 0}
+            for item in answers:
+                question_id = item.get("question_id")
+                user_answer = item.get("user_answer")
+                if not question_id:
+                    continue
+                question = conn.execute(
+                    text(
+                        """
+                        SELECT id, correct_answer, level
+                        FROM question_content
+                        WHERE id = :question_id AND module_type = 'level_test'
+                        LIMIT 1
+                        """
+                    ),
+                    {"question_id": question_id},
+                ).mappings().first()
+                if not question:
+                    continue
+                is_correct = str(user_answer).strip() == str(question["correct_answer"]).strip()
+                score = 10 if is_correct else 0
+                total += score
+                if is_correct:
+                    correct_count += 1
+                    if question["level"] in level_scores:
+                        level_scores[question["level"]] += 1
+                conn.execute(
+                    text(
+                        """
+                        INSERT INTO level_test_answer (test_record_id, question_id, user_answer, is_correct, score)
+                        VALUES (:test_record_id, :question_id, :user_answer, :is_correct, :score)
+                        """
+                    ),
+                    {
+                        "test_record_id": test_record["id"],
+                        "question_id": question_id,
+                        "user_answer": user_answer,
+                        "is_correct": is_correct,
+                        "score": score,
+                    },
+                )
+
+            if total >= 80:
+                result_level = "BEC Higher"
+            elif total >= 50:
+                result_level = "BEC Vantage"
+            else:
+                result_level = "BEC Preliminary"
+
+            ability_summary = (
+                f"You answered {correct_count} question(s) correctly. "
+                f"Recommended level: {result_level}. "
+                f"Level strengths: Preliminary={level_scores['BEC Preliminary']}, "
+                f"Vantage={level_scores['BEC Vantage']}, Higher={level_scores['BEC Higher']}."
+            )
+
+            conn.execute(
+                text(
+                    """
+                    UPDATE level_test_record
+                    SET total_score = :total_score,
+                        result_level = :result_level,
+                        ability_summary = :ability_summary,
+                        ended_at = CURRENT_TIMESTAMP,
+                        status = 'completed'
+                    WHERE id = :record_id
+                    """
+                ),
+                {
+                    "total_score": total,
+                    "result_level": result_level,
+                    "ability_summary": ability_summary,
+                    "record_id": test_record["id"],
+                },
+            )
+
+        return 200, success(
+            {
+                "record_id": test_record["id"],
+                "total_score": total,
+                "result_level": result_level,
+                "ability_summary": ability_summary,
+            }
+        )
+    except HttpError:
+        raise
+    except SQLAlchemyError as exc:
+        raise HttpError(500, "database connection failed", {"error": str(exc)})
+
+
+def route_level_test_result(request: JsonDict, record_id: int) -> Tuple[int, JsonDict]:
+    try:
+        engine = create_engine(settings.database_url, pool_pre_ping=True)
+        with engine.connect() as conn:
+            record = conn.execute(
+                text(
+                    """
+                    SELECT ltr.id, ltr.total_score, ltr.result_level, ltr.ability_summary, ltr.status,
+                           ltr.started_at, ltr.ended_at, u.username
+                    FROM level_test_record ltr
+                    JOIN users u ON u.id = ltr.user_id
+                    WHERE ltr.id = :record_id
+                    LIMIT 1
+                    """
+                ),
+                {"record_id": record_id},
+            ).mappings().first()
+            if not record:
+                raise HttpError(404, "level test record not found")
+
+            answers = conn.execute(
+                text(
+                    """
+                    SELECT lta.question_id, lta.user_answer, lta.is_correct, lta.score, qc.stem, qc.correct_answer
+                    FROM level_test_answer lta
+                    JOIN question_content qc ON qc.id = lta.question_id
+                    WHERE lta.test_record_id = :record_id
+                    ORDER BY lta.id ASC
+                    """
+                ),
+                {"record_id": record_id},
+            ).mappings().all()
+
+        return 200, success(
+            {
+                "record": {
+                    "id": record["id"],
+                    "username": record["username"],
+                    "total_score": float(record["total_score"] or 0),
+                    "result_level": record["result_level"],
+                    "ability_summary": record["ability_summary"],
+                    "status": record["status"],
+                    "started_at": str(record["started_at"]),
+                    "ended_at": str(record["ended_at"]) if record["ended_at"] else None,
+                },
+                "answers": [
+                    {
+                        **dict(row),
+                        "score": float(row["score"] or 0),
+                    }
+                    for row in answers
+                ],
+            }
+        )
+    except HttpError:
+        raise
+    except SQLAlchemyError as exc:
+        raise HttpError(500, "database connection failed", {"error": str(exc)})
+
+
 def route_vocab_list(request: JsonDict) -> Tuple[int, JsonDict]:
     level = request.get("query", {}).get("level")
     try:
@@ -721,6 +903,7 @@ ROUTES: Dict[Tuple[str, str], RouteHandler] = {
     ("GET", "/api/v1/users/profile"): route_users_profile,
     ("PUT", "/api/v1/users/profile"): route_users_profile,
     ("GET", "/api/v1/level-test/start"): route_level_test_start,
+    ("POST", "/api/v1/level-test/submit"): route_level_test_submit,
     ("GET", "/api/v1/vocab"): route_vocab_list,
     ("GET", "/api/v1/patterns"): route_patterns_list,
     ("GET", "/api/v1/scenes"): route_scenes_list,
@@ -751,6 +934,11 @@ def dispatch(request: JsonDict) -> Tuple[int, JsonDict]:
                 return route_scene_finish(request, int(scene_id_text))
         elif suffix.isdigit() and method == "GET":
             return route_scene_detail(request, int(suffix))
+
+    if path.startswith("/api/v1/level-test/result/") and method == "GET":
+        record_id_text = path[len("/api/v1/level-test/result/"):]
+        if record_id_text.isdigit():
+            return route_level_test_result(request, int(record_id_text))
 
     raise HttpError(
         404,
