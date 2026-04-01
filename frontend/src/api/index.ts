@@ -32,7 +32,7 @@ api.interceptors.response.use(
 )
 
 export function request<T>(config: AxiosRequestConfig): Promise<T> {
-  return api.request<T>(config)
+  return api.request(config) as Promise<T>
 }
 
 export default api

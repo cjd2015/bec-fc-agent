@@ -3,12 +3,12 @@ import { Outlet, useNavigate, useLocation } from 'react-router-dom'
 import { Layout as AntLayout, Menu, Avatar, Dropdown } from 'antd'
 import type { MenuProps } from 'antd'
 import {
-  Monitor,
-  User,
-  Document,
-  ChatDotRound,
-  Calendar,
-  Logout,
+  BookOutlined,
+  MessageOutlined,
+  DashboardOutlined,
+  ReadOutlined,
+  LogoutOutlined,
+  UserOutlined,
 } from '@ant-design/icons'
 
 const { Header, Sider, Content } = AntLayout
@@ -20,35 +20,30 @@ const Layout: React.FC = () => {
 
   const menuItems: MenuProps['items'] = [
     {
-      key: '/agents',
-      icon: <User />,
-      label: 'BEC Agent',
+      key: '/tasks',
+      icon: <DashboardOutlined />,
+      label: '学习看板',
     },
     {
       key: '/knowledge',
-      icon: <Document />,
-      label: '知识库',
+      icon: <BookOutlined />,
+      label: '词汇与句型',
     },
     {
       key: '/chat',
-      icon: <ChatDotRound />,
-      label: '对话测试',
-    },
-    {
-      key: '/tasks',
-      icon: <Calendar />,
-      label: '任务管理',
+      icon: <MessageOutlined />,
+      label: '场景训练',
     },
   ]
 
   const userMenuItems: MenuProps['items'] = [
     {
       key: 'profile',
-      label: '个人设置',
+      label: '学习档案',
     },
     {
       key: 'logout',
-      icon: <Logout />,
+      icon: <LogoutOutlined />,
       label: '退出登录',
     },
   ]
@@ -83,8 +78,8 @@ const Layout: React.FC = () => {
             overflow: 'hidden',
           }}
         >
-          <Monitor style={{ fontSize: 24, marginRight: 8 }} />
-          {!collapsed && 'AI Agent Platform'}
+          <ReadOutlined style={{ fontSize: 24, marginRight: 8 }} />
+          {!collapsed && 'BEC 学习平台'}
         </div>
         <Menu
           theme="dark"
@@ -110,7 +105,7 @@ const Layout: React.FC = () => {
           </div>
           <Dropdown menu={{ items: userMenuItems, onClick: handleMenuClick }}>
             <div style={{ cursor: 'pointer', display: 'flex', alignItems: 'center' }}>
-              <Avatar icon={<User />} size={32} />
+              <Avatar icon={<UserOutlined />} size={32} />
               <span style={{ marginLeft: 8 }}>Admin</span>
             </div>
           </Dropdown>
@@ -133,18 +128,12 @@ const Layout: React.FC = () => {
 
 function getLocationTitle(pathname: string): string {
   const map: Record<string, string> = {
-    '/agents': 'BEC Agent 管理',
-    '/agents/create': '创建 Agent',
-    '/knowledge': '知识库',
-    '/chat': '对话测试',
-    '/tasks': '任务管理',
+    '/knowledge': '词汇与句型学习',
+    '/chat': '场景对话训练',
+    '/tasks': '学习进度看板',
   }
 
-  if (pathname.startsWith('/agents/') && pathname !== '/agents' && pathname !== '/agents/create') {
-    return 'Agent 详情'
-  }
-
-  return map[pathname] || 'AI Agent Platform'
+  return map[pathname] || 'BEC 学习平台'
 }
 
 export default Layout
