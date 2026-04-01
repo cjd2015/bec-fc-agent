@@ -848,6 +848,218 @@ def route_patterns_list(request: JsonDict) -> Tuple[int, JsonDict]:
         raise HttpError(500, "database connection failed", {"error": str(exc)})
 
 
+def route_vocab_progress(request: JsonDict, vocab_id: int) -> Tuple[int, JsonDict]:
+    payload = request.get("json") or {}
+    username = payload.get("username")
+    learn_status = payload.get("learn_status", "learning")
+    correct_rate = payload.get("correct_rate")
+    if not username:
+        raise HttpError(400, "username is required")
+
+    try:
+        engine = create_engine(settings.database_url, pool_pre_ping=True)
+        with engine.begin() as conn:
+            user = conn.execute(text("SELECT id FROM users WHERE username = :username LIMIT 1"), {"username": username}).mappings().first()
+            if not user:
+                raise HttpError(404, "user not found")
+
+            vocab = conn.execute(text("SELECT id, word FROM vocab_content WHERE id = :vocab_id LIMIT 1"), {"vocab_id": vocab_id}).mappings().first()
+            if not vocab:
+                raise HttpError(404, "vocab not found")
+
+            row = conn.execute(
+                text(
+                    """
+                    INSERT INTO user_vocab_progress (user_id, vocab_id, learn_status, learn_count, correct_rate, last_learned_at)
+                    VALUES (:user_id, :vocab_id, :learn_status, 1, :correct_rate, CURRENT_TIMESTAMP)
+                    ON CONFLICT (user_id, vocab_id) DO UPDATE SET
+                        learn_status = EXCLUDED.learn_status,
+                        learn_count = user_vocab_progress.learn_count + 1,
+                        correct_rate = EXCLUDED.correct_rate,
+                        last_learned_at = CURRENT_TIMESTAMP,
+                        updated_at = CURRENT_TIMESTAMP
+                    RETURNING learn_status, learn_count, correct_rate, last_learned_at
+                    """
+                ),
+                {
+                    "user_id": user["id"],
+                    "vocab_id": vocab_id,
+                    "learn_status": learn_status,
+                    "correct_rate": correct_rate,
+                },
+            ).mappings().one()
+        return 200, success({"vocab_id": vocab_id, "word": vocab["word"], **dict(row), "correct_rate": float(row["correct_rate"]) if row["correct_rate"] is not None else None, "last_learned_at": str(row["last_learned_at"])})
+    except HttpError:
+        raise
+    except SQLAlchemyError as exc:
+        raise HttpError(500, "database connection failed", {"error": str(exc)})
+
+
+def route_pattern_progress(request: JsonDict, pattern_id: int) -> Tuple[int, JsonDict]:
+    payload = request.get("json") or {}
+    username = payload.get("username")
+    learn_status = payload.get("learn_status", "learning")
+    familiarity_score = payload.get("familiarity_score")
+    if not username:
+        raise HttpError(400, "username is required")
+
+    try:
+        engine = create_engine(settings.database_url, pool_pre_ping=True)
+        with engine.begin() as conn:
+            user = conn.execute(text("SELECT id FROM users WHERE username = :username LIMIT 1"), {"username": username}).mappings().first()
+            if not user:
+                raise HttpError(404, "user not found")
+
+            pattern = conn.execute(text("SELECT id, pattern_text FROM pattern_content WHERE id = :pattern_id LIMIT 1"), {"pattern_id": pattern_id}).mappings().first()
+            if not pattern:
+                raise HttpError(404, "pattern not found")
+
+            row = conn.execute(
+                text(
+                    """
+                    INSERT INTO user_pattern_progress (user_id, pattern_id, learn_status, learn_count, familiarity_score, last_learned_at)
+                    VALUES (:user_id, :pattern_id, :learn_status, 1, :familiarity_score, CURRENT_TIMESTAMP)
+                    ON CONFLICT (user_id, pattern_id) DO UPDATE SET
+                        learn_status = EXCLUDED.learn_status,
+                        learn_count = user_pattern_progress.learn_count + 1,
+                        familiarity_score = EXCLUDED.familiarity_score,
+                        last_learned_at = CURRENT_TIMESTAMP,
+                        updated_at = CURRENT_TIMESTAMP
+                    RETURNING learn_status, learn_count, familiarity_score, last_learned_at
+                    """
+                ),
+                {
+                    "user_id": user["id"],
+                    "pattern_id": pattern_id,
+                    "learn_status": learn_status,
+                    "familiarity_score": familiarity_score,
+                },
+            ).mappings().one()
+        return 200, success({"pattern_id": pattern_id, "pattern_text": pattern["pattern_text"], **dict(row), "familiarity_score": float(row["familiarity_score"]) if row["familiarity_score"] is not None else None, "last_learned_at": str(row["last_learned_at"])})
+    except HttpError:
+        raise
+    except SQLAlchemyError as exc:
+        raise HttpError(500, "database connection failed", {"error": str(exc)})
+
+
+def route_learning_summary(request: JsonDict) -> Tuple[int, JsonDict]:
+    username = request.get("query", {}).get("username")
+    if not username:
+        raise HttpError(400, "username is required")
+
+    try:
+        engine = create_engine(settings.database_url, pool_pre_ping=True)
+        with engine.connect() as conn:
+            user = conn.execute(text("SELECT id FROM users WHERE username = :username LIMIT 1"), {"username": username}).mappings().first()
+            if not user:
+                raise HttpError(404, "user not found")
+
+            vocab_stats = conn.execute(
+                text(
+                    """
+                    SELECT COUNT(*) AS total,
+                           COUNT(*) FILTER (WHERE learn_status = 'learned') AS learned,
+                           COUNT(*) FILTER (WHERE learn_status = 'review') AS review,
+                           COALESCE(AVG(correct_rate), 0) AS avg_correct_rate
+                    FROM user_vocab_progress
+                    WHERE user_id = :user_id
+                    """
+                ),
+                {"user_id": user["id"]},
+            ).mappings().one()
+
+            pattern_stats = conn.execute(
+                text(
+                    """
+                    SELECT COUNT(*) AS total,
+                           COUNT(*) FILTER (WHERE learn_status = 'learned') AS learned,
+                           COUNT(*) FILTER (WHERE learn_status = 'review') AS review,
+                           COALESCE(AVG(familiarity_score), 0) AS avg_familiarity_score
+                    FROM user_pattern_progress
+                    WHERE user_id = :user_id
+                    """
+                ),
+                {"user_id": user["id"]},
+            ).mappings().one()
+
+            scene_stats = conn.execute(
+                text(
+                    """
+                    SELECT COUNT(*) AS total_sessions,
+                           COUNT(*) FILTER (WHERE session_status = 'finished') AS finished_sessions,
+                           COALESCE(AVG(score), 0) AS avg_scene_score
+                    FROM user_scene_session
+                    WHERE user_id = :user_id
+                    """
+                ),
+                {"user_id": user["id"]},
+            ).mappings().one()
+
+            level_test_latest = conn.execute(
+                text(
+                    """
+                    SELECT total_score, result_level, ended_at
+                    FROM level_test_record
+                    WHERE user_id = :user_id
+                    ORDER BY id DESC
+                    LIMIT 1
+                    """
+                ),
+                {"user_id": user["id"]},
+            ).mappings().first()
+
+            mock_exam_latest = conn.execute(
+                text(
+                    """
+                    SELECT total_score, accuracy_rate, weak_tags, ended_at
+                    FROM mock_exam_record
+                    WHERE user_id = :user_id
+                    ORDER BY id DESC
+                    LIMIT 1
+                    """
+                ),
+                {"user_id": user["id"]},
+            ).mappings().first()
+
+        return 200, success(
+            {
+                "username": username,
+                "vocab_progress": {
+                    "total": int(vocab_stats["total"] or 0),
+                    "learned": int(vocab_stats["learned"] or 0),
+                    "review": int(vocab_stats["review"] or 0),
+                    "avg_correct_rate": float(vocab_stats["avg_correct_rate"] or 0),
+                },
+                "pattern_progress": {
+                    "total": int(pattern_stats["total"] or 0),
+                    "learned": int(pattern_stats["learned"] or 0),
+                    "review": int(pattern_stats["review"] or 0),
+                    "avg_familiarity_score": float(pattern_stats["avg_familiarity_score"] or 0),
+                },
+                "scene_progress": {
+                    "total_sessions": int(scene_stats["total_sessions"] or 0),
+                    "finished_sessions": int(scene_stats["finished_sessions"] or 0),
+                    "avg_scene_score": float(scene_stats["avg_scene_score"] or 0),
+                },
+                "latest_level_test": {
+                    "total_score": float(level_test_latest["total_score"] or 0) if level_test_latest else None,
+                    "result_level": level_test_latest["result_level"] if level_test_latest else None,
+                    "ended_at": str(level_test_latest["ended_at"]) if level_test_latest and level_test_latest["ended_at"] else None,
+                },
+                "latest_mock_exam": {
+                    "total_score": float(mock_exam_latest["total_score"] or 0) if mock_exam_latest else None,
+                    "accuracy_rate": float(mock_exam_latest["accuracy_rate"] or 0) if mock_exam_latest else None,
+                    "weak_tags": mock_exam_latest["weak_tags"] if mock_exam_latest else None,
+                    "ended_at": str(mock_exam_latest["ended_at"]) if mock_exam_latest and mock_exam_latest["ended_at"] else None,
+                },
+            }
+        )
+    except HttpError:
+        raise
+    except SQLAlchemyError as exc:
+        raise HttpError(500, "database connection failed", {"error": str(exc)})
+
+
 def route_scenes_list(request: JsonDict) -> Tuple[int, JsonDict]:
     level = request.get("query", {}).get("level")
     try:
@@ -1110,6 +1322,7 @@ ROUTES: Dict[Tuple[str, str], RouteHandler] = {
     ("GET", "/api/v1/mock-exams"): route_mock_exams_list,
     ("GET", "/api/v1/vocab"): route_vocab_list,
     ("GET", "/api/v1/patterns"): route_patterns_list,
+    ("GET", "/api/v1/learning/summary"): route_learning_summary,
     ("GET", "/api/v1/scenes"): route_scenes_list,
 }
 
@@ -1154,6 +1367,16 @@ def dispatch(request: JsonDict) -> Tuple[int, JsonDict]:
             record_id_text = suffix[len("result/"):]
             if record_id_text.isdigit():
                 return route_mock_exam_result(request, int(record_id_text))
+
+    if path.startswith("/api/v1/vocab/") and path.endswith("/progress") and method == "POST":
+        vocab_id_text = path[len("/api/v1/vocab/"):-len("/progress")]
+        if vocab_id_text.isdigit():
+            return route_vocab_progress(request, int(vocab_id_text))
+
+    if path.startswith("/api/v1/patterns/") and path.endswith("/progress") and method == "POST":
+        pattern_id_text = path[len("/api/v1/patterns/"):-len("/progress")]
+        if pattern_id_text.isdigit():
+            return route_pattern_progress(request, int(pattern_id_text))
 
     raise HttpError(
         404,
