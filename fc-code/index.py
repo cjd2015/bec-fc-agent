@@ -375,6 +375,93 @@ def route_db_health(request: JsonDict) -> Tuple[int, JsonDict]:
         raise HttpError(500, "database connection failed", {"error": str(exc)})
 
 
+def route_level_test_start(request: JsonDict) -> Tuple[int, JsonDict]:
+    level = request.get("query", {}).get("level")
+    try:
+        engine = create_engine(settings.database_url, pool_pre_ping=True)
+        sql = """
+            SELECT id, question_type, stem, options_json, level, difficulty
+            FROM question_content
+            WHERE module_type = 'level_test'
+              AND publish_status = 'published'
+        """
+        params: JsonDict = {}
+        if level:
+            sql += " AND level = :level"
+            params["level"] = level
+        sql += " ORDER BY id ASC LIMIT 10"
+        with engine.connect() as conn:
+            rows = conn.execute(text(sql), params).mappings().all()
+
+        questions = []
+        for row in rows:
+            options = row["options_json"]
+            if isinstance(options, str):
+                try:
+                    options = json.loads(options)
+                except json.JSONDecodeError:
+                    options = []
+            questions.append(
+                {
+                    "id": row["id"],
+                    "question_type": row["question_type"],
+                    "prompt": row["stem"],
+                    "options": options or [],
+                    "level_tag": row["level"],
+                    "difficulty": row["difficulty"],
+                }
+            )
+        return 200, success({"questions": questions, "count": len(questions)})
+    except SQLAlchemyError as exc:
+        raise HttpError(500, "database connection failed", {"error": str(exc)})
+
+
+def route_vocab_list(request: JsonDict) -> Tuple[int, JsonDict]:
+    level = request.get("query", {}).get("level")
+    try:
+        engine = create_engine(settings.database_url, pool_pre_ping=True)
+        sql = """
+            SELECT id, word, phonetic, meaning_zh, business_example, collocation, level, difficulty
+            FROM vocab_content
+            WHERE publish_status = 'published'
+        """
+        params: JsonDict = {}
+        if level:
+            sql += " AND level = :level"
+            params["level"] = level
+        sql += " ORDER BY id ASC LIMIT 20"
+        with engine.connect() as conn:
+            rows = conn.execute(text(sql), params).mappings().all()
+        return 200, success({"items": [dict(row) for row in rows], "count": len(rows)})
+    except SQLAlchemyError as exc:
+        raise HttpError(500, "database connection failed", {"error": str(exc)})
+
+
+def route_patterns_list(request: JsonDict) -> Tuple[int, JsonDict]:
+    level = request.get("query", {}).get("level")
+    scene = request.get("query", {}).get("scene")
+    try:
+        engine = create_engine(settings.database_url, pool_pre_ping=True)
+        sql = """
+            SELECT id, pattern_text, scene_type, function_type, example_text, slot_desc, level, difficulty
+            FROM pattern_content
+            WHERE publish_status = 'published'
+        """
+        params: JsonDict = {}
+        if level:
+            sql += " AND level = :level"
+            params["level"] = level
+        if scene:
+            sql += " AND scene_type = :scene"
+            params["scene"] = scene
+        sql += " ORDER BY id ASC LIMIT 20"
+        with engine.connect() as conn:
+            rows = conn.execute(text(sql), params).mappings().all()
+        return 200, success({"items": [dict(row) for row in rows], "count": len(rows)})
+    except SQLAlchemyError as exc:
+        raise HttpError(500, "database connection failed", {"error": str(exc)})
+
+
 ROUTES: Dict[Tuple[str, str], RouteHandler] = {
     ("GET", "/api/v1/health"): route_health,
     ("GET", "/health"): route_health,
@@ -386,6 +473,9 @@ ROUTES: Dict[Tuple[str, str], RouteHandler] = {
     ("GET", "/api/v1/users/me"): route_users_me,
     ("GET", "/api/v1/users/profile"): route_users_profile,
     ("PUT", "/api/v1/users/profile"): route_users_profile,
+    ("GET", "/api/v1/level-test/start"): route_level_test_start,
+    ("GET", "/api/v1/vocab"): route_vocab_list,
+    ("GET", "/api/v1/patterns"): route_patterns_list,
 }
 
 
