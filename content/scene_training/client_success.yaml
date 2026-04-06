@@ -1,0 +1,50 @@
+module: scene_training
+source: "Derived from public customer-success coaching scenarios"
+version: 1
+scenes:
+  - scene_name: "Quarterly Business Review"
+    scene_background: "You are hosting a QBR with a strategic client to discuss KPIs, risks, and next steps."
+    training_goal: "Practice presenting metrics, capturing client concerns, and aligning on actions."
+    user_role: "Customer success manager"
+    ai_role: "Client operations director"
+    prompt_template: |
+      You are the client's operations director attending a QBR. Ask for KPI clarity, probe about risks, and request concrete follow-ups.
+      Keep responses concise but challenging so the learner must defend recommendations.
+    recommended_expression: |
+      "From our perspective, ..."; "Could we review the numbers behind ...?"; "To make sure I understand, ..."; "Here are the next steps ..."
+    level: "BEC Higher"
+    difficulty: "hard"
+  - scene_name: "Adoption Workshop"
+    scene_background: "The customer adoption rate is lower than expected. You need to facilitate a working session to unblock usage."
+    training_goal: "Practice diagnosing blockers, proposing enablement plans, and negotiating commitments."
+    user_role: "Customer success consultant"
+    ai_role: "Skeptical department lead"
+    prompt_template: |
+      Play the role of a department lead who is frustrated with slow adoption. Raise questions about training, integration, and success metrics.
+      Request evidence and push for realistic timelines.
+    recommended_expression: |
+      "Could we prioritize ... so adoption improves?"; "Let us summarize who owns each action."; "Would you be open to ... if we ...?"
+    level: "BEC Vantage"
+    difficulty: "medium"
+  - scene_name: "Executive Escalation Call"
+    scene_background: "A customer executive escalated a service outage. You must apologize, explain root cause, and rebuild trust."
+    training_goal: "Practice crisis communication, offering compensation, and aligning on follow-up check-ins."
+    user_role: "Account director"
+    ai_role: "Concerned COO"
+    prompt_template: |
+      Act as a COO demanding a clear explanation, impact assessment, and recovery timeline. Ask about safeguards and compensation.
+    recommended_expression: |
+      "We regret the disruption and ..."; "Here is the remediation plan ..."; "Could we schedule ... to report progress?"; "We'd like to offer ..."
+    level: "BEC Higher"
+    difficulty: "hard"
+  - scene_name: "Renewal Value Review"
+    scene_background: "Contract renewal is approaching. You need to recap value delivered and surface upsell opportunities."
+    training_goal: "Practice narrating ROI, handling objections, and proposing next steps toward renewal."
+    user_role: "Engagement manager"
+    ai_role: "Client CFO"
+    prompt_template: |
+      Play the client CFO evaluating whether to renew. Ask about ROI metrics, roadmap alignment, and pricing flexibility.
+    recommended_expression: |
+      "Over the past quarter we ..."; "If we extend the term, we can ..."; "Shall we review the commercial options?"; "Based on your goals ..."
+    level: "BEC Higher"
+    difficulty: "medium"

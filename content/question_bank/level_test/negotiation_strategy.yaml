@@ -1,0 +1,136 @@
+module: level_test
+source: "Negotiation language compiled from public business-English drill topics"
+version: 1
+questions:
+  - stem: "Which sentence frames a concession as a trade-off?"
+    level: "BEC Vantage"
+    difficulty: "medium"
+    tags: [negotiation, concession]
+    options:
+      - "Fine, we will discount everything."
+      - "If we extend payment terms to 45 days, could you increase the minimum monthly volume by 20%?"
+      - "Take it or leave it."
+      - "You win."
+    answer: "If we extend payment terms to 45 days, could you increase the minimum monthly volume by 20%?"
+    explanation: "Linking a concession to a reciprocal commitment keeps leverage balanced."
+  - stem: "Choose the best phrase to postpone a decision while gathering data."
+    level: "BEC Vantage"
+    difficulty: "medium"
+    tags: [negotiation, timing]
+    options:
+      - "Not now."
+      - "Could we revisit this clause tomorrow after our legal team shares the risk assessment?"
+      - "Maybe later."
+      - "We will see."
+    answer: "Could we revisit this clause tomorrow after our legal team shares the risk assessment?"
+    explanation: "Providing a reason and concrete timeframe maintains trust."
+  - stem: "Which sentence respectfully challenges a customer's demand?"
+    level: "BEC Vantage"
+    difficulty: "hard"
+    tags: [negotiation, challenge]
+    options:
+      - "Impossible."
+      - "Help me understand how the 50% discount aligns with the scope expansion you just described."
+      - "No."
+      - "Forget it."
+    answer: "Help me understand how the 50% discount aligns with the scope expansion you just described."
+    explanation: "Asking for rationale reframes the discussion with facts."
+  - stem: "Identify the best sentence to highlight unique value instead of price."
+    level: "BEC Higher"
+    difficulty: "medium"
+    tags: [negotiation, value]
+    options:
+      - "It's expensive because it is."
+      - "Our proposal includes on-site training and a dedicated analyst, which reduced churn by 18% for peers—shall we walk through that case study?"
+      - "Trust us."
+      - "You get what you pay for."
+    answer: "Our proposal includes on-site training and a dedicated analyst, which reduced churn by 18% for peers—shall we walk through that case study?"
+    explanation: "Value selling uses evidence and engages the buyer."
+  - stem: "Which phrase signals a desire for a win-win outcome?"
+    level: "BEC Vantage"
+    difficulty: "easy"
+    tags: [negotiation, tone]
+    options:
+      - "Take it or leave it."
+      - "Let's explore a package that protects your budget while keeping our delivery timeline realistic."
+      - "Our way."
+      - "We don't compromise."
+    answer: "Let's explore a package that protects your budget while keeping our delivery timeline realistic."
+    explanation: "Collaborative language recognizes both parties' goals."
+  - stem: "Which statement best summarizes next steps after agreeing on principle?"
+    level: "BEC Vantage"
+    difficulty: "medium"
+    tags: [negotiation, follow-up]
+    options:
+      - "Ok bye."
+      - "Great—we'll draft the revised SOW and send it for your legal review by Thursday."
+      - "Done."
+      - "Later."
+    answer: "Great—we'll draft the revised SOW and send it for your legal review by Thursday."
+    explanation: "Negotiations end with precise follow-up actions."
+  - stem: "Which sentence politely asks for executive approval on the buyer's side?"
+    level: "BEC Vantage"
+    difficulty: "medium"
+    tags: [negotiation, stakeholders]
+    options:
+      - "Call your boss."
+      - "Would it help if we prepared a summary for your CFO so they can approve the extended contract this week?"
+      - "Talk upstairs."
+      - "We need signatures now."
+    answer: "Would it help if we prepared a summary for your CFO so they can approve the extended contract this week?"
+    explanation: "Offering support for stakeholder alignment keeps momentum."
+  - stem: "Choose the best language to de-escalate tension over penalties."
+    level: "BEC Higher"
+    difficulty: "medium"
+    tags: [negotiation, conflict]
+    options:
+      - "Penalties stay."
+      - "I hear your concern about penalties—what if we cap them at 10% and add a monthly performance review so issues surface early?"
+      - "Too bad."
+      - "Deal with it."
+    answer: "I hear your concern about penalties—what if we cap them at 10% and add a monthly performance review so issues surface early?"
+    explanation: "Acknowledging concerns and proposing safeguards calms the discussion."
+  - stem: "Which question uncovers hidden priorities?"
+    level: "BEC Vantage"
+    difficulty: "medium"
+    tags: [negotiation, discovery]
+    options:
+      - "What else do you want?"
+      - "Beyond price, which success metrics matter most for your stakeholders this quarter?"
+      - "Anything more?"
+      - "Why?"
+    answer: "Beyond price, which success metrics matter most for your stakeholders this quarter?"
+    explanation: "Open questions reveal broader interests that can guide trade-offs."
+  - stem: "Which sentence signals you need internal approval before agreeing?"
+    level: "BEC Higher"
+    difficulty: "medium"
+    tags: [negotiation, internal]
+    options:
+      - "Maybe."
+      - "Let me run this revised scope past our legal and finance teams—we can regroup tomorrow with a confirmed position."
+      - "I'll get back whenever."
+      - "No idea."
+    answer: "Let me run this revised scope past our legal and finance teams—we can regroup tomorrow with a confirmed position."
+    explanation: "Explain the internal process and timeframe to maintain credibility."
+  - stem: "Select the most persuasive summary of benefits for a closing call."
+    level: "BEC Higher"
+    difficulty: "hard"
+    tags: [negotiation, closing]
+    options:
+      - "It's good."
+      - "With the analytics add-on, your team gets same-day insights and a 25% faster forecast cycle—shall we schedule signing for Friday?"
+      - "Trust me."
+      - "You'll like it."
+    answer: "With the analytics add-on, your team gets same-day insights and a 25% faster forecast cycle—shall we schedule signing for Friday?"
+    explanation: "Closing statements recap quantified value and propose a next step."
+  - stem: "Which response addresses a competitor comparison without discounting?"
+    level: "BEC Higher"
+    difficulty: "hard"
+    tags: [negotiation, competition]
+    options:
+      - "They are worse."
+      - "I understand they offered a lower rate—our package includes 24/7 support and compliance tooling that saved others $400k annually; can we review those savings together?"
+      - "Ignore them."
+      - "We are better."
+    answer: "I understand they offered a lower rate—our package includes 24/7 support and compliance tooling that saved others $400k annually; can we review those savings together?"
+    explanation: "Comparisons should acknowledge competitors but refocus on differentiated value."

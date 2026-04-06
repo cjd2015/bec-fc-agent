@@ -194,10 +194,19 @@ ai-agent-platform/
 - 标签绑定
 - 内容审核
 - 内容发布
+- 题库源文件维护（YAML/JSON）
 
 关键实体：
 - content_source
 - raw_content
+- question_bank_source（Git 管理的 YAML 文件）
+
+实现要点：
+- `/content/question_bank/<module>/*.yaml` 作为题库的权威源，包含 `stem`、`level`、`difficulty`、`options`、`answer`、`explanation` 等字段。
+- `/content/scene_training/*.yaml` 维护所有训练场景元数据（背景、目标、角色、AI 提示、推荐表达）。
+- `/content/patterns/*.yaml` 维护商务句型模板（场景分类、功能类型、示例表达、Slot 提示）。
+- `scripts/seed_question_bank_from_files.py` / `scripts/seed_scene_content_from_files.py` / `scripts/seed_patterns_from_files.py` 负责批量导入各类内容；均支持 `--dry-run`。
+- 所有新增题目/场景/句型必须先提交到源码仓库再执行导入脚本，确保内容变更可追溯，避免再次丢失。
 - vocab_content
 - pattern_content
 - scene_content

@@ -1,6 +1,9 @@
 import base64
 import json
-from datetime import datetime
+import secrets
+from datetime import datetime, timedelta
+
+import jwt
 from hashlib import sha256
 from typing import Any, Callable, Dict, Optional, Tuple
 from urllib.parse import parse_qs
@@ -8,10 +11,14 @@ from urllib.parse import parse_qs
 from sqlalchemy import create_engine, text
 from sqlalchemy.exc import SQLAlchemyError
 from src.core.config import settings
+from ai_client import AIChatClient
 
 
 JsonDict = Dict[str, Any]
 RouteHandler = Callable[[JsonDict], Tuple[int, JsonDict]]
+
+RESET_TOKEN_EXPIRATION_MINUTES = 30
+ai_client = AIChatClient(settings)
 
 
 class HttpError(Exception):
@@ -36,6 +43,34 @@ def error(code: int, message: str, data: Optional[JsonDict] = None) -> JsonDict:
         "message": message,
         "data": data or {},
     }
+
+
+def _safe_int(value: Any, default: Optional[int] = None) -> Optional[int]:
+    if value in (None, ""):
+        return default
+    try:
+        return int(str(value))
+    except (TypeError, ValueError):
+        return default
+
+
+def _get_pagination(query: Dict[str, Any], *, default_limit: int = 20, max_limit: int = 100) -> Tuple[int, int]:
+    raw_limit = (
+        query.get("limit")
+        or query.get("page_size")
+        or query.get("pageSize")
+    )
+    limit = _safe_int(raw_limit, default_limit) or default_limit
+    limit = max(1, min(limit, max_limit))
+
+    offset = _safe_int(query.get("offset"), 0) or 0
+    offset = max(0, offset)
+
+    page = _safe_int(query.get("page"))
+    if page and page > 0:
+        offset = max(offset, (page - 1) * limit)
+
+    return limit, offset
 
 
 def json_response(status_code: int, payload: JsonDict) -> JsonDict:
@@ -136,6 +171,69 @@ def _hash_password(password: str) -> str:
     return sha256(password.encode("utf-8")).hexdigest()
 
 
+def _generate_reset_token() -> str:
+    return secrets.token_urlsafe(32)
+
+
+def _generate_jwt_token(user_id: int, username: str) -> str:
+    expire_minutes = settings.jwt_expire_minutes or 60
+    expire_minutes = max(1, int(expire_minutes))
+    payload = {
+        "sub": str(user_id),
+        "username": username,
+        "iat": datetime.utcnow(),
+        "exp": datetime.utcnow() + timedelta(minutes=expire_minutes),
+    }
+    return jwt.encode(payload, settings.jwt_secret, algorithm=settings.jwt_algorithm)
+
+
+def _decode_jwt_token(token: str) -> Dict[str, Any]:
+    try:
+        payload = jwt.decode(
+            token,
+            settings.jwt_secret,
+            algorithms=[settings.jwt_algorithm],
+        )
+        return payload
+    except jwt.PyJWTError:
+        raise HttpError(401, "invalid or expired token")
+
+
+def _get_authenticated_user(request: JsonDict) -> Optional[Dict[str, Any]]:
+    headers = request.get("headers") or {}
+    lower_headers = {k.lower(): v for k, v in headers.items()}
+    auth_header = (
+        headers.get("Authorization")
+        or headers.get("X-BEC-Authorization")
+        or lower_headers.get("authorization")
+        or lower_headers.get("x-bec-authorization")
+    )
+    if not auth_header or not isinstance(auth_header, str):
+        return None
+    if not auth_header.lower().startswith("bearer "):
+        return None
+    token = auth_header.split(" ", 1)[1].strip()
+    if not token:
+        raise HttpError(401, "invalid token header")
+    payload = _decode_jwt_token(token)
+    username = payload.get("username")
+    sub = payload.get("sub")
+    if not username or not sub:
+        raise HttpError(401, "invalid token payload")
+    try:
+        user_id = int(sub)
+    except (TypeError, ValueError):
+        raise HttpError(401, "invalid token payload")
+    return {"id": user_id, "username": username}
+
+
+def _require_authenticated_user(request: JsonDict) -> Dict[str, Any]:
+    user = _get_authenticated_user(request)
+    if not user:
+        raise HttpError(401, "authentication required")
+    return user
+
+
 def route_auth_login(request: JsonDict) -> Tuple[int, JsonDict]:
     payload = request.get("json") or {}
     username = payload.get("username")
@@ -159,11 +257,13 @@ def route_auth_login(request: JsonDict) -> Tuple[int, JsonDict]:
             ).mappings().first()
         if not row or row["password_hash"] != _hash_password(password):
             raise HttpError(401, "invalid username or password")
+        token = _generate_jwt_token(row["id"], row["username"])
         return 200, success(
             {
                 "id": row["id"],
                 "username": row["username"],
                 "status": row["status"],
+                "token": token,
             }
         )
     except SQLAlchemyError as exc:
@@ -219,7 +319,10 @@ def route_auth_register(request: JsonDict) -> Tuple[int, JsonDict]:
                 ),
                 {"user_id": user_row["id"]},
             )
-        return 200, success(dict(user_row))
+        token = _generate_jwt_token(user_row["id"], user_row["username"])
+        data = dict(user_row)
+        data["token"] = token
+        return 200, success(data)
     except HttpError:
         raise
     except SQLAlchemyError as exc:
@@ -227,8 +330,15 @@ def route_auth_register(request: JsonDict) -> Tuple[int, JsonDict]:
 
 
 def route_users_me(request: JsonDict) -> Tuple[int, JsonDict]:
+    auth_user = _get_authenticated_user(request)
     username = request.get("query", {}).get("username")
-    if not username:
+    if auth_user:
+        where_clause = "id = :user_id"
+        params = {"user_id": auth_user["id"]}
+    elif username:
+        where_clause = "username = :username"
+        params = {"username": username}
+    else:
         raise HttpError(400, "username is required")
 
     try:
@@ -236,14 +346,14 @@ def route_users_me(request: JsonDict) -> Tuple[int, JsonDict]:
         with engine.connect() as conn:
             row = conn.execute(
                 text(
-                    """
+                    f"""
                     SELECT id, username, email, status
                     FROM users
-                    WHERE username = :username
+                    WHERE {where_clause}
                     LIMIT 1
                     """
                 ),
-                {"username": username},
+                params,
             ).mappings().first()
         if not row:
             raise HttpError(404, "user not found")
@@ -255,7 +365,13 @@ def route_users_me(request: JsonDict) -> Tuple[int, JsonDict]:
 
 
 def route_users_profile(request: JsonDict) -> Tuple[int, JsonDict]:
-    username = request.get("query", {}).get("username")
+    payload = request.get("json") or {}
+    auth_user = _get_authenticated_user(request)
+    username = (
+        request.get("query", {}).get("username")
+        or payload.get("username")
+        or (auth_user["username"] if auth_user else None)
+    )
     if not username:
         raise HttpError(400, "username is required")
 
@@ -276,15 +392,35 @@ def route_users_profile(request: JsonDict) -> Tuple[int, JsonDict]:
             if not user:
                 raise HttpError(404, "user not found")
 
+            is_self = auth_user is not None and auth_user["username"] == user["username"]
+            if request["method"] == "PUT" and auth_user and not is_self:
+                raise HttpError(403, "cannot update other user's profile")
+
             if request["method"] == "PUT":
-                payload = request.get("json") or {}
+                update_email = payload.get("email")
+                if update_email and update_email != user["email"]:
+                    conn.execute(
+                        text(
+                            """
+                            UPDATE users
+                            SET email = :email,
+                                updated_at = CURRENT_TIMESTAMP
+                            WHERE id = :user_id
+                            """
+                        ),
+                        {"email": update_email, "user_id": user["id"]},
+                    )
+                    user["email"] = update_email
+
                 conn.execute(
                     text(
                         """
                         INSERT INTO user_profile (
-                            user_id, target_level, current_level, industry_background, learning_goal, learning_preference
+                            user_id, target_level, current_level, industry_background, learning_goal, learning_preference,
+                            display_name, avatar_url, bio, phone_number, company, job_title
                         ) VALUES (
-                            :user_id, :target_level, :current_level, :industry_background, :learning_goal, :learning_preference
+                            :user_id, :target_level, :current_level, :industry_background, :learning_goal, :learning_preference,
+                            :display_name, :avatar_url, :bio, :phone_number, :company, :job_title
                         )
                         ON CONFLICT (user_id) DO UPDATE SET
                             target_level = EXCLUDED.target_level,
@@ -292,6 +428,12 @@ def route_users_profile(request: JsonDict) -> Tuple[int, JsonDict]:
                             industry_background = EXCLUDED.industry_background,
                             learning_goal = EXCLUDED.learning_goal,
                             learning_preference = EXCLUDED.learning_preference,
+                            display_name = EXCLUDED.display_name,
+                            avatar_url = EXCLUDED.avatar_url,
+                            bio = EXCLUDED.bio,
+                            phone_number = EXCLUDED.phone_number,
+                            company = EXCLUDED.company,
+                            job_title = EXCLUDED.job_title,
                             updated_at = CURRENT_TIMESTAMP
                         """
                     ),
@@ -302,13 +444,20 @@ def route_users_profile(request: JsonDict) -> Tuple[int, JsonDict]:
                         "industry_background": payload.get("industry_background"),
                         "learning_goal": payload.get("learning_goal"),
                         "learning_preference": payload.get("learning_preference"),
+                        "display_name": payload.get("display_name"),
+                        "avatar_url": payload.get("avatar_url"),
+                        "bio": payload.get("bio"),
+                        "phone_number": payload.get("phone_number"),
+                        "company": payload.get("company"),
+                        "job_title": payload.get("job_title"),
                     },
                 )
 
             profile = conn.execute(
                 text(
                     """
-                    SELECT target_level, current_level, industry_background, learning_goal, learning_preference
+                    SELECT target_level, current_level, industry_background, learning_goal, learning_preference,
+                           display_name, avatar_url, bio, phone_number, company, job_title
                     FROM user_profile
                     WHERE user_id = :user_id
                     LIMIT 1
@@ -325,6 +474,191 @@ def route_users_profile(request: JsonDict) -> Tuple[int, JsonDict]:
                 "profile": dict(profile) if profile else None,
             }
         )
+    except HttpError:
+        raise
+    except SQLAlchemyError as exc:
+        raise HttpError(500, "database connection failed", {"error": str(exc)})
+
+
+def route_users_change_password(request: JsonDict) -> Tuple[int, JsonDict]:
+    payload = request.get("json") or {}
+    auth_user = _get_authenticated_user(request)
+    username = payload.get("username") or (auth_user["username"] if auth_user else None)
+    current_password = payload.get("current_password")
+    new_password = payload.get("new_password")
+    if not username or not current_password or not new_password:
+        raise HttpError(400, "username, current_password and new_password are required")
+    if auth_user and username != auth_user["username"]:
+        raise HttpError(403, "cannot change other user's password")
+    if len(str(new_password)) < 8:
+        raise HttpError(400, "new_password must be at least 8 characters long")
+
+    try:
+        engine = create_engine(settings.database_url, pool_pre_ping=True)
+        with engine.begin() as conn:
+            user = conn.execute(
+                text(
+                    """
+                    SELECT id, password_hash
+                    FROM users
+                    WHERE username = :username
+                    LIMIT 1
+                    """
+                ),
+                {"username": username},
+            ).mappings().first()
+            if not user:
+                raise HttpError(404, "user not found")
+            if user["password_hash"] != _hash_password(current_password):
+                raise HttpError(400, "current password is incorrect")
+
+            conn.execute(
+                text(
+                    """
+                    UPDATE users
+                    SET password_hash = :password_hash,
+                        updated_at = CURRENT_TIMESTAMP
+                    WHERE id = :user_id
+                    """
+                ),
+                {
+                    "password_hash": _hash_password(new_password),
+                    "user_id": user["id"],
+                },
+            )
+        return 200, success({"username": username}, message="password updated")
+    except HttpError:
+        raise
+    except SQLAlchemyError as exc:
+        raise HttpError(500, "database connection failed", {"error": str(exc)})
+
+
+def route_users_forgot_password(request: JsonDict) -> Tuple[int, JsonDict]:
+    payload = request.get("json") or {}
+    username = payload.get("username")
+    email = payload.get("email")
+    if not username and not email:
+        raise HttpError(400, "username or email is required")
+
+    try:
+        engine = create_engine(settings.database_url, pool_pre_ping=True)
+        with engine.begin() as conn:
+            user = conn.execute(
+                text(
+                    """
+                    SELECT id, username, email
+                    FROM users
+                    WHERE (:username IS NOT NULL AND username = :username)
+                       OR (:email IS NOT NULL AND email = :email)
+                    LIMIT 1
+                    """
+                ),
+                {"username": username, "email": email},
+            ).mappings().first()
+            if not user:
+                raise HttpError(404, "user not found")
+
+            expires_at = datetime.utcnow() + timedelta(minutes=RESET_TOKEN_EXPIRATION_MINUTES)
+            token = _generate_reset_token()
+
+            conn.execute(
+                text(
+                    """
+                    UPDATE password_reset_token
+                    SET status = 'expired'
+                    WHERE user_id = :user_id AND status = 'pending'
+                    """
+                ),
+                {"user_id": user["id"]},
+            )
+
+            record = conn.execute(
+                text(
+                    """
+                    INSERT INTO password_reset_token (user_id, token, status, expires_at)
+                    VALUES (:user_id, :token, 'pending', :expires_at)
+                    RETURNING token, expires_at
+                    """
+                ),
+                {
+                    "user_id": user["id"],
+                    "token": token,
+                    "expires_at": expires_at,
+                },
+            ).mappings().one()
+        return 200, success(
+            {
+                "username": user["username"],
+                "email": user["email"],
+                "reset_token": record["token"],
+                "expires_at": record["expires_at"].isoformat() if record["expires_at"] else None,
+            },
+            message="reset token issued",
+        )
+    except HttpError:
+        raise
+    except SQLAlchemyError as exc:
+        raise HttpError(500, "database connection failed", {"error": str(exc)})
+
+
+def route_users_reset_password(request: JsonDict) -> Tuple[int, JsonDict]:
+    payload = request.get("json") or {}
+    token = payload.get("token")
+    new_password = payload.get("new_password")
+    if not token or not new_password:
+        raise HttpError(400, "token and new_password are required")
+    if len(str(new_password)) < 8:
+        raise HttpError(400, "new_password must be at least 8 characters long")
+
+    try:
+        engine = create_engine(settings.database_url, pool_pre_ping=True)
+        with engine.begin() as conn:
+            record = conn.execute(
+                text(
+                    """
+                    SELECT prt.id, prt.user_id, prt.status, prt.expires_at, u.username
+                    FROM password_reset_token prt
+                    JOIN users u ON u.id = prt.user_id
+                    WHERE prt.token = :token
+                    LIMIT 1
+                    """
+                ),
+                {"token": token},
+            ).mappings().first()
+            if not record:
+                raise HttpError(404, "reset token not found")
+            if record["status"] != "pending":
+                raise HttpError(400, "reset token already used or expired")
+            expires_at = record["expires_at"]
+            if expires_at and expires_at < datetime.utcnow():
+                raise HttpError(400, "reset token expired")
+
+            conn.execute(
+                text(
+                    """
+                    UPDATE users
+                    SET password_hash = :password_hash,
+                        updated_at = CURRENT_TIMESTAMP
+                    WHERE id = :user_id
+                    """
+                ),
+                {
+                    "password_hash": _hash_password(new_password),
+                    "user_id": record["user_id"],
+                },
+            )
+            conn.execute(
+                text(
+                    """
+                    UPDATE password_reset_token
+                    SET status = 'used',
+                        used_at = CURRENT_TIMESTAMP
+                    WHERE id = :token_id
+                    """
+                ),
+                {"token_id": record["id"]},
+            )
+        return 200, success({"username": record["username"]}, message="password reset successful")
     except HttpError:
         raise
     except SQLAlchemyError as exc:
@@ -377,7 +711,12 @@ def route_db_health(request: JsonDict) -> Tuple[int, JsonDict]:
 
 
 def route_level_test_start(request: JsonDict) -> Tuple[int, JsonDict]:
-    level = request.get("query", {}).get("level")
+    query_params = request.get("query", {}) or {}
+    level = query_params.get("level")
+    limit, offset = _get_pagination(query_params, default_limit=10, max_limit=50)
+    order = (query_params.get("order") or "desc").lower()
+    if order not in {"asc", "desc"}:
+        order = "desc"
     try:
         engine = create_engine(settings.database_url, pool_pre_ping=True)
         sql = """
@@ -386,11 +725,11 @@ def route_level_test_start(request: JsonDict) -> Tuple[int, JsonDict]:
             WHERE module_type = 'level_test'
               AND publish_status = 'published'
         """
-        params: JsonDict = {}
+        params: JsonDict = {"limit": limit, "offset": offset}
         if level:
             sql += " AND level = :level"
             params["level"] = level
-        sql += " ORDER BY id ASC LIMIT 10"
+        sql += f" ORDER BY id {order.upper()} LIMIT :limit OFFSET :offset"
         with engine.connect() as conn:
             rows = conn.execute(text(sql), params).mappings().all()
 
@@ -600,23 +939,47 @@ def route_level_test_result(request: JsonDict, record_id: int) -> Tuple[int, Jso
 
 
 def route_mock_exams_list(request: JsonDict) -> Tuple[int, JsonDict]:
-    level = request.get("query", {}).get("level")
+    query_params = request.get("query", {}) or {}
+    level = query_params.get("level")
+    limit, offset = _get_pagination(query_params, default_limit=20, max_limit=50)
+    order = (query_params.get("order") or "desc").lower()
+    if order not in {"asc", "desc"}:
+        order = "desc"
     try:
         engine = create_engine(settings.database_url, pool_pre_ping=True)
         sql = """
-            SELECT id, stem, level, difficulty, question_type
+            SELECT id, stem, level, difficulty, question_type, options_json
             FROM question_content
             WHERE module_type = 'mock_exam'
               AND publish_status = 'published'
         """
-        params: JsonDict = {}
+        params: JsonDict = {"limit": limit, "offset": offset}
         if level:
             sql += " AND level = :level"
             params["level"] = level
-        sql += " ORDER BY id ASC LIMIT 20"
+        sql += f" ORDER BY id {order.upper()} LIMIT :limit OFFSET :offset"
         with engine.connect() as conn:
             rows = conn.execute(text(sql), params).mappings().all()
-        return 200, success({"items": [dict(row) for row in rows], "count": len(rows)})
+
+        items = []
+        for row in rows:
+            options = row["options_json"]
+            if isinstance(options, str):
+                try:
+                    options = json.loads(options)
+                except json.JSONDecodeError:
+                    options = []
+            items.append(
+                {
+                    "id": row["id"],
+                    "stem": row["stem"],
+                    "question_type": row["question_type"],
+                    "level": row["level"],
+                    "difficulty": row["difficulty"],
+                    "options": options or [],
+                }
+            )
+        return 200, success({"items": items, "count": len(items)})
     except SQLAlchemyError as exc:
         raise HttpError(500, "database connection failed", {"error": str(exc)})
 
@@ -803,7 +1166,12 @@ def route_mock_exam_result(request: JsonDict, record_id: int) -> Tuple[int, Json
 
 
 def route_vocab_list(request: JsonDict) -> Tuple[int, JsonDict]:
-    level = request.get("query", {}).get("level")
+    query_params = request.get("query", {}) or {}
+    level = query_params.get("level")
+    limit, offset = _get_pagination(query_params, default_limit=20, max_limit=200)
+    order = (query_params.get("order") or "desc").lower()
+    if order not in {"asc", "desc"}:
+        order = "desc"
     try:
         engine = create_engine(settings.database_url, pool_pre_ping=True)
         sql = """
@@ -811,11 +1179,11 @@ def route_vocab_list(request: JsonDict) -> Tuple[int, JsonDict]:
             FROM vocab_content
             WHERE publish_status = 'published'
         """
-        params: JsonDict = {}
+        params: JsonDict = {"limit": limit, "offset": offset}
         if level:
             sql += " AND level = :level"
             params["level"] = level
-        sql += " ORDER BY id ASC LIMIT 20"
+        sql += f" ORDER BY id {order.upper()} LIMIT :limit OFFSET :offset"
         with engine.connect() as conn:
             rows = conn.execute(text(sql), params).mappings().all()
         return 200, success({"items": [dict(row) for row in rows], "count": len(rows)})
@@ -824,8 +1192,13 @@ def route_vocab_list(request: JsonDict) -> Tuple[int, JsonDict]:
 
 
 def route_patterns_list(request: JsonDict) -> Tuple[int, JsonDict]:
-    level = request.get("query", {}).get("level")
-    scene = request.get("query", {}).get("scene")
+    query_params = request.get("query", {}) or {}
+    level = query_params.get("level")
+    scene = query_params.get("scene")
+    limit, offset = _get_pagination(query_params, default_limit=20, max_limit=100)
+    order = (query_params.get("order") or "desc").lower()
+    if order not in {"asc", "desc"}:
+        order = "desc"
     try:
         engine = create_engine(settings.database_url, pool_pre_ping=True)
         sql = """
@@ -833,14 +1206,14 @@ def route_patterns_list(request: JsonDict) -> Tuple[int, JsonDict]:
             FROM pattern_content
             WHERE publish_status = 'published'
         """
-        params: JsonDict = {}
+        params: JsonDict = {"limit": limit, "offset": offset}
         if level:
             sql += " AND level = :level"
             params["level"] = level
         if scene:
             sql += " AND scene_type = :scene"
             params["scene"] = scene
-        sql += " ORDER BY id ASC LIMIT 20"
+        sql += f" ORDER BY id {order.upper()} LIMIT :limit OFFSET :offset"
         with engine.connect() as conn:
             rows = conn.execute(text(sql), params).mappings().all()
         return 200, success({"items": [dict(row) for row in rows], "count": len(rows)})
@@ -1061,7 +1434,12 @@ def route_learning_summary(request: JsonDict) -> Tuple[int, JsonDict]:
 
 
 def route_scenes_list(request: JsonDict) -> Tuple[int, JsonDict]:
-    level = request.get("query", {}).get("level")
+    query_params = request.get("query", {}) or {}
+    level = query_params.get("level")
+    limit, offset = _get_pagination(query_params, default_limit=20, max_limit=100)
+    order = (query_params.get("order") or "desc").lower()
+    if order not in {"asc", "desc"}:
+        order = "desc"
     try:
         engine = create_engine(settings.database_url, pool_pre_ping=True)
         sql = """
@@ -1069,11 +1447,11 @@ def route_scenes_list(request: JsonDict) -> Tuple[int, JsonDict]:
             FROM scene_content
             WHERE publish_status = 'published'
         """
-        params: JsonDict = {}
+        params: JsonDict = {"limit": limit, "offset": offset}
         if level:
             sql += " AND level = :level"
             params["level"] = level
-        sql += " ORDER BY id ASC LIMIT 20"
+        sql += f" ORDER BY id {order.upper()} LIMIT :limit OFFSET :offset"
         with engine.connect() as conn:
             rows = conn.execute(text(sql), params).mappings().all()
         return 200, success({"items": [dict(row) for row in rows], "count": len(rows)})
@@ -1177,6 +1555,7 @@ def route_scene_message(request: JsonDict, scene_id: int) -> Tuple[int, JsonDict
                 text(
                     """
                     SELECT uss.id, uss.user_id, uss.scene_id, uss.session_status, uss.round_count,
+                           uss.user_summary, uss.ai_feedback_summary,
                            sc.scene_name, sc.training_goal, sc.ai_role, sc.recommended_expression
                     FROM user_scene_session uss
                     JOIN scene_content sc ON sc.id = uss.scene_id
@@ -1192,14 +1571,27 @@ def route_scene_message(request: JsonDict, scene_id: int) -> Tuple[int, JsonDict
                 raise HttpError(400, "scene session is not active")
 
             new_round_count = int(session["round_count"]) + 1
-            ai_reply = (
-                f"As the {session['ai_role']}, I understand your point: '{message}'. "
-                f"For this scene ({session['scene_name']}), please keep focusing on: {session['training_goal']}"
-            )
-            feedback = (
-                "Good attempt. Try to use one of these business expressions: "
-                f"{session['recommended_expression']}"
-            )
+            ai_data = ai_client.generate_scene_reply(
+                scene_name=session["scene_name"],
+                ai_role=session["ai_role"],
+                training_goal=session["training_goal"],
+                user_message=message,
+                recommended_expression=session.get("recommended_expression"),
+                history=session.get("user_summary"),
+            ) if ai_client.enabled else None
+
+            if ai_data:
+                ai_reply = ai_data.get("reply") or "Understood. Let's keep going."
+                feedback = ai_data.get("feedback") or session.get("recommended_expression") or session["training_goal"]
+            else:
+                ai_reply = (
+                    f"As the {session['ai_role']}, I understand your point: '{message}'. "
+                    f"For this scene ({session['scene_name']}), please keep focusing on: {session['training_goal']}"
+                )
+                feedback = (
+                    "Good attempt. Try to use one of these business expressions: "
+                    f"{session['recommended_expression']}"
+                )
             user_summary = f"[{datetime.utcnow().isoformat()}] user: {message}"
             ai_summary = f"[{datetime.utcnow().isoformat()}] ai: {ai_reply} | feedback: {feedback}"
 
@@ -1270,6 +1662,19 @@ def route_scene_finish(request: JsonDict, scene_id: int) -> Tuple[int, JsonDict]
                 f"Keep improving clarity, politeness, and business structure. Suggested score: {score}."
             )
 
+            ai_summary_data = ai_client.generate_scene_summary(
+                scene_name=session["scene_name"],
+                training_goal=session["training_goal"],
+                user_summary=session.get("user_summary"),
+                ai_feedback_summary=session.get("ai_feedback_summary"),
+            ) if ai_client.enabled else None
+            if ai_summary_data:
+                summary = ai_summary_data.get("summary", summary)
+                feedback_summary = ai_summary_data.get("feedback", feedback_summary)
+                ai_score = ai_summary_data.get("score")
+                if isinstance(ai_score, int):
+                    score = max(60, min(100, ai_score))
+
             conn.execute(
                 text(
                     """
@@ -1306,6 +1711,15 @@ def route_scene_finish(request: JsonDict, scene_id: int) -> Tuple[int, JsonDict]
         raise HttpError(500, "database connection failed", {"error": str(exc)})
 
 
+
+
+
+def route_debug_ai_status(request: JsonDict) -> Tuple[int, JsonDict]:
+    return 200, success({"ai": ai_client.debug_status()})
+
+def route_debug_headers(request: JsonDict) -> Tuple[int, JsonDict]:
+    return 200, success({"headers": request.get("headers") or {}})
+
 ROUTES: Dict[Tuple[str, str], RouteHandler] = {
     ("GET", "/api/v1/health"): route_health,
     ("GET", "/health"): route_health,
@@ -1317,6 +1731,11 @@ ROUTES: Dict[Tuple[str, str], RouteHandler] = {
     ("GET", "/api/v1/users/me"): route_users_me,
     ("GET", "/api/v1/users/profile"): route_users_profile,
     ("PUT", "/api/v1/users/profile"): route_users_profile,
+    ("POST", "/api/v1/users/password/change"): route_users_change_password,
+    ("POST", "/api/v1/users/password/forgot"): route_users_forgot_password,
+    ("POST", "/api/v1/users/password/reset"): route_users_reset_password,
+    ("GET", "/api/v1/debug/headers"): route_debug_headers,
+    ("GET", "/api/v1/debug/ai-status"): route_debug_ai_status,
     ("GET", "/api/v1/level-test/start"): route_level_test_start,
     ("POST", "/api/v1/level-test/submit"): route_level_test_submit,
     ("GET", "/api/v1/mock-exams"): route_mock_exams_list,

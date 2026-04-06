@@ -1,0 +1,136 @@
+module: mock_exam
+source: "Customer communication cases paraphrased from open practice prompts"
+version: 1
+questions:
+  - stem: "A client complains about onboarding speed. Which reply shows empathy plus action?"
+    level: "BEC Preliminary"
+    difficulty: "medium"
+    tags: [customer, onboarding]
+    options:
+      - "Please wait."
+      - "I understand the delay is frustrating—we have assigned a dedicated specialist to complete your onboarding checklist by Wednesday."
+      - "Soon."
+      - "Working on it."
+    answer: "I understand the delay is frustrating—we have assigned a dedicated specialist to complete your onboarding checklist by Wednesday."
+    explanation: "Empathy plus a concrete fix resolves concerns faster."
+  - stem: "Which sentence best summarizes a quarterly business review action?"
+    level: "BEC Preliminary"
+    difficulty: "easy"
+    tags: [customer, qbr]
+    options:
+      - "Do tasks."
+      - "Engineering will deliver the beta build on 18 April and sales will host the training webinar on 25 April."
+      - "Everyone knows."
+      - "Action later."
+    answer: "Engineering will deliver the beta build on 18 April and sales will host the training webinar on 25 April."
+    explanation: "Clear owners plus dates make the summary actionable."
+  - stem: "Select the best update to reassure a customer about service levels."
+    level: "BEC Preliminary"
+    difficulty: "medium"
+    tags: [customer, support]
+    options:
+      - "All good."
+      - "We added a weekend on-call engineer so your incidents receive responses within 30 minutes."
+      - "Trust us."
+      - "We try."
+    answer: "We added a weekend on-call engineer so your incidents receive responses within 30 minutes."
+    explanation: "Service assurances should specify the change and expected benefit."
+  - stem: "Which reply handles a sudden discount demand diplomatically?"
+    level: "BEC Vantage"
+    difficulty: "medium"
+    tags: [customer, negotiation]
+    options:
+      - "No way."
+      - "Let's review the scope change together—if we adjust the timeline, we can explore flexibility on the fee."
+      - "Stop asking."
+      - "Impossible."
+    answer: "Let's review the scope change together—if we adjust the timeline, we can explore flexibility on the fee."
+    explanation: "Counteroffers should reference scope and propose a structured trade-off."
+  - stem: "Which update requests feedback on a pilot politely?"
+    level: "BEC Vantage"
+    difficulty: "medium"
+    tags: [customer, feedback]
+    options:
+      - "Thoughts?"
+      - "Could you share any findings from last week's pilot so we can capture them in the rollout plan?"
+      - "Need comments."
+      - "Tell me now."
+    answer: "Could you share any findings from last week's pilot so we can capture them in the rollout plan?"
+    explanation: "Specific prompts connect feedback to the next deliverable."
+  - stem: "Which line best communicates a service credit offer?"
+    level: "BEC Vantage"
+    difficulty: "medium"
+    tags: [customer, retention]
+    options:
+      - "We'll discount."
+      - "To make up for the outage, we'd like to offer a one-month service credit and schedule a health check next week."
+      - "Fine, free month."
+      - "Take credit."
+    answer: "To make up for the outage, we'd like to offer a one-month service credit and schedule a health check next week."
+    explanation: "Pairing compensation with proactive follow-up restores trust."
+  - stem: "Which statement keeps executive stakeholders informed about adoption?"
+    level: "BEC Higher"
+    difficulty: "medium"
+    tags: [customer, adoption]
+    options:
+      - "Users like it."
+      - "Thirty branch managers activated the workflow in week one, generating 200 automated approvals—we'll share detailed analytics Friday."
+      - "Good usage."
+      - "People using."
+    answer: "Thirty branch managers activated the workflow in week one, generating 200 automated approvals—we'll share detailed analytics Friday."
+    explanation: "Executive updates should quantify adoption and promise next data drops."
+  - stem: "Which response addresses an escalation about missing features?"
+    level: "BEC Higher"
+    difficulty: "medium"
+    tags: [customer, escalation]
+    options:
+      - "Working on it."
+      - "You're right that the export is delayed—product is releasing the patch Tuesday, and we'll send you a preview build tomorrow."
+      - "Soon maybe."
+      - "Can't do."
+    answer: "You're right that the export is delayed—product is releasing the patch Tuesday, and we'll send you a preview build tomorrow."
+    explanation: "Acknowledging the issue and sharing the timeline diffuses tension."
+  - stem: "Which line is best for closing a renewal conversation?"
+    level: "BEC Higher"
+    difficulty: "hard"
+    tags: [customer, renewal]
+    options:
+      - "Renew please."
+      - "With the analytics add-on generating 18% faster forecasts, shall we extend the agreement through 2028 so you lock pricing?"
+      - "Need answer."
+      - "Sign now."
+    answer: "With the analytics add-on generating 18% faster forecasts, shall we extend the agreement through 2028 so you lock pricing?"
+    explanation: "Closing statements recap value and propose a concrete next step."
+  - stem: "Which message sets expectations for a weekly check-in?"
+    level: "BEC Preliminary"
+    difficulty: "easy"
+    tags: [customer, cadence]
+    options:
+      - "Talk weekly."
+      - "Let's touch base every Thursday to review KPIs and capture any blockers—I'll send an invite."
+      - "Maybe meeting."
+      - "We'll see."
+    answer: "Let's touch base every Thursday to review KPIs and capture any blockers—I'll send an invite."
+    explanation: "Suggesting cadence + topics makes the meeting purposeful."
+  - stem: "Which line requests a reference quote politely?"
+    level: "BEC Vantage"
+    difficulty: "medium"
+    tags: [customer, advocacy]
+    options:
+      - "Say something good."
+      - "Would you be open to a short quote about your launch experience for our upcoming press release?"
+      - "Need testimonial."
+      - "Help marketing."
+    answer: "Would you be open to a short quote about your launch experience for our upcoming press release?"
+    explanation: "Respectful asks explain the context and remain optional."
+  - stem: "Which sentence clarifies who owns a backlog item after a customer workshop?"
+    level: "BEC Vantage"
+    difficulty: "medium"
+    tags: [customer, ownership]
+    options:
+      - "We'll see."
+      - "Product Ops will scope the workflow request this sprint and update you during Tuesday's sync."
+      - "Someone handles it."
+      - "Soon."
+    answer: "Product Ops will scope the workflow request this sprint and update you during Tuesday's sync."
+    explanation: "Customers expect to know owner and timing for open asks."

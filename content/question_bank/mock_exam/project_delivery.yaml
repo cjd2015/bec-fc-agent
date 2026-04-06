@@ -1,0 +1,136 @@
+module: mock_exam
+source: "Project delivery and governance prompts curated from open study guides"
+version: 1
+questions:
+  - stem: "Your project is two weeks behind due to vendor delays. Which update balances transparency and control?"
+    level: "BEC Vantage"
+    difficulty: "medium"
+    tags: [project, status]
+    options:
+      - "We're late."
+      - "Vendor tooling is two weeks behind; we escalated to their GM and activated a backup supplier, so launch stays on 12 May."
+      - "Delay happening."
+      - "Problems exist."
+    answer: "Vendor tooling is two weeks behind; we escalated to their GM and activated a backup supplier, so launch stays on 12 May."
+    explanation: "Pairing the issue with mitigation reassures sponsors."
+  - stem: "Which line clarifies critical path ownership?"
+    level: "BEC Vantage"
+    difficulty: "medium"
+    tags: [project, ownership]
+    options:
+      - "Ops handles it."
+      - "Ops will deliver the integration build by the 24th so QA can start environment testing on the 25th."
+      - "Team will do it."
+      - "Pending."
+    answer: "Ops will deliver the integration build by the 24th so QA can start environment testing on the 25th."
+    explanation: "Explicit dependencies prevent surprises."
+  - stem: "Which sentence best requests a steering committee decision?"
+    level: "BEC Higher"
+    difficulty: "medium"
+    tags: [governance, decision]
+    options:
+      - "Need answer."
+      - "We need guidance: do we prioritize the LATAM localization for July or keep the AI pilot on track for August?"
+      - "Tell us now."
+      - "Decide."
+    answer: "We need guidance: do we prioritize the LATAM localization for July or keep the AI pilot on track for August?"
+    explanation: "Frame decisions as trade-offs with context so executives can respond quickly."
+  - stem: "Which update shows proactive risk management?"
+    level: "BEC Vantage"
+    difficulty: "medium"
+    tags: [risk, mitigation]
+    options:
+      - "Risk noted."
+      - "To mitigate the data-center outage risk, we've mirrored workloads to region B and scheduled failover drills every Friday."
+      - "We'll watch it."
+      - "Hope it's fine."
+    answer: "To mitigate the data-center outage risk, we've mirrored workloads to region B and scheduled failover drills every Friday."
+    explanation: "Detailed mitigation steps signal control."
+  - stem: "Which status message quantifies progress?"
+    level: "BEC Preliminary"
+    difficulty: "easy"
+    tags: [status, metrics]
+    options:
+      - "Almost done."
+      - "Sprint 9 delivered 14 story points, keeping us 3% ahead of plan."
+      - "On track."
+      - "Working."
+    answer: "Sprint 9 delivered 14 story points, keeping us 3% ahead of plan."
+    explanation: "Stakeholders expect numbers, not vague adjectives."
+  - stem: "Which phrase politely pushes back on scope creep?"
+    level: "BEC Vantage"
+    difficulty: "medium"
+    tags: [scope, negotiation]
+    options:
+      - "Can't add that."
+      - "To add the chatbot, we'd need to extend the timeline by two weeks or drop the analytics dashboard—how would you like to proceed?"
+      - "No new scope."
+      - "Stop changing things."
+    answer: "To add the chatbot, we'd need to extend the timeline by two weeks or drop the analytics dashboard—how would you like to proceed?"
+    explanation: "Offer options with trade-offs rather than flat refusals."
+  - stem: "Which sentence keeps executives informed about pilot KPIs?"
+    level: "BEC Higher"
+    difficulty: "medium"
+    tags: [reporting, kpi]
+    options:
+      - "Pilot good."
+      - "The pilot cut ticket backlog by 32% and we plan to scale to APAC once we hit 40% sustained reduction."
+      - "Nice results."
+      - "Going ok."
+    answer: "The pilot cut ticket backlog by 32% and we plan to scale to APAC once we hit 40% sustained reduction."
+    explanation: "Tie results to next milestones."
+  - stem: "Which update ensures cross-team alignment?"
+    level: "BEC Vantage"
+    difficulty: "medium"
+    tags: [alignment]
+    options:
+      - "All teams informed."
+      - "Marketing, Legal, and Support synced today—shared launch tracker is in Confluence for real-time status."
+      - "Hope everyone knows."
+      - "Tell others."
+    answer: "Marketing, Legal, and Support synced today—shared launch tracker is in Confluence for real-time status."
+    explanation: "Name groups and artifacts to show coordination."
+  - stem: "Which question surfaces dependencies early?"
+    level: "BEC Vantage"
+    difficulty: "medium"
+    tags: [dependencies]
+    options:
+      - "Anything else?"
+      - "Are there any vendor approvals that could block your component before code freeze next Friday?"
+      - "Stuff pending?"
+      - "All clear?"
+    answer: "Are there any vendor approvals that could block your component before code freeze next Friday?"
+    explanation: "Targeted questions uncover issues proactively."
+  - stem: "Which statement captures lessons learned constructively?"
+    level: "BEC Higher"
+    difficulty: "hard"
+    tags: [lessons]
+    options:
+      - "We failed."
+      - "Key lesson: pair QA engineers with analysts during UAT to catch data issues earlier—we'll apply this in Phase 2."
+      - "Lots went wrong."
+      - "Bad process."
+    answer: "Key lesson: pair QA engineers with analysts during UAT to catch data issues earlier—we'll apply this in Phase 2."
+    explanation: "Lessons should include the future action."
+  - stem: "Which request secures additional budget with justification?"
+    level: "BEC Higher"
+    difficulty: "hard"
+    tags: [budget]
+    options:
+      - "Need more money."
+      - "To meet the client-mandated compliance update, we need $120k for a dedicated audit squad; otherwise go-live slips by six weeks."
+      - "Give funds."
+      - "Budget please."
+    answer: "To meet the client-mandated compliance update, we need $120k for a dedicated audit squad; otherwise go-live slips by six weeks."
+    explanation: "Budget requests must tie spend to risk avoidance."
+  - stem: "Which update informs stakeholders about training readiness?"
+    level: "BEC Preliminary"
+    difficulty: "easy"
+    tags: [training]
+    options:
+      - "Training soon."
+      - "All facilitators completed certification and training decks are ready for next Monday's dry run."
+      - "Working on training."
+      - "Almost set."
+    answer: "All facilitators completed certification and training decks are ready for next Monday's dry run."
+    explanation: "Readiness updates should confirm prerequisites are met."

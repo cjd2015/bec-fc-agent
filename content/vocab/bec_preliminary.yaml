@@ -1,0 +1,36 @@
+module: vocab
+level: BEC Preliminary
+count: 4
+entries:
+- word: agenda
+  phonetic: /əˈdʒendə/
+  part_of_speech: noun
+  meaning_zh: 议程
+  business_example: Let us begin with the first item on today's agenda.
+  collocation: meeting agenda
+  level: BEC Preliminary
+  difficulty: easy
+- word: deadline
+  phonetic: /ˈdedlaɪn/
+  part_of_speech: noun
+  meaning_zh: 截止日期
+  business_example: We need to meet the client's deadline.
+  collocation: meet a deadline
+  level: BEC Preliminary
+  difficulty: easy
+- word: invoice
+  phonetic: /ˈɪnvɔɪs/
+  part_of_speech: noun
+  meaning_zh: 发票
+  business_example: Please send the invoice by email.
+  collocation: issue an invoice
+  level: BEC Preliminary
+  difficulty: easy
+- word: shipment
+  phonetic: /ˈʃɪpmənt/
+  part_of_speech: noun
+  meaning_zh: 货运，发货
+  business_example: The shipment will arrive on Thursday.
+  collocation: shipment delay
+  level: BEC Preliminary
+  difficulty: easy

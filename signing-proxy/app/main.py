@@ -77,6 +77,7 @@ async def proxy(full_path: str, request: Request):
         target_url = f"{target_url}?{query_string}"
 
     body = await request.body()
+    user_auth_header = request.headers.get("Authorization")
     upstream_headers = {
         k: v for k, v in request.headers.items()
         if k.lower() not in HOP_BY_HOP_HEADERS and k.lower() != "authorization"
@@ -86,6 +87,9 @@ async def proxy(full_path: str, request: Request):
     upstream_headers["x-acs-date"] = acs_date
     if ALIYUN_SECURITY_TOKEN:
         upstream_headers["x-acs-security-token"] = ALIYUN_SECURITY_TOKEN
+
+    if user_auth_header:
+        upstream_headers["x-bec-authorization"] = user_auth_header
 
     authorization = build_acs3_authorization(
         method=request.method,

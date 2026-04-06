@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { Alert, Button, Card, Col, Input, List, Row, Space, Tag, Typography } from 'antd'
 import { request } from '@/api'
+import { getAuthSession } from '@/utils/auth'
 
 const { Title, Paragraph, Text } = Typography
 
@@ -29,21 +30,57 @@ const Chat: React.FC = () => {
   const [conversation, setConversation] = useState<string[]>([])
   const [result, setResult] = useState<string>('')
   const [error, setError] = useState('')
-  const username = 'fc_user_1775006297'
+  const [loadingScenes, setLoadingScenes] = useState<boolean>(true)
+  const [loadingMoreScenes, setLoadingMoreScenes] = useState<boolean>(false)
+  const [hasMoreScenes, setHasMoreScenes] = useState<boolean>(true)
+  const [nextPage, setNextPage] = useState<number>(1)
+  const pageSize = 6
+  const username = getAuthSession()?.username
 
-  useEffect(() => {
-    const loadScenes = async () => {
-      try {
-        const res = await request<{ data: { items: SceneItem[] } }>({ url: '/scenes', method: 'GET' })
-        setScenes(res.data.items || [])
-      } catch (err) {
-        setError(err instanceof Error ? err.message : '加载场景失败')
+  const fetchScenes = async (reset: boolean = false) => {
+    const pageToLoad = reset ? 1 : nextPage
+    if (reset) {
+      setLoadingScenes(true)
+      setError('')
+    } else {
+      setLoadingMoreScenes(true)
+    }
+    try {
+      const res = await request<{ data: { items: SceneItem[] } }>({
+        url: '/scenes',
+        method: 'GET',
+        params: { page: pageToLoad, limit: pageSize, order: 'desc' },
+      })
+      const items = res.data.items || []
+      setHasMoreScenes(items.length === pageSize)
+      if (reset) {
+        setScenes(items)
+        setNextPage(2)
+      } else {
+        setScenes((prev) => [...prev, ...items])
+        setNextPage(pageToLoad + 1)
+      }
+    } catch (err) {
+      setError(err instanceof Error ? err.message : '加载场景失败')
+    } finally {
+      if (reset) {
+        setLoadingScenes(false)
+      } else {
+        setLoadingMoreScenes(false)
       }
     }
-    loadScenes()
+  }
+
+  useEffect(() => {
+    fetchScenes(true)
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
   const startScene = async (scene: SceneItem) => {
+    if (!username) {
+      setError('请先登录后再开始训练')
+      return
+    }
     setError('')
     setResult('')
     try {
@@ -111,18 +148,37 @@ const Chat: React.FC = () => {
         </Paragraph>
       </div>
 
+      {!username ? <Alert type="warning" message="请先登录以启动真实场景对话" /> : null}
       {error ? <Alert type="error" message={error} /> : null}
       {result ? <Alert type="success" message={result} /> : null}
 
       <Row gutter={16}>
         <Col xs={24} lg={10}>
-          <Card title={`训练场景 (${scenes.length})`}>
+          <Card
+            title={`训练场景 (${scenes.length})`}
+            extra={
+              hasMoreScenes ? (
+                <Button size="small" onClick={() => fetchScenes(false)} loading={loadingMoreScenes}>
+                  加载更多
+                </Button>
+              ) : (
+                <Text type="secondary">没有更多场景</Text>
+              )
+            }
+          >
             <List
+              loading={loadingScenes}
               dataSource={scenes}
               renderItem={(item) => (
                 <List.Item
+                  style={{ background: selectedScene?.id === item.id ? '#f0f5ff' : undefined }}
                   actions={[
-                    <Button type="primary" onClick={() => startScene(item)} key={`start-${item.id}`}>
+                    <Button
+                      type="primary"
+                      onClick={() => startScene(item)}
+                      key={`start-${item.id}`}
+                      disabled={!username || loadingScenes}
+                    >
                       开始训练
                     </Button>,
                   ]}

@@ -1,0 +1,125 @@
+module: level_test
+source: "Executive reporting prompts referencing public MBA-style cases"
+version: 1
+questions:
+  - stem: "Which sentence best summarizes KPI trends for executives?"
+    level: "BEC Higher"
+    difficulty: "medium"
+    tags: [reporting, KPI]
+    options:
+      - "KPIs are fine."
+      - "Revenue is 6% ahead of plan while churn rose two points in APAC; we are launching a retention playbook this month."
+      - "Numbers changed."
+      - "All good maybe."
+    answer: "Revenue is 6% ahead of plan while churn rose two points in APAC; we are launching a retention playbook this month."
+    explanation: "Leadership updates pair metrics with actions."
+  - stem: "Choose the most precise status update for an OKR."
+    level: "BEC Higher"
+    difficulty: "medium"
+    tags: [reporting, okr]
+    options:
+      - "Progressing."
+      - "Objective 2 is at 70%: onboarding automation is live for 120 dealers and cutting manual hours by 40%."
+      - "Going well."
+      - "Still working."
+    answer: "Objective 2 is at 70%: onboarding automation is live for 120 dealers and cutting manual hours by 40%."
+    explanation: "Quantifying progress and impact builds credibility."
+  - stem: "Which statement frames a risk with mitigation clearly?"
+    level: "BEC Higher"
+    difficulty: "medium"
+    tags: [risk, mitigation]
+    options:
+      - "Risk exists."
+      - "Supplier tooling is two weeks late; we secured a backup vendor and expect zero impact on launch if we ship CAD files by Monday."
+      - "Problem maybe."
+      - "It's bad."
+    answer: "Supplier tooling is two weeks late; we secured a backup vendor and expect zero impact on launch if we ship CAD files by Monday."
+    explanation: "Executives want both the issue and the mitigation plan."
+  - stem: "Identify the best way to highlight customer impact in a report."
+    level: "BEC Higher"
+    difficulty: "medium"
+    tags: [customer, reporting]
+    options:
+      - "Customers like it."
+      - "NPS climbed from 34 to 52 after we launched proactive onboarding check-ins; the same play will roll out to enterprise clients next."
+      - "More satisfied."
+      - "Users happier."
+    answer: "NPS climbed from 34 to 52 after we launched proactive onboarding check-ins; the same play will roll out to enterprise clients next."
+    explanation: "Use before/after metrics and explain the next experiment."
+  - stem: "Which line best introduces a board slide on investment needs?"
+    level: "BEC Higher"
+    difficulty: "hard"
+    tags: [board, funding]
+    options:
+      - "Need money."
+      - "To hit the automation roadmap, we request $2.3M for tooling and data hires, yielding $6M in annual savings by FY27."
+      - "Budget please."
+      - "Give more."
+    answer: "To hit the automation roadmap, we request $2.3M for tooling and data hires, yielding $6M in annual savings by FY27."
+    explanation: "Investment asks must tie spend to return."
+  - stem: "Which sentence clarifies variance drivers in a flash report?"
+    level: "BEC Higher"
+    difficulty: "medium"
+    tags: [finance, variance]
+    options:
+      - "Costs up."
+      - "Operating expenses exceeded plan by $180k due to the accelerated APAC launch; offsetting savings will appear next quarter."
+      - "Budget overspent."
+      - "Spent too much."
+    answer: "Operating expenses exceeded plan by $180k due to the accelerated APAC launch; offsetting savings will appear next quarter."
+    explanation: "Explain cause and forward-looking impact together."
+  - stem: "Which phrase requests executive support diplomatically?"
+    level: "BEC Higher"
+    difficulty: "medium"
+    tags: [leadership, support]
+    options:
+      - "Help."
+      - "Could you sponsor the security review so infra prioritizes it this sprint? We'll be blocked until then."
+      - "Need you."
+      - "Do something."
+    answer: "Could you sponsor the security review so infra prioritizes it this sprint? We'll be blocked until then."
+    explanation: "Be specific about the ask and the consequence."
+  - stem: "Which sentence frames a course correction tactfully?"
+    level: "BEC Higher"
+    difficulty: "medium"
+    tags: [reporting, course-correct]
+    options:
+      - "We failed."
+      - "Given the lower conversion from webinars, we are reallocating $300k to partner-driven demos for the remainder of the year."
+      - "Change plan."
+      - "Switch strategy."
+    answer: "Given the lower conversion from webinars, we are reallocating $300k to partner-driven demos for the remainder of the year."
+    explanation: "Tie the change to data and specify the new action."
+  - stem: "Which question invites senior feedback on a tough trade-off?"
+    level: "BEC Higher"
+    difficulty: "hard"
+    tags: [leadership, decision]
+    options:
+      - "What now?"
+      - "Do you prefer we protect gross margin by delaying the LATAM launch or accept a short-term hit to accelerate market share?"
+      - "Tell us."
+      - "Need advice."
+    answer: "Do you prefer we protect gross margin by delaying the LATAM launch or accept a short-term hit to accelerate market share?"
+    explanation: "Executives respond better to clearly framed options."
+  - stem: "Select the most concise progress highlight for a dashboard."
+    level: "BEC Higher"
+    difficulty: "medium"
+    tags: [dashboard]
+    options:
+      - "Deployment complete."
+      - "Automation bot is live in all hubs, removing 4,000 manual tickets per month."
+      - "It works."
+      - "All set."
+    answer: "Automation bot is live in all hubs, removing 4,000 manual tickets per month."
+    explanation: "Headlines should combine milestone + quantified benefit."
+  - stem: "Which line introduces a sensitive people topic professionally?"
+    level: "BEC Higher"
+    difficulty: "hard"
+    tags: [HR, reporting]
+    options:
+      - "People issue."
+      - "To address rising attrition in engineering, we're launching a retention plan focused on technical mentorship and compensation benchmarking."
+      - "Staff unhappy."
+      - "Morale low."
+    answer: "To address rising attrition in engineering, we're launching a retention plan focused on technical mentorship and compensation benchmarking."
+    explanation: "Describe the issue plus the structured response."

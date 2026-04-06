@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { Alert, Card, Col, List, Progress, Row, Space, Statistic, Tag, Typography } from 'antd'
 import { request } from '@/api'
+import { getAuthSession } from '@/utils/auth'
 
 const { Title, Paragraph, Text } = Typography
 
@@ -39,10 +40,14 @@ interface SummaryData {
 const TaskList: React.FC = () => {
   const [summary, setSummary] = useState<SummaryData | null>(null)
   const [error, setError] = useState('')
-  const username = 'fc_user_1775006297'
+  const [loading, setLoading] = useState(false)
+  const username = getAuthSession()?.username
 
   useEffect(() => {
+    if (!username) return
     const load = async () => {
+      setLoading(true)
+      setError('')
       try {
         const res = await request<{ data: SummaryData }>({
           url: `/learning/summary?username=${username}`,
@@ -51,10 +56,12 @@ const TaskList: React.FC = () => {
         setSummary(res.data)
       } catch (err) {
         setError(err instanceof Error ? err.message : '加载学习看板失败')
+      } finally {
+        setLoading(false)
       }
     }
     load()
-  }, [])
+  }, [username])
 
   return (
     <Space direction="vertical" size={16} style={{ width: '100%' }}>
@@ -65,9 +72,22 @@ const TaskList: React.FC = () => {
         </Paragraph>
       </div>
 
+      {!username ? <Alert type="warning" message="请登录后查看学习数据" /> : null}
       {error ? <Alert type="error" message={error} /> : null}
 
-      {summary ? (
+      {loading ? (
+        <Row gutter={16}>
+          <Col xs={24} md={8}>
+            <Card loading style={{ minHeight: 120 }} />
+          </Col>
+          <Col xs={24} md={8}>
+            <Card loading style={{ minHeight: 120 }} />
+          </Col>
+          <Col xs={24} md={8}>
+            <Card loading style={{ minHeight: 120 }} />
+          </Col>
+        </Row>
+      ) : summary ? (
         <>
           <Row gutter={16}>
             <Col xs={24} md={8}>

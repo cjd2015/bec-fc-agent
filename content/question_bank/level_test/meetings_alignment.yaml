@@ -1,0 +1,147 @@
+module: level_test
+source: "Meeting facilitation prompts inspired by open BEC prep materials"
+version: 1
+questions:
+  - stem: "Which sentence best opens a virtual status meeting?"
+    level: "BEC Vantage"
+    difficulty: "easy"
+    tags: [meeting, facilitation]
+    options:
+      - "Let's go."
+      - "Thanks for joining—today we will review the sprint burn-down and unblock the payment integration issues."
+      - "Any questions?"
+      - "So..."
+    answer: "Thanks for joining—today we will review the sprint burn-down and unblock the payment integration issues."
+    explanation: "Leaders should state agenda and purpose right away."
+  - stem: "Choose the best way to invite questions after presenting data."
+    level: "BEC Vantage"
+    difficulty: "easy"
+    tags: [meeting, facilitation]
+    options:
+      - "Done."
+      - "Happy to take any questions about the assumptions or next steps."
+      - "No questions."
+      - "Figure it out."
+    answer: "Happy to take any questions about the assumptions or next steps."
+    explanation: "Inviting discussion explicitly encourages engagement."
+  - stem: "Which phrase keeps the meeting on schedule when discussion drifts?"
+    level: "BEC Vantage"
+    difficulty: "medium"
+    tags: [meeting, facilitation]
+    options:
+      - "Stop talking."
+      - "Let's capture that off-line so we can finish the risk review within the remaining ten minutes."
+      - "Whatever."
+      - "Move on."
+    answer: "Let's capture that off-line so we can finish the risk review within the remaining ten minutes."
+    explanation: "Acknowledge the idea but refocus on the agenda and time box."
+  - stem: "Identify the best way to summarize decisions at the end of a stand-up."
+    level: "BEC Vantage"
+    difficulty: "medium"
+    tags: [meeting, summary]
+    options:
+      - "Good job."
+      - "To recap: product will deliver the demo build by Monday, CX will draft the comms, and finance will confirm pricing approvals."
+      - "Same thing tomorrow."
+      - "See ya."
+    answer: "To recap: product will deliver the demo build by Monday, CX will draft the comms, and finance will confirm pricing approvals."
+    explanation: "Summaries should pair owners with actions and deadlines."
+  - stem: "Which question politely checks whether everyone supports a proposal?"
+    level: "BEC Vantage"
+    difficulty: "medium"
+    tags: [meeting, alignment]
+    options:
+      - "Any objections?"
+      - "Does anyone foresee risks if we move forward with the phased launch plan next quarter?"
+      - "Speak now."
+      - "All good, right?"
+    answer: "Does anyone foresee risks if we move forward with the phased launch plan next quarter?"
+    explanation: "Specific prompts elicit thoughtful feedback instead of silence."
+  - stem: "Select the best sentence to encourage quieter participants to share."
+    level: "BEC Vantage"
+    difficulty: "medium"
+    tags: [meeting, inclusion]
+    options:
+      - "Anyone else?"
+      - "Emily, you led the client interviews—would you share your view before we decide?"
+      - "Speak louder."
+      - "We don't have time."
+    answer: "Emily, you led the client interviews—would you share your view before we decide?"
+    explanation: "Calling on someone with relevant data invites inclusive participation."
+  - stem: "Which phrase transitions smoothly between agenda items?"
+    level: "BEC Vantage"
+    difficulty: "easy"
+    tags: [meeting, transitions]
+    options:
+      - "Next."
+      - "With budget updates covered, let's move to the customer escalation status."
+      - "Ok done."
+      - "Whatever."
+    answer: "With budget updates covered, let's move to the customer escalation status."
+    explanation: "Transitions should reference what finished and what comes next."
+  - stem: "How do you note an action item live during the meeting?"
+    level: "BEC Vantage"
+    difficulty: "medium"
+    tags: [meeting, action]
+    options:
+      - "Noted."
+      - "I'll record that action: IT to deliver the access audit by Wednesday."
+      - "Later."
+      - "Someone do it."
+    answer: "I'll record that action: IT to deliver the access audit by Wednesday."
+    explanation: "Action logging should capture owner plus deadline for accountability."
+  - stem: "Which sentence best handles an agenda item that lacks data?"
+    level: "BEC Vantage"
+    difficulty: "medium"
+    tags: [meeting, decision]
+    options:
+      - "Skip."
+      - "Since we don't have the updated churn numbers, let's park this topic and revisit tomorrow after analytics shares the file."
+      - "Guess."
+      - "No idea."
+    answer: "Since we don't have the updated churn numbers, let's park this topic and revisit tomorrow after analytics shares the file."
+    explanation: "Acknowledging missing data and scheduling a follow-up keeps the meeting productive."
+  - stem: "Choose the best statement to clarify a complex slide."
+    level: "BEC Vantage"
+    difficulty: "medium"
+    tags: [presentation, clarity]
+    options:
+      - "Look at this."
+      - "Let me highlight the three metrics on this slide: pipeline velocity, conversion, and deal size."
+      - "Pretty self-explanatory."
+      - "Numbers show the thing."
+    answer: "Let me highlight the three metrics on this slide: pipeline velocity, conversion, and deal size."
+    explanation: "Guiding the audience through the structure aids comprehension."
+  - stem: "Which phrase politely requests that participants mute themselves?"
+    level: "BEC Vantage"
+    difficulty: "easy"
+    tags: [virtual, etiquette]
+    options:
+      - "Mute please."
+      - "Could everyone mute when not speaking so we can hear the presenter clearly?"
+      - "Quiet."
+      - "Stop talking."
+    answer: "Could everyone mute when not speaking so we can hear the presenter clearly?"
+    explanation: "Virtual etiquette requests should explain the benefit."
+  - stem: "Identify the most diplomatic way to challenge a data source in a meeting."
+    level: "BEC Vantage"
+    difficulty: "hard"
+    tags: [meeting, challenge]
+    options:
+      - "Your data is wrong."
+      - "Just to be sure, is this churn number pulled from the latest CRM export or last quarter's snapshot?"
+      - "Nope."
+      - "Can't trust that."
+    answer: "Just to be sure, is this churn number pulled from the latest CRM export or last quarter's snapshot?"
+    explanation: "Asking clarifying questions invites verification without confrontation."
+  - stem: "Which closing sentence best signals next steps and gratitude?"
+    level: "BEC Vantage"
+    difficulty: "medium"
+    tags: [meeting, closing]
+    options:
+      - "Finish."
+      - "Thanks for the candid input—I'll circulate minutes and owners within the hour so we keep momentum."
+      - "Bye."
+      - "Done here."
+    answer: "Thanks for the candid input—I'll circulate minutes and owners within the hour so we keep momentum."
+    explanation: "Effective closings combine appreciation with an immediate action."

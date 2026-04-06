@@ -1,4 +1,5 @@
 import axios, { AxiosError, AxiosRequestConfig } from 'axios'
+import { clearAuthSession, getAuthSession } from '@/utils/auth'
 
 export const api = axios.create({
   baseURL: '/api/v1',
@@ -10,9 +11,13 @@ export const api = axios.create({
 
 api.interceptors.request.use(
   (config) => {
-    const token = localStorage.getItem('token')
-    if (token) {
-      config.headers.Authorization = `Bearer ${token}`
+    const session = getAuthSession()
+    if (session?.token) {
+      config.headers.Authorization = `Bearer ${session.token}`
+      config.headers['X-BEC-Authorization'] = `Bearer ${session.token}`
+    }
+    if (session?.username) {
+      config.headers['X-BEC-Username'] = session.username
     }
     return config
   },
@@ -24,7 +29,7 @@ api.interceptors.response.use(
   (error: AxiosError) => {
     const message = (error.response?.data as any)?.detail || '请求失败'
     if (error.response?.status === 401) {
-      localStorage.removeItem('token')
+      clearAuthSession()
       window.location.href = '/login'
     }
     return Promise.reject(new Error(message))

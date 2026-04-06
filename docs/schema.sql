@@ -22,6 +22,12 @@ CREATE TABLE IF NOT EXISTS user_profile (
     industry_background VARCHAR(128),
     learning_goal VARCHAR(255),
     learning_preference VARCHAR(255),
+    display_name VARCHAR(128),
+    avatar_url TEXT,
+    bio TEXT,
+    phone_number VARCHAR(32),
+    company VARCHAR(128),
+    job_title VARCHAR(128),
     created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
     updated_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP
 );
@@ -225,6 +231,27 @@ CREATE TABLE IF NOT EXISTS mock_exam_answer (
     explanation_result TEXT,
     created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP
 );
+
+CREATE TABLE IF NOT EXISTS password_reset_token (
+    id BIGSERIAL PRIMARY KEY,
+    user_id BIGINT NOT NULL REFERENCES users(id) ON DELETE CASCADE,
+    token VARCHAR(255) NOT NULL UNIQUE,
+    status VARCHAR(32) NOT NULL DEFAULT 'pending',
+    expires_at TIMESTAMP NOT NULL,
+    used_at TIMESTAMP,
+    created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP
+);
+
+ALTER TABLE user_profile
+    ADD COLUMN IF NOT EXISTS display_name VARCHAR(128),
+    ADD COLUMN IF NOT EXISTS avatar_url TEXT,
+    ADD COLUMN IF NOT EXISTS bio TEXT,
+    ADD COLUMN IF NOT EXISTS phone_number VARCHAR(32),
+    ADD COLUMN IF NOT EXISTS company VARCHAR(128),
+    ADD COLUMN IF NOT EXISTS job_title VARCHAR(128);
+
+CREATE INDEX IF NOT EXISTS idx_password_reset_token_user ON password_reset_token(user_id);
+CREATE INDEX IF NOT EXISTS idx_password_reset_token_status ON password_reset_token(status);
 
 CREATE INDEX IF NOT EXISTS idx_vocab_word ON vocab_content(word);
 CREATE INDEX IF NOT EXISTS idx_pattern_scene_type ON pattern_content(scene_type);

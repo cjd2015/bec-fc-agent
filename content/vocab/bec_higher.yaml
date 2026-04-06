@@ -1,0 +1,20 @@
+module: vocab
+level: BEC Higher
+count: 2
+entries:
+- word: allocate
+  phonetic: /ˈæləkeɪt/
+  part_of_speech: verb
+  meaning_zh: 分配
+  business_example: We need to allocate more budget to marketing.
+  collocation: allocate resources
+  level: BEC Higher
+  difficulty: medium
+- word: benchmark
+  phonetic: /ˈbentʃmɑːrk/
+  part_of_speech: noun
+  meaning_zh: 基准
+  business_example: This result is our industry benchmark.
+  collocation: set a benchmark
+  level: BEC Higher
+  difficulty: medium

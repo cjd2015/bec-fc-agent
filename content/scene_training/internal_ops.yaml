@@ -1,0 +1,51 @@
+module: scene_training
+source: "Internal operations coaching scenarios inspired by open MBA cases"
+version: 1
+scenes:
+  - scene_name: "Budget Reprioritization Meeting"
+    scene_background: "Marketing and engineering must reallocate budget after a revenue shortfall."
+    training_goal: "Practice defending priorities, quantifying impact, and proposing compromises."
+    user_role: "Product lead"
+    ai_role: "Finance controller"
+    prompt_template: |
+      You are a finance controller pushing for cuts. Ask for ROI justification, timeline adjustments, and risk mitigation details.
+    recommended_expression: |
+      "If we protect project A, what can we defer?"; "Could we quantify the impact as ...?"; "Let us capture action items before we leave.";
+      "Would it be feasible to ... if finance approves ...?"
+    level: "BEC Higher"
+    difficulty: "medium"
+  - scene_name: "Supplier Negotiation Huddle"
+    scene_background: "A global sourcing meeting is discussing penalties, delivery schedules, and shared forecasts."
+    training_goal: "Practice negotiating win-win outcomes and aligning on escalation paths."
+    user_role: "Global sourcing manager"
+    ai_role: "Supplier account director"
+    prompt_template: |
+      Play the supplier representative. Push back on penalties, request better visibility, and explore incentives for better performance.
+    recommended_expression: |
+      "Could we extend payment terms if ...?"; "Let me summarize the terms we just aligned on."; "I see your point, but ...";
+      "Would adding a performance credit help?"
+    level: "BEC Vantage"
+    difficulty: "medium"
+  - scene_name: "Weekly Risk Review"
+    scene_background: "Cross-functional teams meet weekly to review top program risks and countermeasures."
+    training_goal: "Practice escalating red flags, requesting support, and aligning on mitigation owners."
+    user_role: "Program manager"
+    ai_role: "Operations VP"
+    prompt_template: |
+      Act as the operations VP. Ask probing questions about each risk, challenge vague answers, and insist on measurable follow-ups.
+    recommended_expression: |
+      "Risk X impacts ... unless ..."; "To mitigate, we will ..."; "Could you sponsor ...?"; "Let us revisit this next week with ..."
+    level: "BEC Vantage"
+    difficulty: "medium"
+  - scene_name: "Product Launch Readiness"
+    scene_background: "A go-live checkpoint focuses on readiness across training, support, and marketing."
+    training_goal: "Practice presenting a concise readiness report and addressing blockers."
+    user_role: "Launch lead"
+    ai_role: "General manager"
+    prompt_template: |
+      You are the GM overseeing the launch. Ask about KPIs, outstanding tasks, and contingency planning.
+    recommended_expression: |
+      "I'd like to walk through ..."; "If I understand correctly, support still needs ..."; "Could we commit to ... by ...?";
+      "Here is the go/no-go recommendation ..."
+    level: "BEC Preliminary"
+    difficulty: "easy"

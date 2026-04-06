@@ -1,0 +1,1788 @@
+module: vocab
+level: BEC Finance
+count: 223
+entries:
+- word: Acceptance Houses
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 承兑公司
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: Accommodating Transaction
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 调节性交易
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: Adjustable Peg
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 可调整的钉住
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: Agency Agreement
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 通汇合约
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: American Depositary Receipt (ADR)
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 美国存托凭证
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: American Options
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 美式期权
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: Asked Yield
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 要价收益率(卖出收益率)
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: Assistant Dealer
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 助理交易员
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: At Discount
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 低价发行
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: At Par
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 平价
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: At Premium
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 溢价发行
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: At the Money
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 平价期权
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: automated Payment System, APS
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 自动付费系统
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: Automatic Teller Machine, ATM
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 银行自动柜员机
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: Autonomous Transaction
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 自主性交易
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: Balance of Paymentd Deficit
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 国际收支逆差
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: Balance of Payments
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 国际收支
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: Balance of Payments Statement
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 国际收支平衡
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: Balance of Payments Surplus
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 国际收支顺差
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: Balance Sheet Hedge
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 资产负债表保值法
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: Balancing or Settlement Account
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 平衡项目(储备项目/结算项目)
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: Banker’s Check
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 银行支票
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: Bank Note Rate
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 现钞汇率
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: Bank’s Medium Term and Long Term Loan
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 银行中长期贷款
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: Basic Rate
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 基本汇率
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: Bid Yield
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 出价收益率(买入收益率)
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: Bill Broker
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 票据经纪人
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: Bill Dealer
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 贴现商
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: Borrowing
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 借款法
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: Buffer Stock Finacing
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 缓冲库存贷款
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: business to Business, B-B
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 商户对商户商务模式
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: Business to Customer, B-C
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 商户对顾客商务模式
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: Buyer Credit
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 买方信贷
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: Buying Rate
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 买入汇率
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: Call Buyer
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 期权买方
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: Call Seller/Writer
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 期权卖方
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: Capital Account
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 资本项目
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: Cash Against Currency Future
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 现代套汇交易
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: Cash Management System,CMS
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 现金管理系统
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: Chief Dealer
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 首席交易员
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: Clean Collection
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 光票托收
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: Collection
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 托收
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: Commercial Bill of Exchange
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 商业汇票
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: Commercial Paper (CP)
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 商业票据
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: Commercial Rate
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 贸易汇率
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: Common Share
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 普通股
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: Compensatory Financing Facility
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 出口波动补偿信贷
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: Competitive Exposure
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 竞争风险
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: Correspondent Bank
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 通汇银行
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: Coupon Rate
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 息票率
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: Covered Arbitrage
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 抵补套利
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: Credit
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 信贷
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: Cross Rate
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 套算汇率
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: Currency Market
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 货币市场
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: Current Account
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 经常项目
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: Day Trade
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 当日平盘
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: Dealer
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 交易员
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: Dealing Slip
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 交易单
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: Demand Draft,D/D
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 票汇
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: Depositary Receipt (DR)
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 证券存托凭证
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: Direct Arbitrage (Two Points Arbitrage)
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 直接套汇(两角套汇)
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: Direct Investment
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 长期资本
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: Direct Quotation
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 直接标价法
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: Discount
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 贴水
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: Discount Charges
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 贴现利息
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: Discount Houses
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 贴现公司
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: Discount Market
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 贴现市场
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: Discount Rate
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 贴现率
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: Documentary Collection
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 跟单托收
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: documents against Acceptance,D/A
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 承兑交单
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: Documents against Payment,D/P
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 付款交单
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: Down Payment
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 定金
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: Economic Exposure
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 经济风险
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: Electronic Cash, E-cash
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 电子现金
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: Electronic Check
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 电子支票
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: Electronic Commerce,EC
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 电子商务
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: Electronic Credit Card
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 电子信用卡
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: Electronic Money
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 电子货币
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: Electronic Purse
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 电子钱夹
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: Electronic Wallet
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 电子钱包
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: Enlarged Access Policy
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 扩大贷款
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: Eurobond
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 欧洲债券
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: European Monetary System (EMS)
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 欧洲货币体系
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: European Monetary Union
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 欧洲货币联盟
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: European Options
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 欧式期权
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: Eutopean Currency Unit (ECU)
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 欧洲货币单位
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: Ex-ante Transaction
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 事前交易
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: Exchange Rate
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 汇率
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: Exercise Price
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 敲定价格
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: Expiration Date
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 期权到期日
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: Export Credit
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 出口信贷
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: Ex-post Transaction
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 事后交易
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: Extended Facility
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 中期贷款
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: Financial Rate
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 金融汇率
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: First Credit Tranche
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 第一档信货部分贷款
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: Fixed Exchange Rate System
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 固定汇率制度
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: Fixed Maturity Forward Transaction
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 交割日固定的远期外汇交易
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: Fixed Rate
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 固定汇率
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: Floating Exchange Rate System
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 浮动汇率制度
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: Floating Rate
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 浮动汇率
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: Foreign Bill of Exchange
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 国外汇票
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: Foreign Bond
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 外国债券
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: Foreign Currency Options
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 外汇期权
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: Foreign Exchange Control
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 外汇管制
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: foreign Exchange Exposure
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 外汇风险
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: Foreign Exchange Reserves
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 外汇储备
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: Forfiting
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 中长期票据收买业务(福费廷)
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: Forward Exchange Transaction
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 远期外汇交易
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: Forward-Forward Swap
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 远期对远期掉期
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: Forward Margin
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 远期差额
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: Forward Rate
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 远期汇率
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: Freely Floating Exchange Rate
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 自由浮动汇率
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: Futures
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 期货
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: Futures Transaction
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 期货交易
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: Gain
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 获得利益
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: Global Depositary Receipt (GDR)
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 全球存托凭证
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: Gold Content
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 含金量
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: Gold Market
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 国际黄金市场
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: Gold Point
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 黄金输送点
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: Gold Standard
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 金本位
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: Goods
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 贸易收支
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: Government Loan
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 政府贷款
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: Guarantee for Refund of Advance Payment
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 退款保函
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: Higher Credit Tranche
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 高档信货部分贷款
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: Hongkong Inter-Bank Offered Rate,HIBOR
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 香港银行间同业拆放利率
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: Hot Money
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 热钱/游资
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: Indirect Arbitrage (Three Points Arbitrage)
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 间接套汇(三角套汇)
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: Indirect Quotation
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 间接标价法
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: Inter-bank Offer
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 银行间同业拆借
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: Interest Arbitrage
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 套利
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: International Bank for Reconstruction and Development,IBRD
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 国际复兴开发银行
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: International Capital Market
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 国际资本市场
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: International Development Association,IDA
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 国际开发协会
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: International Finance Corporation,IFC
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 国际金融公司
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: International Monetary Fund
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 国际货币基金组织
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: International Monetary Market (IMM)
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 国际货币市场
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: International Reserves
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 国际储备
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: Internet Bank
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 网络银行
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: In the Money
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 价内期权
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: Intrinsic value
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 期权内在价值
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: Investing
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 投资法
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: Joint Floating Exchange Rate
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 联合浮动汇率
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: Key Currency
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 关键货币
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: Leads & Lags
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 提前或延期结汇
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: Letter of Guarantee,L/G
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 银行保函
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: London Inter-Bank Offered Rate,LIBOR
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 伦敦银行同业拆放利率
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: London International Financial Futures Exchange (LIFFE)
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 伦敦国际金融期货交易所
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: Loss
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 遭受损失
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: Mail Transfer,M/T
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 信汇
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: Managed Floating Exchange Rate
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 管理浮动汇率
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: Margins
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 期权保证金
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: Master Card
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 万事达信用卡
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: Medial Rate
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 中间汇率
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: Mint Par
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 铸币平价
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: Mixed Loan
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 混合贷款
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: Monetary Gold
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 黄金储备
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: Multiple Rate
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 复汇率
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: Negotiable Certificate of Deposit (CD)
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 大额可转让定期存单
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: Note Dealer
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 票据商
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: Official Reserve
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 官方储备
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: Official Reserves
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 官方储备
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: Oil Facility
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 石油贷款
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: Online Financial Services
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 在线网络金融服务
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: Online Investment
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 网上投资
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: Operation Exposure
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 营业风险
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: Optional Forward Transaction
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 选择交割日的远期交易(择期交易)
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: Options
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 期权
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: Out of the Money
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 价外期权
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: Out-right Sell
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 卖断
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: Over Night
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 隔夜敞口
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: Paper Money
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 纸币
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: Pegged Exchange Rate
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 钉住汇率制
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: Performance Guarantee
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 履约保函
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: Point
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 汇价点
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: Point of Sales, POS
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 销售点终端
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: Preferred Share
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 优先股
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: Premium
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 升水
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: Regional Monetary Integration
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 区域性货币一体化
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: Remittance
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 汇付
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: Repayment Guarantee
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 还款保函
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: Reserve Tranche
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 储备部分贷款
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: Retention Money Guarantee
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 保留款保函
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: Selling Rate
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 卖出汇率
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: Senior Dealer
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 交易主任
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: Service
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 劳务收支
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: Settlement Office
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 交易后线
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: Singapore Inter-Bank Offered Rate,SIBOR
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 新加坡银行间同业拆放利率
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: Single Floating Exchange Rate
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 单独浮动汇率
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: Single Rate
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 单一汇率
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: Space Arbitrage
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 地点套汇
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: Special Draw Right, SDR
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 特别提款权
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: Spot Exchange Transaction
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 即期外汇交易
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: Spot-Forward Swap
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 即期对远期掉期
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: Spot Rate
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 即期汇率
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: Spot-Spot Swap
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 即期对即期掉期
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: Stock
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 股票
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: Strike Price
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 协议价格
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: Supplier Credit
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 卖方信贷
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: Swap
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 掉期交易
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: Telegraphic Transfer,T/T
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 电汇
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: Tender Guarantee
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 投标保函
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: the Clearing House Automated Payments System.CHAPS
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 伦敦票据交换所自动支付系统
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: the Clearing House Interbank Payments System, CHIPS
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 美国纽约票据交换所银行间支付系统
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: The Current Account Balance
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 经常项目差额
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: the Society for World Interbank Financial Telecommunications, SWIFT
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 环球银行间金融电讯系统
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: The Witteveen Facility
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 维特芬贷款
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: Time Arbitrage
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 时间套汇
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: Time value
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 期权时间价值
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: Trade Balance
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 贸易差额
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: Transaction Exposure
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 交易风险
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: Translation Exposure
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 转换风险
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: Treasury Bill (T. Bill/Bill)
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 短期国库券
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: Treasury Head
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 资金部主管
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: Trust Fund
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 信托基金
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: Trust Receipt,T/P
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 信托收据
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: Uncovered Arbitrage
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 非抵补套利
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: Uncovered Interest Differential
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 非抵补利差
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: Uniform Rules for Demand Guarantee
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 即期保函统一规则
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: Unilateral Transfer
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 单方面转移收支
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: value Added Networks, V AN
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 增值网
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: Volatility
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 易变性
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: World Bank
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 世界银行
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium
+- word: Yankee Bond
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 扬基债券
+  business_example: null
+  collocation: null
+  level: BEC Finance
+  difficulty: medium

@@ -1,0 +1,169 @@
+module: level_test
+source: "Composed from publicly discussed BEC email etiquette patterns"
+version: 1
+questions:
+  - stem: "Which email opening is most suitable when writing to a new supplier contact?"
+    level: "BEC Preliminary"
+    difficulty: "easy"
+    tags: [email, etiquette]
+    options:
+      - "Dear Ms. Patel, I hope this message finds you well."
+      - "Hey there, long time no see!"
+      - "Yo!" 
+      - "Sup?"
+    answer: "Dear Ms. Patel, I hope this message finds you well."
+    explanation: "Formal greetings with the recipient's surname are expected in first-contact business emails."
+  - stem: "Choose the best sentence to acknowledge receipt of a quotation."
+    level: "BEC Preliminary"
+    difficulty: "easy"
+    tags: [email, acknowledgement]
+    options:
+      - "Got it."
+      - "We confirm receipt of your quotation and will review it this afternoon."
+      - "Send again later."
+      - "Message received maybe."
+    answer: "We confirm receipt of your quotation and will review it this afternoon."
+    explanation: "Clear acknowledgement plus next step helps maintain professional tone."
+  - stem: "Which closing line maintains a helpful tone after supporting a client?"
+    level: "BEC Preliminary"
+    difficulty: "easy"
+    tags: [email, closing]
+    options:
+      - "Let me know if you need anything else and thank you for your partnership."
+      - "That is all."
+      - "Bye." 
+      - "Stop emailing me."
+    answer: "Let me know if you need anything else and thank you for your partnership."
+    explanation: "Closing with appreciation and support is standard for client-facing BEC communication."
+  - stem: "What is the most polite way to request missing attachments?"
+    level: "BEC Preliminary"
+    difficulty: "easy"
+    tags: [email, request]
+    options:
+      - "Why did you forget the files?"
+      - "Could you please resend the deck and budget attachments at your convenience?"
+      - "Need files now."
+      - "Send attachments ASAP or else."
+    answer: "Could you please resend the deck and budget attachments at your convenience?"
+    explanation: "Polite phrasing plus clear reference to the items keeps the request professional."
+  - stem: "Select the clearest reminder for an upcoming payment deadline."
+    level: "BEC Preliminary"
+    difficulty: "medium"
+    tags: [email, finance]
+    options:
+      - "Invoice soon."
+      - "This is a friendly reminder that invoice DH-2045 is due on 18 April."
+      - "Money time." 
+      - "Where is payment?"
+    answer: "This is a friendly reminder that invoice DH-2045 is due on 18 April."
+    explanation: "Referencing the invoice number and date reduces ambiguity."
+  - stem: "Which phrase best introduces the purpose of an email to a new stakeholder?"
+    level: "BEC Preliminary"
+    difficulty: "medium"
+    tags: [email, structure]
+    options:
+      - "Here comes information."
+      - "I am reaching out to share the updated project milestones for your review."
+      - "Guess what?"
+      - "Need to talk."
+    answer: "I am reaching out to share the updated project milestones for your review."
+    explanation: "Explicitly stating the reason early helps busy readers."
+  - stem: "Identify the most professional way to thank someone for rapid feedback."
+    level: "BEC Preliminary"
+    difficulty: "easy"
+    tags: [email, appreciation]
+    options:
+      - "Cheers."
+      - "Thanks for the quick turnaround—this helps us finalize the launch plan on schedule."
+      - "Cool."
+      - "Nice one."
+    answer: "Thanks for the quick turnaround—this helps us finalize the launch plan on schedule."
+    explanation: "Linking appreciation to business impact shows respect for the effort."
+  - stem: "Which sentence politely follows up on an unanswered email?"
+    level: "BEC Preliminary"
+    difficulty: "medium"
+    tags: [email, follow-up]
+    options:
+      - "You ignored me."
+      - "Just checking whether you had a chance to review the partnership proposal below."
+      - "Hey?"
+      - "Are you there?"
+    answer: "Just checking whether you had a chance to review the partnership proposal below."
+    explanation: "Polite follow-ups restate the pending item instead of blaming the reader."
+  - stem: "Choose the best sentence to provide context when forwarding minutes to a manager."
+    level: "BEC Preliminary"
+    difficulty: "medium"
+    tags: [email, handover]
+    options:
+      - "FYI."
+      - "Please find attached the supplier workshop minutes; action items relevant to finance are highlighted."
+      - "Look."
+      - "See attached maybe."
+    answer: "Please find attached the supplier workshop minutes; action items relevant to finance are highlighted."
+    explanation: "Summaries plus a callout of relevance respect the reader's time."
+  - stem: "Which statement best communicates that a file was updated?"
+    level: "BEC Preliminary"
+    difficulty: "easy"
+    tags: [email, update]
+    options:
+      - "Changed it."
+      - "I have updated the forecast worksheet with the latest Q2 run rate; please review tab 3."
+      - "Fixed now."
+      - "Version new."
+    answer: "I have updated the forecast worksheet with the latest Q2 run rate; please review tab 3."
+    explanation: "Mentioning the change and where to look prevents confusion."
+  - stem: "What is the clearest way to confirm meeting attendance?"
+    level: "BEC Preliminary"
+    difficulty: "easy"
+    tags: [calendar, confirmation]
+    options:
+      - "OK."
+      - "Confirming that I will join the pricing review on Tuesday at 15:00."
+      - "Sure maybe."
+      - "See you?"
+    answer: "Confirming that I will join the pricing review on Tuesday at 15:00."
+    explanation: "Include meeting name and time when acknowledging attendance."
+  - stem: "Which sentence keeps a professional tone while declining a meeting?"
+    level: "BEC Preliminary"
+    difficulty: "medium"
+    tags: [calendar, communication]
+    options:
+      - "Busy, sorry."
+      - "I am afraid I have a client briefing at that time—could we move the sync to Thursday morning?"
+      - "Nope."
+      - "Cannot."
+    answer: "I am afraid I have a client briefing at that time—could we move the sync to Thursday morning?"
+    explanation: "Declines should provide a reason and alternative whenever possible."
+  - stem: "Select the most appropriate email subject for a contract review."
+    level: "BEC Preliminary"
+    difficulty: "easy"
+    tags: [email, subject]
+    options:
+      - "Hello"
+      - "Action required: review draft master services agreement by Friday"
+      - "Contract"
+      - "Read this"
+    answer: "Action required: review draft master services agreement by Friday"
+    explanation: "Effective subjects summarize the request and deadline."
+  - stem: "Which response offers help to a coworker who flagged workload issues?"
+    level: "BEC Preliminary"
+    difficulty: "medium"
+    tags: [collaboration]
+    options:
+      - "Not my problem."
+      - "Let me know which sections I can draft so we split the workload evenly."
+      - "Figure it out."
+      - "Too busy."
+    answer: "Let me know which sections I can draft so we split the workload evenly."
+    explanation: "Collaborative tone is key in BEC tasks that value teamwork."
+  - stem: "Identify the safest way to share a revised policy document."
+    level: "BEC Preliminary"
+    difficulty: "medium"
+    tags: [compliance]
+    options:
+      - "Sending policy."
+      - "Attached is the updated travel policy; please note the highlighted approvals section on page 3."
+      - "New doc."
+      - "Policy changed lol."
+    answer: "Attached is the updated travel policy; please note the highlighted approvals section on page 3."
+    explanation: "Providing context and pointing to key changes helps adoption."

@@ -27,3 +27,6 @@ loguru==0.7.2
 
 # Utilities
 click==8.1.7
+
+# Auth
+PyJWT==2.8.0

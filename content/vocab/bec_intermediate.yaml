@@ -1,0 +1,7297 @@
+module: vocab
+level: BEC Intermediate
+count: 906
+entries:
+- word: abroad
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: adv. 在国外，出国，广泛流传
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: absence
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 缺席，离开
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: absent
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: adj. 不在，不参与
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: absenteeism
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n.（经常性）旷工，旷职
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: absorb
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: v. 吸收，减轻（冲击、困难等）作用或影响
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: abstract
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 摘要 adj.抽象
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: access
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 接近（或进入）的机会，享用权 v. 获得使用计算机数据库的权利
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: accommodation
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 设施，住宿
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: account
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 会计账目
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: accountancy
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 会计工作
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: accountant
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 会计
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: account executive
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. （广告公司）客户经理
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: account for
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: v. 解释，说明
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: accounts
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 往来账目
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: accruals
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 增值，应计   [ə'kru:əl]
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: achieve
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: v. 获得或达到，实现，完成
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: acknowledge
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: v. 承认/确认，告知已收到(某物)承认某人
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: acquire
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: v. 获得，得到
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: acquisition
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 收购，被收购的公司或股份
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: acting
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: adj. 代理的
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: activity
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 业务类型
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: actual
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: adj. 实在的，实际的，确实的
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: ad
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 做广告，登广告
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: adapt
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: v. 修改，适应
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: adjust
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: v. 整理，使适应
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: administer
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: v. 管理，实施
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: administration
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 实施，经营，行政
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: adopt
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: v. 采纳，批准，挑选某人作候选人
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: advertise
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: v. 公布，做广告
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: advertisement
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 出公告，做广告
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: advertising
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 广告业
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: after-sales service
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 售后服务
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: aged debtors
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n.长期债务人
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: agenda
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 议事日程
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: agent
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 代理人，经纪人
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: allocate
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: v. 分配，配给
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: amalgamation
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: "n. 合并，重组      [əmælgə'meiʃən] g,\x8DDn\x90NÅO\x9B[fN`N¤mAÿ N%y\x81\
+    u(N\x8EUFN\x1Au(\x90\x14ÿ \x8B÷N\x8E24\\\x0FeöQ R \x96d0\x02"
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: ambition
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 强烈的欲望，野心
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: amortize
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: v. 摊还   [əmɔ:taiz]
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: analysis
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: v.分析，研究
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: analyst
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 分析家，化验员
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: annual
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: adj. 每年的，按年度计算的 annual general meeting （AGM） 股东年会
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: anticipate
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: v. 期望
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: anticipated
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: adj. 期待的
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: appeal
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 吸引力
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: applicant
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 申请人
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: application
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n . 申请，施用，实施
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: apply
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: v. 申请，请求；应用，运用
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: appointee
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 被任命人
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: appraisal
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 估量，估价
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: appreciate
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: v. 赏识，体谅，增值 感激 doing sth
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: appropriate
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: v. 拨出(款项) [ə'prəuprieit] adj. 适合的 适当的
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: approve
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: v. 赞成，同意，批准
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: aptitude
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 天资，才能
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: arbitrage
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 套利
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: arbitration
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 仲裁
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: a retail outlet
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 零售店
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: arrears
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 欠账  [ə'riəz]
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: a slump in sales
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 销售暴跌
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: assemble
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: v. 收集，集合
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: assembly-line
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 装配线，流水作业线
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: assess
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: v. 评定，估价
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: asset
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 资产
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: assist
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: v. 援助，协助，出席
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: audit
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 查账，审计
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: automate
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: v. 使某事物自动操作
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: a variety of
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: "adj. 多种多样的 vary v. 改变，修改 g,\x8DDn\x90NÅO\x9B[fN`N¤mAÿ N%y\x81u(N\x8E\
+    UFN\x1Au(\x90\x14ÿ \x8B÷N\x8E24\\\x0FeöQ R \x96d0\x02 VAT Value Added Tax    n.\
+    \ 增值税"
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: average
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 平均，平均水准
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: awareness
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: "n. 意识；警觉 g,\x8DDn\x90NÅO\x9B[fN`N¤mAÿ N%y\x81u(N\x8EUFN\x1Au(\x90\x14\
+    ÿ \x8B÷N\x8E24\\\x0FeöQ R \x96d0\x02"
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: backhander
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 贿赂
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: backing
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 财务支持，赞助
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: backlog
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 积压（工作或订货）
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: bad debt
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 死账（无法收回的欠款）
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: balance
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 收支差额，余额 balance of payments   n . 贸易支付差额
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: balance of trade
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n.贸易平衡
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: balance sheet
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 资产负债表
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: bankrupt
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: adj. 破产的
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: bankruptcy
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 破产
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: bank statement
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 银行结算清单(给账户的)，银行对账单
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: bar chart
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 条形图，柱状图
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: bargain
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: v. 谈判，讲价
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: base
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 基地，根据地
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: batch
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 一批，一组，一群
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: batch production
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n.批量生产
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: bear market
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 熊市
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: beat
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: v. 超过，胜过
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: behave
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: v. 表现，运转
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: behavior
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 举止，行为，运转情况 below-the-line advertising 线下广告，尚未被付款的广告
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: benchmark
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 衡量标准  [bentʃ] n. 板凳,
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: benefit
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 利益，补助金，保险金得益
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: bid
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 出价，投标  v. 出价,招标
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: bill
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 账单，票据
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: billboard
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n.（路边）广告牌，招贴板
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: black
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: adj. 违法的
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: black list
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n.黑名单,禁止贸易的 (货物/公司/个人)名单
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: black Monday
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: "n. 黑色星期一 g,\x8DDn\x90NÅO\x9B[fN`N¤mAÿ N%y\x81u(N\x8EUFN\x1Au(\x90\x14\
+    ÿ \x8B÷N\x8E24\\\x0FeöQ R \x96d0\x02 1987 年 10 月国际股票市场崩溃的日子"
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: blue chips
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 蓝筹股，绩优股
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: blue-collar
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: adj. 蓝领（工人）的
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: Board of Directors
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 董事会
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: Bond
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 债券
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: bonus
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 津贴，红利
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: bookkeeper
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 簿记员，记账人
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: books
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n . 公司帐目
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: book value
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 账面价值，（公司或股票）净值
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: boom
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 繁荣，暴涨
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: boost
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: v. 提高，增加，宣扬  [bu:st]
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: bottleneck
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 瓶颈，窄路，阻碍
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: bottom
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: adj. 最后的，根本的 v. 到达底部，建立基础
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: bounce
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: v. 支票因签发人无钱而遭拒付并退 [bauns]
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: brainstorm
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n./v. 点子会议，献计献策, 头脑风暴
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: branch
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 分支，分部
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: brand
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 商标，品牌
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: brand leader
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 占市场最大份额的品牌，名牌
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: brand loyalty
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. （消费者）对品牌的忠实   ['lɔiəlti]
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: break even
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: v. 收支相抵，不亏不盈
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: break even point
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n.收支相抵点, 盈亏平衡点
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: breakthrough
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 突破  突破性进展
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: brief
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 摘要
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: brochure
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 小册子
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: broker
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 经纪人，代理人
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: budget
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 预算
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: buffer inventory
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 用于应付突发性需求的存货   ['bʌfə] n. 缓冲区，缓冲物 capacity inventory    n. 用于将来某时使用的存货
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: bulk
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 大量（货物） adj. 大量的
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: bull market
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n.牛市
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: bust
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: adj. 破了产的
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: buyout
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: "n. 买下全部产权 g,\x8DDn\x90NÅO\x9B[fN`N¤mAÿ N%y\x81u(N\x8EUFN\x1Au(\x90\x14\
+    ÿ \x8B÷N\x8E24\\\x0FeöQ R \x96d0\x02 CAD(=Computer Aided Design) n. 计算机辅助设计"
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: call
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. v.打电话
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: call on
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: v. 呼吁，约请，拜访
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: campaign
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 战役，运动  [kæm'pein]
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: candidate
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 求职者，候选人
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: canteen
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 食堂
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: canvass
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: v. 征求意见，劝说   ['kænvəs]
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: capacity
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 生产额，（最大）产量 output
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: capital
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 资本，资金
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: capital gains tax
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 资本收益税  [gein] v./n.增益 获得 得到
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: caption
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 照片或图片下的简短说明   [kæpʃən]
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: capture
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: v. 赢得    ['kæptʃə]
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: case study
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 案例分析
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: cash
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 现金，现付款 v. 兑现
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: cash flow
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 现金流量
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: catalogue
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 目录，产品目录
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: catastrophe
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 大灾难，大祸   [kə'tæstrəfi]
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: CEO
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. Chief Executive Officer （美）总经理
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: chain
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 连锁店
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: challenger
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 挑战者
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: channel
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. (商品流通的) 渠道
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: charge
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 使承担，要（价）， v.把......记入（账册等）
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: chart
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 图表
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: checkout
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 付款台
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: chief
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: adj. 主要的，首席的，总的[t ʃi:f] CIF, c.i.f.          成本保险费加运费
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: circular
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 传阅的小册子（传单等）
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: circulate
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: v. 传阅  vt. (使)流通,使)循环,(使)传播
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: claim
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n./v. 要求，索赔
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: client
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 委托人，顾客
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: closed shop
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 限制行业（只允许本工会会员）
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: cold
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: adj. 没人找上门来的，生意清淡的
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: commercialize
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: v. 使商品化
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: commission
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 佣金
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: commitment
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 承诺
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: commodity
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 商品，货物
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: company
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: "n. 公司 limited (liability) company (ltd.) 股份有限公司 g,\x8DDn\x90NÅO\x9B\
+    [fN`N¤mAÿ N%y\x81u(N\x8EUFN\x1Au(\x90\x14ÿ \x8B÷N\x8E24\\\x0FeöQ R \x96d0\x02\
+    \ public limited company (plc) n. 股票上市公司"
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: compensate
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: v. 补偿，酬报    ['kɔmpenseit]
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: compensation
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 补偿，酬金   [kɔmpen'seiʃən]
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: compete
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: v. 比赛，竞争
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: competition
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 比赛，竞争
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: competitive
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: adj. 竞争性的
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: competitor
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 竞争者，对手
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: component
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 机器元件、组件、部件，部分 concentrated marketing n. 集中营销策略['kɔnsentreit] vt.vi.
+    集中,集结
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: condition
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 条件，状况
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: configuration
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 设备的结构、组合[k ənfigju'reiʃən]
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: conflict
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n.vi 冲突，争论   ['kɔnflikt]
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: conglomerate
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 综合商社，多元化集团公司 consolidate v. 帐目合并 [kən'glɔmərit]
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: consortium
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 财团    [kən'sɔ:ʃiəm]
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: constant
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: adj. 恒定的，不断的，经常的['kɔnstənt]
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: consultant
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 咨询人员，顾问，会诊医生
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: consumables
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 消耗品     [kəm'sju:məbl] consumer durables    n. 耐用消费品（如：洗衣机） ['djuərəbl]
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: consumer goods
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 消费品，生活资料
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: contingency
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 意外事件   [kən'tindʒənsi]
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: continuum
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 连续时间    [k ən'tinjuəm]
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: contract
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 合同，契约
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: contractor
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 承办商，承建人
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: contribute
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: v. 提供，捐献
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: contribution
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 贡献，捐献，税
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: conversion
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 改装，改造   [kən'və:ʃən]
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: conveyor
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 运送，传递，转让   [kən'veiə]
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: core time
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. （弹性工作制的）基本上班时间 （员工于此段时间必须上班，弹性只对除此以外的时间有效） n. 核心,果心 [kɔ:]
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: corporation tax
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 公司税，法人税
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: cost
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 成本
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: costing
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: "n. 成本计算，成本会计 g,\x8DDn\x90NÅO\x9B[fN`N¤mAÿ N%y\x81u(N\x8EUFN\x1Au(\x90\
+    \x14ÿ \x8B÷N\x8E24\\\x0FeöQ R \x96d0\x02"
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: credit
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 赊购，赊购制度
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: credit control
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 赊销管理（检查顾客及时付款的体系）
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: credit limit
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 赊销限额
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: creditor
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 债权人，贷方
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: credit rating
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 信贷的信用等级，信誉评价  ['reitiŋ]
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: creditworthiness
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 信贷价值，信贷信用
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: crisis
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 危机，转折点
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: critical
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: adj. 关键的  ['kritik əl] critical path analysis n. 关键途径分析法
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: currency
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 货币，流通
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: current
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: adj. 通用的，现行的
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: Current account
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 往来帐户，活期（存款）户
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: current asset
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 流动资产
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: current assets
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 流动资产 current liabilities  n. 流动负债   [laiə'biliti]
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: customize
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: v. 按顾客的具体要求制造（或改造等）； 顾客化 vt 定做
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: cut-price
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: adj. 削价（出售）的 CV(=curriculum vitae) n. 简历，履历
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: cut-throat
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: adj. 残酷的，激烈的 n. 咽喉,喉咙[θrəut]
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: cycle inventory
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 循环盘存 decoupling inventory  n. 保险性存货（以应付万一）  [di'kʌpl] v. 减弱(核爆炸)震波
+    finished goods inventory   n. 制成品存货（盘存）
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: cycle time
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 循环时间
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: damages
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 损害，损失
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: deadline
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 最后期限
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: deal
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 营业协议，数量  v. 交易
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: dealer
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 商人
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: debit
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 借方，欠的钱 v. 记入帐户的借方
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: debt
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 欠款，债务  [det]
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: debtor
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 债务人  ['detə]
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: declare
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: v. 申报，声明
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: decline
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n./v. 衰退，缓慢，下降  [di'klain]
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: decrease
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: "v. 减少 g,\x8DDn\x90NÅO\x9B[fN`N¤mAÿ N%y\x81u(N\x8EUFN\x1Au(\x90\x14\
+    ÿ \x8B÷N\x8E24\\\x0FeöQ R \x96d0\x02"
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: deduct
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: v. 扣除，减去   [di'dʌkt]
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: default
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 违约，未履行
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: defect
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 缺陷 不足 缺点
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: defective
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: adj. 有缺点的
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: defer
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: v. 推迟    [di' fə:]
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: deferred payments
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 延期支付
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: deficit
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 赤字   ['defisit]
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: delivery cycle
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 交货周期
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: demand management
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 需求规化
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: demodulated
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: adj. 消极的，冷谈的   [di:'mɔdjuleit]
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: deposit
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 储蓄，预付（定金）
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: depot
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 仓库 停车场 贮藏室    ['depə u]
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: depreciate
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: v. 贬值，（对资产）折旧  ['dipri ʃieit]
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: depressing
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: adj. 令人沮丧的
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: deputy
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 代理人，副职，代理
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: devalue
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: v. 货币贬值（相对于其它货币）
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: diet
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 饮食，食物，特种饮食
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: differentiation
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 区分，鉴别   [difərenʃi'eiʃən]
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: dimensions
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 尺寸，面积，规模  [di'menʃəns]
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: direct
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: v.管理，指导
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: direct cost
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 直接成本
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: direct mail
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. （商店为招揽生意而向人们投寄的） 直接邮件
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: director
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 经理，主管
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: directory
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 指南，号码簿
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: direct selling
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 直销，直接销售
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: discount
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 折扣，贴现
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: dismiss
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: v. 让...... 离开，打发走  [dis'mis]
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: dismissal
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 打发走    [dis'mis əl]
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: dispatch
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n./v. 调遣
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: display
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n./v. 展出，显示
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: dispose
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: v. 安排，处理（事务）[dis'p əuz]
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: dispose of
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: v. 去掉，清除
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: distribution
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 分配，分发，分送产品
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: diversify
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: v. 从事多种经营；使多样化   [dai'və:sifai]
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: divest
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: v. 剥夺   [dai'vest]
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: dividend
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: "n. 股息，红利，年息    ['dividend] g,\x8DDn\x90NÅO\x9B[fN`N¤mAÿ N%y\x81u(N\x8E\
+    UFN\x1Au(\x90\x14ÿ \x8B÷N\x8E24\\\x0FeöQ R \x96d0\x02"
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: division
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 部门
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: dog
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 滞销品  down-market a./ad.低档商品的 down-time/downtime    n. 设备闲置期 DP(=Data
+    Processing)   n. 计算机数据处理，计算机数据处理部门
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: down market
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: "adv./adj. 低档商品/地的 g,\x8DDn\x90NÅO\x9B[fN`N¤mAÿ N%y\x81u(N\x8EUFN\x1A\
+    u(\x90\x14ÿ \x8B÷N\x8E24\\\x0FeöQ R \x96d0\x02"
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: dramatic
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: adj. 戏剧性的
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: drive
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 积极性，能动性
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: due
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: adj. 应付的，预期的
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: dynamic
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: adj. 有活力的
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: earned income
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 劳动收入，劳动所得
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: earnings
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 工资
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: ective
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: adj. 合算的，有效益的
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: efficiency
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 效率   [i'fiʃənsi]
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: endorse
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: v. 背书，接受  [in'dɔ:s]. v.背面签字,背签;签署,批注,
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: engage
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: v. 雇用  参加 从事于  [in'geidʒ]
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: entitle
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: v. 授权
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: entitlement
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 应得的权利 holiday entitlement   n. 休假权
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: equities
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 普通股，股票
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: equity
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 股东权益 ['ekwiti] 1.n. 公平，公正
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: equity capital
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 股本
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: estimated demand
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 估计需求
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: evaluate
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: v. 估价，评价   [i'væljueit]
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: eventual
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: adj. 最终的  [i'ventʃuəl]
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: exaggerate
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: v. 夸张   [ig'zædʒəreit]
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: exceed
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: v. 超过   [ik'si:d]
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: exhibit
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 展览，表现   [ig'zibit]
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: expenditure
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 花费，支出额
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: expense
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 费用，支出
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: expense account
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 费用账户
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: expenses
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 费用，业务津贴
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: expertise
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 专长，专门知识和技能
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: exposure
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: "n.公众对某一产品或公司的知悉； [iks'pəuʒə] 广告所达到的观众总数 n. 显露，暴露；曝露 g,\x8DDn\x90NÅO\x9B\
+    [fN`N¤mAÿ N%y\x81u(N\x8EUFN\x1Au(\x90\x14ÿ \x8B÷N\x8E24\\\x0FeöQ R \x96d0\x02"
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: facilities
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 用于生产的设备、器材
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: facilities layout
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 设备的布局规划、计划 facilities location   n. 设备安置  [l əu'keiʃən]
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: factoring
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 折价购买债券
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: fail-safe system
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 安全系统
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: feasibility study
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 可行性研究  [fi:zə'biliti]
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: feedback
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 反馈，反馈的信息
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: field
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 办公室外边，具体业务
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: file
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 文件集，卷宗，档案，文件 v. 把文件（或资料）归档
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: fill
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: v. 充任
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: finance
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 资金，财政 v. 提供资金
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: financial
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: adj. 财政的
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: financing
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 提供资金，筹借资金
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: finished goods
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 制成品
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: fire
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: v. 解雇
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: firm
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 公司
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: fiscal
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: adj. 国库的，财政的   ['fiskl]
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: fix
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: v. 确定，使固定在
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: fixed asset
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 固定资产
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: fixed costs
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n.固定成本
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: fixed rate
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 固定费用，固定汇率
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: fix up
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: v. 解决，商妥
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: flagship
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 同类中最成功的商品，佼佼者
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: flexible
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: adj. 有弹性的，灵活的
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: flextime
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 弹性工作时间制 flier(=flyer)         n. 促销传单
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: float
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: v. 发行股票   漂浮
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: flop
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 失败  [fl ɔp] vt. 笨拙地抛下
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: flow shop
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 车间
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: fluctuate
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: v. 波动，涨落，起伏   ['flʌktʃueit] FOB, f.o.b            n. 离岸价
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: follow-up
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 细节落实，接连要做的事
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: forecast
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: v. 预测
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: four P's
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n.指产品 PRODUCT、价格 PRICE、 地点 PLACE、促销 PROMOTION
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: framework
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 框架，结构
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: franchise
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 特许经销权 v. 特许经销，给予特许经销权
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: franchisee
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: "n. 特许经营人 g,\x8DDn\x90NÅO\x9B[fN`N¤mAÿ N%y\x81u(N\x8EUFN\x1Au(\x90\x14\
+    ÿ \x8B÷N\x8E24\\\x0FeöQ R \x96d0\x02"
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: franchiser
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 授予特许经营权者
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: fraud
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 欺骗
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: freebie
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. （非正式的） 赠品， 免费促销的商品  ['fri:bi]
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: freelancer
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n.& adj. 自由职业者（的）
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: fringe benefits
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 附加福利   [frindʒ ]
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: frozen asset
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 冻结资产
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: full milk
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 全脂牛奶
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: funds
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 资金，基金
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: futures
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 期货交易
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: gap
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 缺口，空隙  [gæp]
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: gearing
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 配称 （即定息债务与股份资本之间的比率）[giriŋ]
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: gimmick
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 好主意，好点子        ['gimik] n. 暗机关,伎俩，花招,诡计，诈欺
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: goal
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 目标
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: going
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: adj. 进行的，运转中的
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: going rate
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 产品的市场价格
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: goods
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 货物，商品
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: goodwill
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 声誉
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: go public
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: v. 首次公开发行股票
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: gradually
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: adv. 逐渐地
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: grapple with
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: v. 与...... 搏斗，尽力解决[græpl] vi/vt 抓住 把握
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: grievance
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 申诉，抱怨   ['gri:vəns] 委屈 苦况
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: gross
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: adj. 总的，毛的
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: gross margin
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 毛利率     ['mɑ:dʒin] n. 页边的空白,余裕,差数,差额,利润
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: gross profit
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 毛利
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: gross yield
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 毛收益  [ji:ld] n. 生产量,投资收益
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: group
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. （由若干公司联合而成的）集团
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: grow
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: v. 增长，扩大
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: growth
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 增长，发展
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: guarantee
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 保证，保单
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: guidelines
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 指导方针，准则
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: hand in
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: v. 呈送 hand in one's notice  v. 递交辞呈
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: handle
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: "v. 经营 g,\x8DDn\x90NÅO\x9B[fN`N¤mAÿ N%y\x81u(N\x8EUFN\x1Au(\x90\x14\
+    ÿ \x8B÷N\x8E24\\\x0FeöQ R \x96d0\x02"
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: hands on
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: adj. 有直接经验的
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: hard sell
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 强行推销
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: hazard
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 危险，危害行为
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: head
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 主管，负责
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: health and safety
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 健康和安全
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: hedge
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 套期保值  [hedʒ] 树篱,障碍,套头交易
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: hidden
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: adj. 隐藏的，不明显的
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: hierarchy
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 等级制度， 统治集团， 领导层 ['haiərɑ:ki]
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: hire
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: v. 雇用
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: hire purchase
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 分期付款购物法
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: hit
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: v. 击中，到达
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: holder
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 持有者
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: holding company
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 控股公司
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: hostile
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: adj. 不友好的，恶意的，敌对的 ['hɔstail]
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: HRD
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 人力资源发展部
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: human resources
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 人力资源
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: hype
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 天花乱坠的（夸张）广告宣传
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: impact
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 冲击，强烈影响    ['impækt]
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: implement
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: v. 实施，执行    ['implim ənt]
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: implicantion
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n.隐含意义
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: incentive
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n.v 刺激；鼓励   [in'sentiv]
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: income
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 工资或薪金收入，经营或投资的收入
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: income tax
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 所得税
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: increment
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: v. n. 定期增加   ['inkrimənt]
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: incur
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: v.招致，遭受，承担   [in'k ə:]
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: indemnity
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 偿还，赔偿   [in'demniti]
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: index
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 指数，索引   ['indeks] retail price index    n. 零售价格指数
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: indirect costs
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 间接成本
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: induction
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 就职
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: industrial
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: adj. 工业的
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: industrial action
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. （罢工、怠工等）劳工行动 industrial relations   n. 劳资关系
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: inefficiency
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 低效率，不称职
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: inflate
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: "v. 抬高（物价，使通货等）膨胀 g,\x8DDn\x90NÅO\x9B[fN`N¤mAÿ N%y\x81u(N\x8EUFN\x1A\
+    u(\x90\x14ÿ \x8B÷N\x8E24\\\x0FeöQ R \x96d0\x02"
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: inflation
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 通货膨胀
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: infringe
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: v. 违法，违章    [in'frindʒ]
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: initial
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: adj. 初步的 n. 首字母;姓名的开头字母  [i'ni ʃəl]
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: innovate
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: v. 革新
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: input
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 投入
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: insider trading
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 内部交易
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: insolvent
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: adj. 无清偿力的 n.无力偿付者，破产者 [in'sɔlvənt]
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: installment
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 部分，分期付款
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: insurance
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 保险
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: insure
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: v. 给......保险，投保   [in'ʃuə]
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: intangible assets
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 无形资产
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: interest
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 利息，兴趣
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: interest rate
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 利率
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: interim
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 中期，过渡期间   ['intərim] intermittent production n. 阶段性生产    [,intə'mitənt
+    ] adj.间歇的，断断续续的
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: interview
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n./v. 面试
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: interviewee
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 被面试的人
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: interviewer
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 主持面试的人，招聘者
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: in the black
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n.有盈余，贷方
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: in the red
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 赤字，负债
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: introduce
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: v. 介绍，提出
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: inventory
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 库存
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: invest
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: v. 投资
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: investment
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 投资
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: investor
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 投资者
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: invoice
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 发票 v. 给（某人）开发票
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: irrevocable
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: adj. 不可撤消的，不能改变的 [i'revəkəbl]
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: issue
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 发行股票
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: item
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 货物，条目，条款
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: job
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 工作
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: jobbing
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 为一次性的或小的订货需求而 特设的生产制度
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: job description
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 工作说明，职务说明
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: job lot
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 一次生产的部分或少数产品
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: job mobility
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 工作流动
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: job rotation
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 工作轮换  n.循环，转换 [rəu'teiʃən]
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: job satisfaction
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 工作的满意感（自豪感）
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: job shop
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 专门车间
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: joint
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: adj. 联合的 joint bank account    n.（几个人的）联合银行存款帐户
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: journal
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 专业杂志 日志 日报 日记账 杂志['dʒə:nl]
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: junk bonds
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 低档(风险）债券，垃圾债券 n.垃圾
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: junk mail
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n.(未经收信人要求) 直接邮寄的广告宣传
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: jurisdiction
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 管辖（权） [dʒuəris'dikʃən] 司法权 审判权 管辖权
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: just-in-time
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 无库存制度
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: key
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: adj. 主要的，关键的
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: knockdown
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: adj. （价格）很低的
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: know-how
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 专门技术
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: label
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 标签，标牌 v. 加标签，加上标牌
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: labor
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 劳动，工作，劳动力
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: labor market
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 劳动力市场
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: labor relations
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 劳资关系 industrial relations  n. 劳资关系
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: labor shortage
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 劳动力短缺
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: launch
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: v. 在市场推出一种新产品 n.新产品的推出
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: lay-off/layoff
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n./v. 临时解雇
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: layout
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 工厂的布局 v.编排 布局
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: lead
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: v. 领先，领导
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: lead time
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: "n. 完成某项活动所需的时间 g,\x8DDn\x90NÅO\x9B[fN`N¤mAÿ N%y\x81u(N\x8EUFN\x1Au(\x90\
+    \x14ÿ \x8B÷N\x8E24\\\x0FeöQ R \x96d0\x02"
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: leaflet
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 广告印刷传单
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: lease
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 租借，租赁物 [li:s]
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: ledger
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 分类帐   ['ledʒə]
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: legal
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: adj. 合法的，法律的
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: lend
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: v. 出借，贷款
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: lessee
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 承租人   [le'si:]
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: lesser
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 出租人  ['les ə] adj.较少的，次要的
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: letter of credit
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 信用证
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: leverage
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 杠杆比率    ['lev əridʒ]
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: liabilities
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: 'n. 债务 license(US: license)  n. 许可证'
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: liability
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 负债
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: license
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: v. 许可，批准
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: life cycle
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 寿命周期
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: likely
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: adj. 可能的
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: line manager
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 基层负责人
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: line process
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 流水线（组装）
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: link
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 关系，联系，环
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: liquid
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: adj. 易转换成现款的 a. 液体的,透明的,明亮的,流动的,易变的
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: liquid assets
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 速动资产
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: liquidate
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: v. 清算
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: liquidation
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 清理（关闭公司），清算
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: liquidator
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 清算人，公司资产清理人
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: liquidity
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 拥有变现力 n.流畅性 流畅 偿债能力
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: listed
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: adj. 登记注册的
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: listing
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 上市公司名录
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: literature
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. （产品说明书之类的）印刷品， 宣传品 ['litəritʃə]
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: litigate
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: v. 提出诉讼   ['litigeit]
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: loan
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n./v. 贷款，暂借
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: logo
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 企业的特有标记
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: lose
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: v. 亏损
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: loser
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 失败者
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: loss
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 损失
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: lot
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 批，量
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: loyalty
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: "n. 忠诚，忠实 g,\x8DDn\x90NÅO\x9B[fN`N¤mAÿ N%y\x81u(N\x8EUFN\x1Au(\x90\x14\
+    ÿ \x8B÷N\x8E24\\\x0FeöQ R \x96d0\x02"
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: magazine
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 杂志，期刊
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: mailshot
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 邮购
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: maintain
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: v. 维持，保持
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: maintenance
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 维持，坚持
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: major
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: adj. 重大的，主要的，较大的 ['meidʒə] majority shareholding n.绝对控股  [m ə'dʒɔriti]
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: make
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 产品的牌子或型号
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: make-to-order
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: adj. 根据订货而生产的产品
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: make-to-stock
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: adj. 指那些在未收到订货时 就已生产了的 产品
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: management
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 管理，管理部门
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: manager
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 经理
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: managerial
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: adj. 管理人员的，管理方面的
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: Managing Director
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 总经理
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: manning
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 人员配备
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: manpower
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 劳动力 manpower resources    n. 劳动力资源
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: manual
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: adj. 体力的，人工的，蓝领的
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: manufacture
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: v. （用机器）制造
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: manufacturer
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 制造者（厂、商、公司）
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: manufacturing
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: adj. 制造的 manufacturing industry n.制造业
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: margin
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 利润  ['m ɑ:dʒin]
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: market
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 市场；产品可能的销量
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: marketing mix
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 综合营销策略， 指定价、促销、产品等策略的配合
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: market leader
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 市场上的主导公司
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: market niche
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 小摊位，专业市场的一个小部分 [nitʃ] n. 壁橱 market penetration    n. 市场渗入[peni'treiʃən]
+    n.浸透 目标市场的占有份额 market segmentation   n.市场划分  [segm ən'teiʃən] n.分割 割断 细胞分裂
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: market price
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: "n. 市场价，市价 g,\x8DDn\x90NÅO\x9B[fN`N¤mAÿ N%y\x81u(N\x8EUFN\x1Au(\x90\x14\
+    ÿ \x8B÷N\x8E24\\\x0FeöQ R \x96d0\x02"
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: market share
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 市场占有率，市场份额
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: mark-up
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: v. 标高售价，加价
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: mass-marketing
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 大众营销术 n. 块,大多数, adj. 群众的,大规模的,集中的 master production schedule n. 主要生产计划
+    material requirements planning(MRP) n. 计算生产中所需材料的 方法
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: mass media
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 大众传媒（如电视、广播、报纸等） merchandising  n. （在商店中）通过对商品的摆放与促销进行经营 ['mə:tʃəndaiziŋ]
+    n.有计划的销售
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: materials handling
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 材料管理，材料控制
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: matrix management
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 矩阵管理 n.母体 子宫 细胞 矩阵 ['meitriks] management information system(MIS)
+    n. 管理信息系统
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: maximise
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: v. 使增至最大限度、最大化 ['mæksimaiz]
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: measure
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 措施，步骤
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: media
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 新闻工具，传媒
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: merge
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: v. 联合，合并
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: merger
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. （公司，企业等的）合并
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: merit
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 优点，值得，应受    ['merit]
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: method study
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 方法研究
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: middleman
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 中间人，经纪人
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: middle management
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 中层管理人员
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: minimize
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: v. 使减至最小限度，最小化 ['minimaiz] maximise
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: mission
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 公司的长期目标和原则 n. 任务,代表团,使命
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: mobility
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 流动性，可移性
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: moderately
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: "adv. 中等地，适度地  ['mɔdəritli] g,\x8DDn\x90NÅO\x9B[fN`N¤mAÿ N%y\x81u(N\x8E\
+    UFN\x1Au(\x90\x14ÿ \x8B÷N\x8E24\\\x0FeöQ R \x96d0\x02"
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: monopoly
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 垄断，独占  [m ə'nɔpəli]
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: mortgage
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n./v. 抵押  ['m ɔ:gidʒ]
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: motivate
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: v. 激励，激发...... 的积极性
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: motivated
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: adj. 有积极性的
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: motivation
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 提供动机，积极性，动力
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: motive
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 动机
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: negotiable
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: adj. 可谈判的，可转让的 [ni'gəuʃjəbl]
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: negotiate
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: v. 谈判
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: net
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: adj. 净的，纯的
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: net margin
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 净利润
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: network
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 网络
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: niche
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 专业市场中的小摊位 [nitʃ] n. 壁橱
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: nominal ledger
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 记名帐  ['n ɔminl] adj. 名义上的,有名无实的,稍许的
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: notice
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 通知，辞职申请，离职通知
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: objective
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 目标，目的
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: obsolete
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: adj. 过时的，淘汰的，废弃的 ['ɔbsəli:t] n. 废词,陈腐的人,废物
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: offer
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 报价，发盘
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: off-season
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: adj./adv. 淡季的
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: off-the-peg
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: adj. 标准的，非顾客化的 [peg] n. 钉,藉口, vi. 坚持不懈地工作
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: off-the-shelf
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: adj. 非专门设计的
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: opening
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 空位
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: open shop
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 开放行业（非会员可从事的工作）
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: operate
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: v. 操作，经营，管理
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: operating profit
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 营业利润 profit and loss account n. 损益帐户
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: operating profits
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 营业利润
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: operations chart
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 经营（管理）表 operations scheduling  n. 生产经营进度表
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: opportunity
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 机会
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: optimize
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: v. 优化 美化    [' ɔptəmaiz]
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: option
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 选择权
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: organ gram
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: "n. 组织图    [græm]n. 克 绿豆 ['ɔ:gən] n.. 器官,喉舌;机构,机关; g,\x8DDn\x90NÅO\x9B\
+    [fN`N¤mAÿ N%y\x81u(N\x8EUFN\x1Au(\x90\x14ÿ \x8B÷N\x8E24\\\x0FeöQ R \x96d0\x02\
+    \ 风琴,口琴"
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: organization chart
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 公司组织机构图
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: orient
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: v. 定向，指引 a. 东方的,上升的 n. 东方,东方诸国
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: orientation
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 倾向，方向；熟悉，介绍情况
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: outcome
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 结果
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: outgoings
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 开支，开销
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: outlay
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 开销，支出，费用
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: outlet
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 商店
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: outlined
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: adj. 概括的，勾勒的草图的 v. outline
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: output
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 产量
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: outsource
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: v. 外购产品或由外单位制做产品
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: outstanding
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: adj. 未付款的，应收的
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: over-demand
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 求过于供
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: overdraft
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 透支 [dra:ft ] v. 草稿, n.穿堂风 n.生啤酒
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: overdraft facility
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 透支限额
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: overdraw
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: v. 透支
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: overhead costs
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 营业成本
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: overheads
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 企业一般管理费用 adj/v. 在头顶上,
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: overpay
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 多付（款）
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: overtime
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 加班
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: overview
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 概述，概观
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: owe
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: v. 欠钱，应付 p.a.(=per annum)       n. 每年
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: packaging
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 包装物；包装
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: parent company
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 母公司，总公司
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: participate
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: v. 参加，分享  (in)
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: partnership
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 合伙（关系），合伙，合伙企业
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: part-time
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: adj. 部分时间工作的，业余的
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: patent
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 专利 ['pætnt] a. 专利的 vt. 取得…的专利权
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: pay
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 工资，酬金 v. 付钱，付报酬
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: payroll
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: "n. 雇员名单，工资表['peirəul]n.薪水册 g,\x8DDn\x90NÅO\x9B[fN`N¤mAÿ N%y\x81u(N\x8E\
+    UFN\x1Au(\x90\x14ÿ \x8B÷N\x8E24\\\x0FeöQ R \x96d0\x02"
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: peak
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 峰值，顶点
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: penetrate
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: v. 渗透，打入（市场）
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: penetration
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 目标市场的占有份额
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: pension
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 养老金，退休金 ['penʃən] vt. 发给退休金
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: perform
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: v. 表现，执行
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: performance
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 进行，表现工作情况 performance appraisal  n. 工作情况评估
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: perk
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 额外待遇（交通、保健、保险等） n. 小费
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: personnel
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: Un. 员工，人员  [p ə:sə'nel]
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: petty cash
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 零用现金    ['peti] adj.小的 不重要的 细微的 卑微的
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: phase out
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 分阶段停止使用 v.使逐步淘汰  [feiz] n.阶段 状态 v.逐步采用
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: pick
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: v. 提取生产用零部件或给顾客发货
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: picking list
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 用于择取生产或运输订货的表格
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: pie chart
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 饼形图
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: pilot
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 小规模试验
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: pipeline
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 管道，渠道
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: pipeline inventory
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 在途存货   ['paiplain]n.管道线 raw materials inventory    n. 原材料存货 work-in-progress
+    inventory n. 在制品盘存（存货）
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: plant capacity
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 生产规模，生产能力
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: plant manager
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 工厂负责人
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: plot
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: v. 标绘，策划 密谋  [plɔt]
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: plough back
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 将获利进行再投资  [plau] n.耕地 v.耕地 犁 耕 point of sale (POS)    n. 销售点
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: policy
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 政策，规定, 保险单
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: portfolio
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. （投资）组合 portfolio management   n. 组合证券管理
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: position
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 职位 地位 处境
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: post
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 邮件，邮局；职位
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: potential
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 潜在力，潜势
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: power
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 能力
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: preference shares
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 优先股 n. 偏爱,优先,优先权
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: price
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 价格
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: probation
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 试用期   [pr əu'beiʃən] n. 鉴定,查验,证明 缓刑 be on ~在试用期
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: product
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 产品
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: production cycle
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 生产周期 production schedule    n. 生产计划
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: productive
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: adj. 生产的，多产的
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: product life cycle
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 产品生命周期
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: product mix
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 产品组合（种类和数量的组合）
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: profile
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 简介形象特征
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: profit
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 利润
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: project
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: v. 预测 n.项目 方案
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: promote
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: v. 推销
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: promotion
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 提升，升级
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: proposal
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 建议，计划 求婚 [prə'pəuzəl]
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: prospect
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 预期，景色，希望，展望 ['prɔspekt] v.勘探 有前途
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: prospectus
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 创立计划书，内容说明书 [prəs'pektəs]
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: prosperity
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 繁荣，兴隆
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: prototype
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 原型，样品
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: public
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: adj. 公众的，公开的
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: publicity
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 引起公众注意   [pʌb'lisiti] n. 公开场合，名声，宣传
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: publics
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 公众，（有共同兴趣的）一群人 或社会 人士
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: public sector
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 公有企业
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: punctual
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: adj. 准时的 ['pʌŋktjuəl]
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: punctuality
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 准时  [p ʌŋktjuæliti]
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: purchase
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: v. & n. 购买
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: purchase ledger
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 进货
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: purchaser
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 买主，采购人['p ə:tʃəsə] QC(=Quality Circle)    n. 质检人员
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: purchasing power
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 购买力    PR=Public Relations 公共关系
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: qualification
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 资格，资格证明
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: qualified
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: adj. 有资格的，胜任的，合格的
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: qualify
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: "v. 有资格，胜任 g,\x8DDn\x90NÅO\x9B[fN`N¤mAÿ N%y\x81u(N\x8EUFN\x1Au(\x90\x14\
+    ÿ \x8B÷N\x8E24\\\x0FeöQ R \x96d0\x02"
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: quality
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 质量
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: quality assurance
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 质量保证
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: quality control
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 质量控制，质量管理
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: quarterly
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: adj./adv. 季度的，按季度 n. 季刊
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: questionnaire
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 调查表，问卷
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: quotation
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 报价，股票牌价
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: quote
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 报价，股票牌价 vt. 引述,举证,报价 n. 引用
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: radically
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: adv. 根本地，彻底地 ['rædikli]
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: raise
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. （美）增加薪金 v. 增加，提高；提出，引起 [reiz]
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: range
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 系列产品
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: rank
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n./v. 排名
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: rapport
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 密切的关系，轻松愉快的气氛 [ræ'pɔ:] n.关系 同意
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: rate
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 比率，费用
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: rating
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 评定结果. n.等级,额定值,责骂，收视率
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: ratio
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 系数，比率['rei ʃiəu]
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: rationalize
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: v. 使更有效，使更合理  ['ræʃənəlaiz]
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: raw
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: adj. 原料状态的，未加工的
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: raw material
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 原材料
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: R&D
+  phonetic: null
+  part_of_speech: Research and Development
+  meaning_zh: n.研究与开发
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: receipt
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 收据
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: receive
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: v. 得到
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: receiver
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 接管人，清算人 accounts receivable    n. 应收帐
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: receivership
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 破产管理
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: recession
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 萧条，不景气 凹入的地方 [ri'seʃən]
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: reckon
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: v. 估算，认为  ['rekən]
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: recognise
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: v. 承认
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: reconcile
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: "v. 使...... 相吻合，使调节， g,\x8DDn\x90NÅO\x9B[fN`N¤mAÿ N%y\x81u(N\x8EUFN\x1A\
+    u(\x90\x14ÿ \x8B÷N\x8E24\\\x0FeöQ R \x96d0\x02 v.和谐，核对，调和  ['rekənsail]"
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: recoup
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: v. 扣除，赔偿，偿还，赔偿损失[ri'ku:p]
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: recover
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: v. 重新获得，恢复
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: recovery
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 重获，恢复
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: recruit
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: v. 招聘，征募 n. 新招收的人员
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: recruitment
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 新成员的吸收
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: red
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 红色
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: reduce
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: v. 减少
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: reduction
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 减少
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: redundancy
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 裁员，解雇  [ri'dʌndənsi]
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: redundant
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: adj. 过多的，被裁减的， adj.多余的，被解雇的[ri'dʌndənt]
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: reference
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 参考，参考资料
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: reference number
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n.(Ref. No.) 产品的参考号码
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: refund
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n./v. 归还，偿还  [ri:'f ʌnd]
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: region
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 地区
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: reimburse
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: v. 偿还，付还，报销   [ri:im'bə:s]
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: reject
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n./v. 拒绝
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: reliability
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 可靠性，可信度  [rilai ə'biliti]
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: relief
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 减轻，解除，救济  [ri'li:f]
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: relocate
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: v. 调动，重新安置   [ri:'ləukeit]
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: remuneration
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 酬报，酬金  [rimju:nə'reiʃən]
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: rent
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: v. 租 n. 租金
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: report to
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: v. 低于（某人），隶属，从属
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: reposition
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: v. ( 为商品)重新定位  [ripə'ziʃən]
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: represent
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: v. 代表，代理
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: representative
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 代理人，代表,rep （代表）的缩写
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: reputable
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: adj. 名声/名誉好的
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: reputation
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 名声，声望
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: reserves
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 储量金，准备金
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: resign
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: v. 放弃，辞去
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: resignation
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 辞职
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: resistance
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 阻力，抵触情绪   [re'zistəns]
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: respond
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: v. 回答，答复
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: response
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 回答，答复
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: restore
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: "v. 恢复 g,\x8DDn\x90NÅO\x9B[fN`N¤mAÿ N%y\x81u(N\x8EUFN\x1Au(\x90\x14\
+    ÿ \x8B÷N\x8E24\\\x0FeöQ R \x96d0\x02"
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: result/results
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 结果，效果
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: retail
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n./v. 零售
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: retailer
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 零售商
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: retail price
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 零售价
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: retained earnings
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 留存收益   [ri'tein] vt. 保持,保留;留住,
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: retire
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: v. 退休
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: retirement
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 退休
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: return
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 投资报酬 return on investment (ROI) n. 投资收入，投资报酬,投资利润
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: revenue
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 岁入，税收，税务局  ['revinju:]
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: review
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: v./n. 检查
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: reward
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n./v. 报答，报酬，奖赏
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: rework
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: v. （因劣质而）重作
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: rights issue
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: "n. 优先认股权 g,\x8DDn\x90NÅO\x9B[fN`N¤mAÿ N%y\x81u(N\x8EUFN\x1Au(\x90\x14\
+    ÿ \x8B÷N\x8E24\\\x0FeöQ R \x96d0\x02 IT=Information Technology 信息技术"
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: risk capital
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 风险资本
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: rival
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n./v. 竞争，对抗 / 竞争者，对手 adj. 竞争的  ['raivəl]
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: rocket
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: v. 急速上升，直线上升，飞升
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: roughly
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: adv. 粗略地，粗心地，粗暴地 ['rʌfli]
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: round
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: adj. 整数表示的，大约
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: round trip
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 往返的行程
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: royalty
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 特许权， 专利权税， 皇室， 王权， 版税['rɔiəlti]
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: run
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: v. 管理，经营
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: running
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: adj. 运转的
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: running costs
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n.日常管理费用
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: sack
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: v. 解雇
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: sales force
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 销售人员
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: sales ledger
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 销货帐
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: sample
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 样品 ；v. 试验；抽样检验
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: saturate
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: v. 饱和 ['sætʃəreit]
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: saturation
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. （市场的）饱和（状态）[sætʃə'reiʃən]
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: save
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: v. 节省，储蓄
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: savings
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 存款
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: scale
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 刻度， 衡量， 数值范围， 层次， 规模 [skeil]
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: scapegoat
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 替罪羊   [skeip] n. 花茎;触角根
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: scare
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: adj. 缺乏的，不足的 v./n. 惊吓,恐慌
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: scrap
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 废料或废品,残片，碎片  [skræp]
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: seasonal
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: adj. 季节性的
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: section
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: "n. 部门 g,\x8DDn\x90NÅO\x9B[fN`N¤mAÿ N%y\x81u(N\x8EUFN\x1Au(\x90\x14\
+    ÿ \x8B÷N\x8E24\\\x0FeöQ R \x96d0\x02"
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: sector
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 部门
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: securities
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 债券及有价证券   [si'kjuəritis]
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: segment
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 部分，片，段 v. 将市场划分成不同的部分  ['segmənt]
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: segmentation
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 将市场划分成不同的部门， n.分割，分裂   [segmən'teiʃən]
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: semi-skilled
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: adj. 半熟练的 semi- 1.pref. [前缀] 表示“半”“部分的”“不完全”之意
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: senior management
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 高层管理人员
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: service
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 服务，帮佣
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: services
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 专业服务
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: settle
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: v. 解决，决定，安排，支付
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: settlement
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 解决，清偿，支付
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: set up
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: v. 创立
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: share
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 股份
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: shareholder
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 股东
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: share option
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 期权
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: shelf-life
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 货架期( 商品可以陈列在货架上的时间)
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: shift
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 轮班
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: shop
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 商店
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: shopfloor
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 生产场所
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: shop steward
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 工会管事  ['stju:wəd] n. 管理人,招待员,
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: shortlist
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. ...... 供最后选择的候选人名单 v. 把......列入最后的候选人名单
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: showroom
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 陈列室
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: sick
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: adj. 病的
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: sick leave
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 病假
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: sickness
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 生病
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: sickness benefit
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 疾病补助费
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: sick note
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 病假条
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: sick pay
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 病假工资
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: simulation
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 模拟，伪装，模仿  [simju'leiʃən]
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: skill
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 技能，熟巧
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: skilled employee
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 熟练工人
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: skimmed milk
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 脱脂乳[skim] vt.撇取浮沫,略读,掠过 n. 脱脂乳,擦过 a. 撇取浮沫了的
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: skimming
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 高额定价，撇奶油式定价
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: slogan
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: "n. 销售口号 n.呐喊声,标语,口号 ['sləugən] g,\x8DDn\x90NÅO\x9B[fN`N¤mAÿ N%y\x81\
+    u(N\x8EUFN\x1Au(\x90\x14ÿ \x8B÷N\x8E24\\\x0FeöQ R \x96d0\x02"
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: slump
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 暴跌  陷入  [sl ʌmp] vi.(因乏力无法支持而)倚靠，跌坐，； (物价数量等)暴跌，剧降, n. (物价销售额等)突然下跌；
+    萧条时期；不景气； 【尤美】运动员状态不佳时期
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: soft-sell
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 劝诱销售（术），软销售（手段）
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: software
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 软件
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: sole
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: adj. 仅有的，单独的 n.脚掌,鞋底, a.唯一的,仅有的,单独的,独身的
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: sole distributor
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 独家分销商
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: solvent
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: adj. 有偿付能力的 insolvent,adj.无偿付能力的
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: sourcing
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 得到供货 n. 来源
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: spare part
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 零部件
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: specification
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 产品说明  [spesifi'keiʃən]
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: split
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: v. 分离,分裂，裂开 [split]
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: spokesman
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 发言人
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: sponsor
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 赞助者（为了商品的广告宣传）
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: spread
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n （股票买价和卖价的）差额 [spred]n.传播散布 adj.扩展的，延伸的
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: stable
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: adj. 稳定的
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: staff
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 职员
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: staff manager
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 部门经理助理 management accounts   n. 管理帐目
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: staff turnover
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 人员换手率
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: stag
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 投机认股者 v. 炒买炒卖 n. 牡鹿, [stæg] a. 全是男人的只有男性的社交晚会
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: stagnant
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: adj. 停滞的，萧条的    ['stægnənt]
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: statute
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 成文法 n. 法令,成文法律,法规 ['stætjut]
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: statutory
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: adj. 法定的 a. 法令的,法定的 ['stætjutəri]
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: steadily
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: adv. 稳定地，平稳地
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: stock
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 库存，股票
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: stockbroker
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 股票经纪人
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: stock controller
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 库房管理者
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: stock exchange
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 证券交易所
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: stock turnover
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 股票换手率
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: storage
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: "n. 贮藏，库存量 g,\x8DDn\x90NÅO\x9B[fN`N¤mAÿ N%y\x81u(N\x8EUFN\x1Au(\x90\x14\
+    ÿ \x8B÷N\x8E24\\\x0FeöQ R \x96d0\x02"
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: strategy
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 战略
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: streamline
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: v. 精简机构，提高效率 ['stri:mlain] n. 流线,流线型 n. 水流,小河,流出
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: stress
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 压力，紧迫
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: strike
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 罢工
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: structure
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 结构，设备
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: subcontract
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: v. 分包（工程项目），转包
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: subordinate
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 下级 adj. 下级的  [sə'bɔ:dnit]
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: subscribe
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: v. 认购  [s əb'skraib] vt. 捐献,签署
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: subsidiary
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 子公司
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: subsidies
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: v. 补贴，资助
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: subsidy
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 补助金
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: substantially
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: adv. 大量地，大幅度地  [səbstænʃəli] ad. 实质上,本质上,
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: summaries
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: v. 概括，总结
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: superior
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 上级，长官 [sju:'piəriə] a. 优良的,卓越的,
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: supervisor
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 监督人，管理人
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: supervisory
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: adj. 监督的，管理的
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: supply
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n./v. 供给，提供
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: survey
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n.调查
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: SWOT analysis
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. SWOT 分析是分析一个公司或 一个项目的优点、弱点、机会和风险
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: synergy
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n.协作作用   ['sinədʒi] [各机体或不同药物间的]
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: tactic
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 战术，兵法 adj.排序的 顺序的 ['tæktik]
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: tailor
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: v. 特制产品  n.裁缝 v.缝制 定做 tailor made products   n. 特制产品
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: take-home pay
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 实得工资
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: take on
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: v. 雇用
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: takeover
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n./v. 接管
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: takeover bid
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 盘进（一个公司）的出价
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: tangible assets
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 有形资产
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: target
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 目标 v. 把......作为目标
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: tariff
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 关税；价目表  ['tærif]
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: task
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 任务，工作
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: task force
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: "n. 突击队，攻关小队 g,\x8DDn\x90NÅO\x9B[fN`N¤mAÿ N%y\x81u(N\x8EUFN\x1Au(\x90\
+    \x14ÿ \x8B÷N\x8E24\\\x0FeöQ R \x96d0\x02 （为完成某项任务而在一起的一组人）"
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: tax
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 税，税金
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: taxable
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: adj. 可征税的
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: tax allowance
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 免减税
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: taxation
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 征税
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: tax avoidance
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 避税
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: tax-deductible
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: adj 在计算所得税时予以扣除的 adj.  可扣除的   [di'd ʌktəbl]
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: telesales
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 电话销售，电话售货
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: temporary
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: adj. 暂时的
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: temporary post
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 临时职位
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: tender
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n./v. 投标  ['tendə ] adj.嫩的，柔软的 柔弱的 敏感的,一触就痛的 n.看管者，法定货币
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: territory
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n.(销售 ）区 域n. 领土 领地 版图 ['teritəri]
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: throughput
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 工厂的总产量 TQC(=Total Quality Control) n. 全面质量管理
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: tie
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 关系，联系
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: to be out of debt
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: v.不欠债
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: to get into debt
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: v.负债
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: to pay off a debt
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: v. 还清债务
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: track record
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 追踪记录，业绩[træk] n.轨迹 跑道 轨道 vi.追踪
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: trade
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n./v. 商业，生意；交易，经商
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: trade mark
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 商标
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: trade union
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 工会
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: trading profit
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 贸易利润
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: trainee
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 受培训者
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: transaction
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 交易，业务
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: transfer
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n./v. 传输，转让
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: transformation
+  phonetic: null
+  part_of_speech: n
+  meaning_zh: 加工
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: transparency
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: "n. (投影用) 透明胶片 [træns'pærənsi] g,\x8DDn\x90NÅO\x9B[fN`N¤mAÿ N%y\x81\
+    u(N\x8EUFN\x1Au(\x90\x14ÿ \x8B÷N\x8E24\\\x0FeöQ R \x96d0\x02 n.透明 透明物 幻灯片"
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: treasurer
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 司库，掌管财务的人 ['treʒərə] n.会计 出纳
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: treasury
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 国库，财政部  ['tre ʒəri]
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: trend
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 趋势，时尚
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: trouble-shooting
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 解决问题
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: turnover
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 营业额，员工流动的比率
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: undertake
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: v. 从事、同意做某事 vt. 从事,保证,承担,同意,接受 undifferentiated marketing n. 无差异性营销策略
+    ['ʌndifə'renʃieitid] adj. 分化不良型的
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: unearned income
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 非劳动收入，投资所得
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: uneconomical
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: adj. 不经济的，浪费
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: unemployment
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 失业 unemployment benefit   n. 失业津贴
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: unit
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 单位 a. 单位的,单元的
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: unit cost
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 单位成本
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: update
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: v. 使现代化 ,更新,
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: upgrade
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: v. 升级，增加
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: up market
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: adj./adv. 高档商品的/地
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: up to date
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: adj./adv. 流行的，现行的，时髦的
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: upturn
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 使向上，使朝上
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: USP
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 唯一的销售计划
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: vacancy
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 空缺
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: vacant
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: adj. 空缺的
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: valuation
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 价值
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: value
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n./v. 价值，估价
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: value-added
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 增加值
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: value added tax
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 增值税
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: variable
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 可变物，变数 a. 可变的,不定的
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: variable costs
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 可变成本 cost-eff
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: variation
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 变化，变更
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: variety
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: Un. 多样化 n.种类
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: vendor
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 卖主（公司或个人） ['vendə] n. 小贩,卖主,自动售货机;
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: venture
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 冒险， 投机   vt. 冒…的危险;敢于 ['ventʃə]
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: venue
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 地点，集合地点
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: viability
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 可行性
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: viable
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: adj. 可行的
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: vision
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 设想，公司的长期目标
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: vocation
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 行业，职业，天职 ,才能 [vəu'keiʃən]
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: vocational
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: ad j. 行业的，职业的
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: wage
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. （周）工资
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: wage freeze
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 工资冻结
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: warehouse
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 仓库，货栈
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: wealth
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 财富，资源
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: wealthy
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: adj. 富裕的，丰富的
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: welfare
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 福利
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: white-collar
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 白领阶层
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: white goods
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 如冰箱和洗衣机等用在厨房中的产品
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: wholesale
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n./a. 批发；批发的
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: wholesaler
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 批发商
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: wind up
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: v. 关闭公司
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: withdraw
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: v. 拿走，收回，退出
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: withdrawal
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 拿走，收回，退出
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: work
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 工作
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: working capital
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 营运资本，营运资金
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: working conditions
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 工作条件
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: work-in-progress
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 工作过程
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: workload
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 工作量
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: work order
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. （包括原料、半成品、成品的） 全部存货总量
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: work station
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n.工作位置
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: write off
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: v. 取消
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: write-off
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 债务的取消
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: yield
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: "n. 有效产量 g,\x8DDn\x90NÅO\x9B[fN`N¤mAÿ N%y\x81u(N\x8EUFN\x1Au(\x90\x14\
+    ÿ \x8B÷N\x8E24\\\x0FeöQ R \x96d0\x02"
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: zero defect
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: n. 合格产品
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium
+- word: zero inventory
+  phonetic: null
+  part_of_speech: ''
+  meaning_zh: "n. 零存货 g,\x8DDn\x90NÅO\x9B[fN`N¤mAÿ N%y\x81u(N\x8EUFN\x1Au(\x90\x14\
+    ÿ \x8B÷N\x8E24\\\x0FeöQ R \x96d0\x02"
+  business_example: null
+  collocation: null
+  level: BEC Intermediate
+  difficulty: medium

@@ -1,0 +1,114 @@
+module: mock_exam
+source: "Risk & finance prompts adapted from public treasury and audit drills"
+version: 1
+questions:
+  - stem: "Which statement communicates a currency risk hedge to stakeholders?"
+    level: "BEC Higher"
+    difficulty: "medium"
+    tags: [risk, finance]
+    options:
+      - "FX is risky."
+      - "We've hedged 80% of EUR exposure for Q3, limiting downside to $200k even if the euro drops another 5%."
+      - "Watching FX."
+      - "Not sure."
+    answer: "We've hedged 80% of EUR exposure for Q3, limiting downside to $200k even if the euro drops another 5%."
+    explanation: "Quantify coverage and residual risk."
+  - stem: "Which line summarizes compliance remediation clearly?"
+    level: "BEC Higher"
+    difficulty: "medium"
+    tags: [compliance]
+    options:
+      - "We fixed issues."
+      - "Audit findings 3 and 4 are closed: access reviews run monthly and evidence was uploaded to GRC."
+      - "Compliance ok."
+      - "Done."
+    answer: "Audit findings 3 and 4 are closed: access reviews run monthly and evidence was uploaded to GRC."
+    explanation: "Executives expect reference to control owners and evidence."
+  - stem: "Which sentence requests finance approval responsibly?"
+    level: "BEC Higher"
+    difficulty: "medium"
+    tags: [finance, approval]
+    options:
+      - "Sign this."
+      - "Could you approve the $450k capex this week? Delays push back savings from the automation program by a quarter."
+      - "Need sign."
+      - "Please approve."
+    answer: "Could you approve the $450k capex this week? Delays push back savings from the automation program by a quarter."
+    explanation: "Include urgency plus impact."
+  - stem: "Which update reassures leadership about cost controls?"
+    level: "BEC Higher"
+    difficulty: "medium"
+    tags: [finance, control]
+    options:
+      - "Costs stable."
+      - "Travel spend is down 18% after the new approval workflow; we'll monitor monthly to maintain compliance."
+      - "Budget fine."
+      - "Ok."
+    answer: "Travel spend is down 18% after the new approval workflow; we'll monitor monthly to maintain compliance."
+    explanation: "Tie results to the control mechanism and ongoing monitoring."
+  - stem: "Which sentence explains working-capital stress concisely?"
+    level: "BEC Higher"
+    difficulty: "hard"
+    tags: [finance, working_capital]
+    options:
+      - "Cash tight."
+      - "Receivables are 12 days slower due to the ERP cutover; without acceleration, we breach covenants in July."
+      - "Need cash."
+      - "Collections bad."
+    answer: "Receivables are 12 days slower due to the ERP cutover; without acceleration, we breach covenants in July."
+    explanation: "State cause, metric, and consequence."
+  - stem: "Which message frames insurance coverage adjustments?"
+    level: "BEC Higher"
+    difficulty: "medium"
+    tags: [risk, insurance]
+    options:
+      - "Insurance change."
+      - "We raised cyber coverage to $50M and added breach response riders to meet customer contract terms."
+      - "Updated policy."
+      - "Insurance fine."
+    answer: "We raised cyber coverage to $50M and added breach response riders to meet customer contract terms."
+    explanation: "Mention new limits and the driver."
+  - stem: "Which response addresses internal audit concerns constructively?"
+    level: "BEC Higher"
+    difficulty: "medium"
+    tags: [audit, remediation]
+    options:
+      - "Noted."
+      - "We'll deploy segregation-of-duty monitoring next sprint and deliver evidence before the follow-up audit on 30 May."
+      - "Later."
+      - "Okay."
+    answer: "We'll deploy segregation-of-duty monitoring next sprint and deliver evidence before the follow-up audit on 30 May."
+    explanation: "Audit responses require timelines and artifacts."
+  - stem: "Which sentence escalates a fraud signal properly?"
+    level: "BEC Higher"
+    difficulty: "hard"
+    tags: [risk, escalation]
+    options:
+      - "Fraud maybe."
+      - "Unusual refunds from region West exceed thresholds—we need Risk to freeze the channel until forensics reviews the logs tomorrow."
+      - "Weird things."
+      - "Investigate?"
+    answer: "Unusual refunds from region West exceed thresholds—we need Risk to freeze the channel until forensics reviews the logs tomorrow."
+    explanation: "Escalations must cite thresholds and required action."
+  - stem: "Which update highlights treasury's liquidity actions?"
+    level: "BEC Higher"
+    difficulty: "medium"
+    tags: [treasury]
+    options:
+      - "Liquidity ok."
+      - "We extended our revolver to 2029 and added $50M in unused capacity to cushion macro volatility."
+      - "Cash fine."
+      - "Plenty of funds."
+    answer: "We extended our revolver to 2029 and added $50M in unused capacity to cushion macro volatility."
+    explanation: "Spell out instruments, amounts, and rationale."
+  - stem: "Which sentence requests board approval for a divestiture succinctly?"
+    level: "BEC Higher"
+    difficulty: "hard"
+    tags: [board, finance]
+    options:
+      - "Sell unit."
+      - "We recommend divesting the legacy hardware unit for $70M, freeing capital for SaaS expansion and lifting gross margin by 4 pts."
+      - "Need to sell."
+      - "Approve sale."
+    answer: "We recommend divesting the legacy hardware unit for $70M, freeing capital for SaaS expansion and lifting gross margin by 4 pts."
+    explanation: "Board proposals should highlight proceeds and strategic benefit."

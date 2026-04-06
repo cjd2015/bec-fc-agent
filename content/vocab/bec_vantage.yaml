@@ -1,0 +1,36 @@
+module: vocab
+level: BEC Vantage
+count: 4
+entries:
+- word: margin
+  phonetic: /ˈmɑːrdʒɪn/
+  part_of_speech: noun
+  meaning_zh: 利润空间
+  business_example: Our margin improved this quarter.
+  collocation: profit margin
+  level: BEC Vantage
+  difficulty: medium
+- word: negotiate
+  phonetic: /nɪˈɡoʊʃieɪt/
+  part_of_speech: verb
+  meaning_zh: 谈判
+  business_example: We need to negotiate better payment terms.
+  collocation: negotiate terms
+  level: BEC Vantage
+  difficulty: medium
+- word: proposal
+  phonetic: /prəˈpoʊzl/
+  part_of_speech: noun
+  meaning_zh: 提案
+  business_example: The sales team prepared a detailed proposal.
+  collocation: submit a proposal
+  level: BEC Vantage
+  difficulty: easy
+- word: stakeholder
+  phonetic: /ˈsteɪkhoʊldər/
+  part_of_speech: noun
+  meaning_zh: 利益相关方
+  business_example: We should update all stakeholders.
+  collocation: key stakeholder
+  level: BEC Vantage
+  difficulty: medium

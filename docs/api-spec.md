@@ -86,7 +86,11 @@
   "code": 0,
   "message": "success",
   "data": {
-    "user_id": 1
+    "id": 1,
+    "username": "alice",
+    "email": "alice@example.com",
+    "status": "active",
+    "token": "jwt_token_here"
   }
 }
 ```
@@ -108,10 +112,15 @@
   "code": 0,
   "message": "success",
   "data": {
+    "id": 1,
+    "username": "alice",
+    "status": "active",
     "token": "jwt_token_here"
   }
 }
 ```
+
+> ✅ 登录成功必须在后续请求头中添加 `Authorization: Bearer <token>`。
 
 ### 4.3 GET `/api/v1/users/profile`
 获取当前用户画像。
@@ -122,10 +131,61 @@
 请求示例：
 ```json
 {
+  "username": "alice",
+  "display_name": "Alice Chen",
+  "avatar_url": "https://...",
   "target_level": "BEC Intermediate",
   "current_level": "A2",
   "industry_background": "International Trade",
-  "learning_goal": "Prepare for BEC and improve business speaking"
+  "learning_goal": "Prepare for BEC and improve business speaking",
+  "phone_number": "+86-10-12345678",
+  "company": "DataHive",
+  "job_title": "PM"
+}
+```
+
+### 4.5 POST `/api/v1/users/password/change`
+修改密码（需要提供旧密码）。
+
+请求示例：
+```json
+{
+  "username": "alice",
+  "current_password": "oldP@ss",
+  "new_password": "NewP@ssword1"
+}
+```
+
+### 4.6 POST `/api/v1/users/password/forgot`
+申请重置密码令牌（临时方案直接返回 token，后续可接入邮件/短信）。
+
+请求示例：
+```json
+{
+  "username": "alice"
+}
+```
+
+响应示例：
+```json
+{
+  "code": 0,
+  "message": "success",
+  "data": {
+    "reset_token": "abcd...",
+    "expires_at": "2026-04-02T00:00:00Z"
+  }
+}
+```
+
+### 4.7 POST `/api/v1/users/password/reset`
+使用 token 重置密码。
+
+请求示例：
+```json
+{
+  "token": "abcd...",
+  "new_password": "BrandNew123!"
 }
 ```
 

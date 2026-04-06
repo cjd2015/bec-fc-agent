@@ -102,3 +102,13 @@ fc-code/_yaml/
 fc-code/email_validator/
 fc-code/annotated_types/
 fc-code/typing_extensions.py
+# Deployment backups & secrets
+deploy/nginx-datahive-site/ssl/
+deploy/nginx-datahive-site/html/index.html.backup-*
+deploy/nginx-datahive-site/html/assets_backup*/
+deploy/nginx-datahive-site/html_backup_*/
+fc-code/certifi/
+fc-code/httpcore/
+fc-code/httpx/
+fc-code/jwt/
+fc-code/sniffio/

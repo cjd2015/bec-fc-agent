@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { Card, Col, Row, List, Tag, Typography, Space, Alert } from 'antd'
+import { Card, Col, Row, List, Tag, Typography, Space, Alert, Button } from 'antd'
 import { request } from '@/api'
 
 const { Title, Paragraph, Text } = Typography
@@ -30,21 +30,89 @@ const KnowledgeList: React.FC = () => {
   const [vocab, setVocab] = useState<VocabItem[]>([])
   const [patterns, setPatterns] = useState<PatternItem[]>([])
   const [error, setError] = useState<string>('')
+  const [vocabLoading, setVocabLoading] = useState<boolean>(true)
+  const [patternLoading, setPatternLoading] = useState<boolean>(true)
+  const [vocabLoadingMore, setVocabLoadingMore] = useState<boolean>(false)
+  const [patternLoadingMore, setPatternLoadingMore] = useState<boolean>(false)
+  const [vocabHasMore, setVocabHasMore] = useState<boolean>(true)
+  const [patternHasMore, setPatternHasMore] = useState<boolean>(true)
+  const [vocabNextPage, setVocabNextPage] = useState<number>(1)
+  const [patternNextPage, setPatternNextPage] = useState<number>(1)
+  const vocabPageSize = 100
+  const patternPageSize = 60
 
-  useEffect(() => {
-    const load = async () => {
-      try {
-        const [vocabRes, patternRes] = await Promise.all([
-          request<{ data: { items: VocabItem[] } }>({ url: '/vocab', method: 'GET' }),
-          request<{ data: { items: PatternItem[] } }>({ url: '/patterns', method: 'GET' }),
-        ])
-        setVocab(vocabRes.data.items || [])
-        setPatterns(patternRes.data.items || [])
-      } catch (err) {
-        setError(err instanceof Error ? err.message : '加载学习内容失败')
+  const fetchVocab = async (reset: boolean = false) => {
+    const page = reset ? 1 : vocabNextPage
+    if (reset) {
+      setVocabLoading(true)
+      setError('')
+    } else {
+      setVocabLoadingMore(true)
+    }
+    try {
+      const res = await request<{ data: { items: VocabItem[] } }>({
+        url: '/vocab',
+        method: 'GET',
+        params: { page, page_size: vocabPageSize, order: 'desc', status: 'published' },
+      })
+      const items = res.data.items || []
+      setVocabHasMore(items.length === vocabPageSize)
+      if (reset) {
+        setVocab(items)
+        setVocabNextPage(2)
+      } else {
+        setVocab((prev) => [...prev, ...items])
+        setVocabNextPage(page + 1)
+      }
+    } catch (err) {
+      setError(err instanceof Error ? err.message : '加载学习内容失败')
+    } finally {
+      if (reset) {
+        setVocabLoading(false)
+      } else {
+        setVocabLoadingMore(false)
       }
     }
-    load()
+  }
+
+  const fetchPatterns = async (reset: boolean = false) => {
+    const page = reset ? 1 : patternNextPage
+    if (reset) {
+      setPatternLoading(true)
+      setError('')
+    } else {
+      setPatternLoadingMore(true)
+    }
+    try {
+      const res = await request<{ data: { items: PatternItem[] } }>({
+        url: '/patterns',
+        method: 'GET',
+        params: { page, page_size: patternPageSize, order: 'desc', status: 'published' },
+      })
+      const items = res.data.items || []
+      setPatternHasMore(items.length === patternPageSize)
+      if (reset) {
+        setPatterns(items)
+        setPatternNextPage(2)
+      } else {
+        setPatterns((prev) => [...prev, ...items])
+        setPatternNextPage(page + 1)
+      }
+    } catch (err) {
+      setError(err instanceof Error ? err.message : '加载学习内容失败')
+    } finally {
+      if (reset) {
+        setPatternLoading(false)
+      } else {
+        setPatternLoadingMore(false)
+      }
+    }
+  }
+
+  useEffect(() => {
+    fetchVocab(true)
+    fetchPatterns(true)
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
   return (
@@ -60,8 +128,21 @@ const KnowledgeList: React.FC = () => {
 
       <Row gutter={16}>
         <Col xs={24} lg={12}>
-          <Card title={`商务词汇 (${vocab.length})`}>
+          <Card
+            title={`商务词汇（已加载 ${vocab.length} 条）`}
+            loading={vocabLoading && vocab.length === 0}
+            extra={
+              vocabHasMore ? (
+                <Button size="small" onClick={() => fetchVocab(false)} loading={vocabLoadingMore}>
+                  加载更多
+                </Button>
+              ) : (
+                <Text type="secondary">已加载全部</Text>
+              )
+            }
+          >
             <List
+              loading={vocabLoading && vocab.length === 0}
               dataSource={vocab}
               renderItem={(item) => (
                 <List.Item>
@@ -83,8 +164,21 @@ const KnowledgeList: React.FC = () => {
         </Col>
 
         <Col xs={24} lg={12}>
-          <Card title={`商务句型 (${patterns.length})`}>
+          <Card
+            title={`商务句型（已加载 ${patterns.length} 条）`}
+            loading={patternLoading && patterns.length === 0}
+            extra={
+              patternHasMore ? (
+                <Button size="small" onClick={() => fetchPatterns(false)} loading={patternLoadingMore}>
+                  加载更多
+                </Button>
+              ) : (
+                <Text type="secondary">已加载全部</Text>
+              )
+            }
+          >
             <List
+              loading={patternLoading && patterns.length === 0}
               dataSource={patterns}
               renderItem={(item) => (
                 <List.Item>

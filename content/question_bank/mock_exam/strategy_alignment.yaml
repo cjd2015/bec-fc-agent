@@ -1,0 +1,114 @@
+module: mock_exam
+source: "Strategy alignment questions adapted from open consulting drills"
+version: 1
+questions:
+  - stem: "Which summary best links market data to a recommendation?"
+    level: "BEC Higher"
+    difficulty: "medium"
+    tags: [strategy, summary]
+    options:
+      - "Market is fine."
+      - "Premium bundles grew 12% YoY; shifting launch messaging to value-add services should defend margin."
+      - "Sales ok."
+      - "Customers like it."
+    answer: "Premium bundles grew 12% YoY; shifting launch messaging to value-add services should defend margin."
+    explanation: "Strategies must tie data to action."
+  - stem: "Which line frames strategic options clearly?"
+    level: "BEC Higher"
+    difficulty: "hard"
+    tags: [strategy, decision]
+    options:
+      - "We need a plan."
+      - "Option A accelerates product launches but requires $3M capex; Option B protects cash but delays AI features by two quarters."
+      - "Multiple choices."
+      - "Either way."
+    answer: "Option A accelerates product launches but requires $3M capex; Option B protects cash but delays AI features by two quarters."
+    explanation: "Decision slides should outline trade-offs explicitly."
+  - stem: "Which statement requests executive sponsorship for cross-functional work?"
+    level: "BEC Higher"
+    difficulty: "medium"
+    tags: [alignment, leadership]
+    options:
+      - "Need support."
+      - "Could you co-sign the transformation brief so Legal, Ops, and Sales treat it as a Tier-1 initiative?"
+      - "Please help."
+      - "Do this."
+    answer: "Could you co-sign the transformation brief so Legal, Ops, and Sales treat it as a Tier-1 initiative?"
+    explanation: "State the ask plus impact on other teams."
+  - stem: "Which question uncovers competitive threats effectively?"
+    level: "BEC Higher"
+    difficulty: "medium"
+    tags: [strategy, competitive]
+    options:
+      - "Competitors?"
+      - "Which competitor moves could disrupt our SMB share in the next six months?"
+      - "Any rivals?"
+      - "Who cares?"
+    answer: "Which competitor moves could disrupt our SMB share in the next six months?"
+    explanation: "Specific timeframes and segments focus analysis."
+  - stem: "Which update explains how a strategy will be executed?"
+    level: "BEC Higher"
+    difficulty: "medium"
+    tags: [strategy, execution]
+    options:
+      - "We'll execute."
+      - "We'll pilot with 50 key accounts, measure retention uplift after one quarter, then scale globally if we hit 10% improvement."
+      - "Roll out soon."
+      - "Implement everywhere."
+    answer: "We'll pilot with 50 key accounts, measure retention uplift after one quarter, then scale globally if we hit 10% improvement."
+    explanation: "Execution plans specify cohort, metric, and gate."
+  - stem: "Which sentence ties talent strategy to business goals?"
+    level: "BEC Higher"
+    difficulty: "medium"
+    tags: [strategy, talent]
+    options:
+      - "Hire more."
+      - "To support the fintech push, we need five senior solution architects—without them, deal velocity drops next quarter."
+      - "Need people."
+      - "Staff shortage."
+    answer: "To support the fintech push, we need five senior solution architects—without them, deal velocity drops next quarter."
+    explanation: "Talent requests should connect capabilities to outcomes."
+  - stem: "Which message secures alignment on customer segmentation?"
+    level: "BEC Higher"
+    difficulty: "medium"
+    tags: [strategy, segmentation]
+    options:
+      - "Segment change."
+      - "We'll focus GTM on mid-market accounts with $20–50M revenue because they show 2x conversion—does anyone see issues with that focus?"
+      - "Target mid."
+      - "New segment."
+    answer: "We'll focus GTM on mid-market accounts with $20–50M revenue because they show 2x conversion—does anyone see issues with that focus?"
+    explanation: "State the rationale and invite objection before finalizing."
+  - stem: "Which sentence escalates a strategic blocker appropriately?"
+    level: "BEC Higher"
+    difficulty: "hard"
+    tags: [strategy, risk]
+    options:
+      - "Blocked."
+      - "The partner data-sharing agreement is stalled—without your sponsorship, we risk missing the Q3 marketplace launch."
+      - "Problem."
+      - "Need help."
+    answer: "The partner data-sharing agreement is stalled—without your sponsorship, we risk missing the Q3 marketplace launch."
+    explanation: "Escalations should show business impact and required action."
+  - stem: "Which update best communicates OKR progress to leadership?"
+    level: "BEC Higher"
+    difficulty: "medium"
+    tags: [strategy, okr]
+    options:
+      - "OKRs good."
+      - "Objective 1 is on track: 85% of prioritized workflows are automated and we're heading for the 100% target by June."
+      - "Working."
+      - "Progress."
+    answer: "Objective 1 is on track: 85% of prioritized workflows are automated and we're heading for the 100% target by June."
+    explanation: "Leaders need metrics plus forecast."
+  - stem: "Which line proposes a partnership evaluation effectively?"
+    level: "BEC Higher"
+    difficulty: "medium"
+    tags: [strategy, partnerships]
+    options:
+      - "Check partner."
+      - "Let's evaluate a logistics partner to speed EU deliveries—we'll compare costs and SLA impact by next steering session."
+      - "Look into it."
+      - "Maybe partner."
+    answer: "Let's evaluate a logistics partner to speed EU deliveries—we'll compare costs and SLA impact by next steering session."
+    explanation: "State goal, scope, and timeline when proposing analyses."
